@@ -78,6 +78,7 @@ def ChatGPT_request(prompt):
     try:
         completion = client.responses.create(
             model="gpt-5-nano",
+            reasoning={"effort": "low"},
             input=prompt,
         )
         return completion.output_text
@@ -223,7 +224,8 @@ def GPT_request(prompt, gpt_parameter):
             # temerature is not supported by gpt-5-nano
             # temperature=gpt_parameter["temperature"],
             max_output_tokens=gpt_parameter["max_tokens"],
-            top_p=gpt_parameter["top_p"])
+            top_p=gpt_parameter["top_p"],
+            reasoning={"effort": gpt_parameter["reasoning_effort"]})
         return response.output_text
     except Exception as err:
         print(err)
@@ -290,7 +292,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
 
 
 if __name__ == '__main__':
-    gpt_parameter = {"engine": "gpt-5-nano", "max_tokens": 50,
+    gpt_parameter = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 50,
                      "temperature": 0, "top_p": 1, "stream": False,
                      "frequency_penalty": 0, "presence_penalty": 0,
                      "stop": ['"']}

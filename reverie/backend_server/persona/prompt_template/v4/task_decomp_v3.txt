@@ -10,7 +10,6 @@ Variables:
 !<INPUT 6>! -- Current action duration in min
 !<INPUT 7>! -- Persona first names
 
-<commentblockmarker>###</commentblockmarker>
 Describe subtasks in 5 min increments. 
 ---
 Name: Kelly Bronson
@@ -33,7 +32,12 @@ In 5 min increments, list the subtasks Kelly does when Kelly is working on the n
 8) Kelly is printing the lesson plan. (duration in minutes: 10, minutes left: 5)
 9) Kelly is putting the lesson plan in her bag. (duration in minutes: 5, minutes left: 0)
 ---
+<commentblockmarker>###</commentblockmarker>
 !<INPUT 0>!
 !<INPUT 1>!
-In 5 min increments, list the subtasks !<INPUT 2>! does when !<INPUT 3>! is !<INPUT 4>! from !<INPUT 5>! (total duration in minutes !<INPUT 6>!): 
-1) !<INPUT 7>! is
+In 5 min increments, list the subtasks !<INPUT 2>! does when !<INPUT 3>! is !<INPUT 4>! from !<INPUT 5>! (total duration in minutes !<INPUT 6>!).
+Respond with a JSON array describing the subtasks with the following structure:
+[
+	{"task": "!<INPUT 7>! is <SUBTASK>", "duration_in_minutes": <DURATION>, "minutes_left": <MINUTES LEFT>},
+	..
+]

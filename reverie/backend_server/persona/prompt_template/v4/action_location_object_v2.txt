@@ -10,7 +10,14 @@ Variables:
 !<INPUT 8>! -- Persona's current sector
 
 <commentblockmarker>###</commentblockmarker>
+This is a classification task -- choose an appropriate area from the area options for a task at hand.
+
 !<INPUT 0>! is in {!<INPUT 1>!} in !<INPUT 2>!.
 !<INPUT 3>! is going to !<INPUT 4>! that has ONLY the following areas: {!<INPUT 5>!}
+
 Stay in the current area if the activity can be done there. Never go into other people's rooms unless necessary.
-!<INPUT 6>! is !<INPUT 7>!. For !<INPUT 8>!, !<INPUT 9>! should go to the following area in !<INPUT 10>!: {
+
+Classification task: !<INPUT 6>! is !<INPUT 7>!. Pick one of the choices given in the area options in !<INPUT 10>! that !<INPUT 9>! should go to for !<INPUT 8>!.
+
+Output the response to the prompt above as a JSON object with the structure {"output": "<AREA>"}
+The value for the output must contain one of the area options above verbatim (including lower/upper case).
