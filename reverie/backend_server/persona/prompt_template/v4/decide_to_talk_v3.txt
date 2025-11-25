@@ -16,3 +16,6 @@ Right now, it is !<INPUT 1>!. !<INPUT 2>! and !<INPUT 3>! last chatted at !<INPU
 Question: Would !<INPUT 8>! initiate a conversation with !<INPUT 9>!? 
 
 Reasoning: Let's think step by step.
+
+Output the response to the prompt above as a JSON object with the structure:
+{"context": "<CONTEXT>", "question": "<QUESTION>", "reasoning": "<REASONING>", "should_talk": "<yes or no>" }

@@ -472,6 +472,9 @@ class ReverieServer:
         sim_folder = f"{fs_storage}/{self.sim_code}"
 
         while True:
+            if self.curr_time:
+                curr_time_str = self.curr_time.strftime("%B %d, %Y, %H:%M:%S")
+                print(f"The current in-simulation time is {curr_time_str}")
             sim_command = input("Enter option: ")
             sim_command = sim_command.strip()
             ret_str = ""
@@ -510,7 +513,7 @@ class ReverieServer:
                         print(
                             "Usage: run <amount>\n\tamount: amount of steps to run the simulation for")
                     int_count = int(args[0])
-                    run_detached = "detached" in args
+                    run_detached = not "attached" in args
                     rs.start_server(int_count, run_detached)
 
                 elif ("print persona schedule"

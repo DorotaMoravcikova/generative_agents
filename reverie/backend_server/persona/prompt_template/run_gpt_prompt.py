@@ -1058,8 +1058,8 @@ def run_gpt_prompt_new_decomp_schedule(persona,
             if count < len(truncated_act_dur) - 1:
                 for_time += datetime.timedelta(minutes=int(i[1]))
 
-        new_plan_init += (for_time +
-                          datetime.timedelta(minutes=int(i[1]))).strftime("%H:%M") + " ~"
+        # new_plan_init += (for_time +
+                #   datetime.timedelta(minutes=int(i[1]))).strftime("%H:%M") + " ~"
 
         prompt_input = [persona_name,
                         start_hour_str,
@@ -1076,24 +1076,18 @@ def run_gpt_prompt_new_decomp_schedule(persona,
         return prompt_input
 
     def __func_clean_up(gpt_response, prompt=""):
-        new_schedule = prompt + " " + gpt_response.strip()
-        new_schedule = new_schedule.split("The revised schedule:")[-1].strip()
-        new_schedule = new_schedule.split("\n")
-
-        ret_temp = []
-        for i in new_schedule:
-            ret_temp += [i.split(" -- ")]
+        response = json.loads(gpt_response)
 
         ret = []
-        for time_str, action in ret_temp:
-            start_time = time_str.split(" ~ ")[0].strip()
-            end_time = time_str.split(" ~ ")[1].strip()
+        for item in response:
+            start_time = item['start_time'].strip()
+            end_time = item['end_time'].strip()
             delta = datetime.datetime.strptime(
                 end_time, "%H:%M") - datetime.datetime.strptime(start_time, "%H:%M")
             delta_min = int(delta.total_seconds()/60)
             if delta_min < 0:
                 delta_min = 0
-            ret += [[action, delta_min]]
+            ret += [[item['action'], delta_min]]
 
         return ret
 
@@ -1103,15 +1097,12 @@ def run_gpt_prompt_new_decomp_schedule(persona,
             dur_sum = 0
             for act, dur in gpt_response:
                 dur_sum += dur
-                if str(type(act)) != "<class 'str'>":
+                if not isinstance(act, str):
                     return False
-                if str(type(dur)) != "<class 'int'>":
+                if not isinstance(dur, int):
                     return False
-            x = prompt.split("\n")[0].split(
-                "originally planned schedule from")[-1].strip()[:-1]
-            x = [datetime.datetime.strptime(
-                i.strip(), "%H:%M %p") for i in x.split(" to ")]
-            delta_min = int((x[1] - x[0]).total_seconds()/60)
+            delta_min = int(
+                (end_time_hour - start_time_hour).total_seconds()/60)
 
             if int(dur_sum) != int(delta_min):
                 return False
@@ -1147,10 +1138,10 @@ def run_gpt_prompt_new_decomp_schedule(persona,
 
         return ret
 
-    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 1000,
+    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 8196,
                  "temperature": 0, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v4/new_decomp_schedule_v1.txt"
+    prompt_template = "persona/prompt_template/v4/new_decomp_schedule_v2.txt"
     prompt_input = create_prompt_input(persona,
                                        main_act_dur,
                                        truncated_act_dur,
@@ -1240,14 +1231,16 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved, test_input
 
     def __func_validate(gpt_response, prompt=""):
         try:
-            if gpt_response.split("Answer in yes or no:")[-1].strip().lower() in ["yes", "no"]:
+            response = json.loads(gpt_response)
+            if response["should_talk"] in ["yes", "no"]:
                 return True
             return False
         except:
             return False
 
     def __func_clean_up(gpt_response, prompt=""):
-        return gpt_response.split("Answer in yes or no:")[-1].strip().lower()
+        response = json.loads(gpt_response)
+        return response["should_talk"]
 
     def get_fail_safe():
         fs = "yes"
@@ -1256,7 +1249,7 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved, test_input
     gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 20,
                  "temperature": 0, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v4/decide_to_talk_v2.txt"
+    prompt_template = "persona/prompt_template/v4/decide_to_talk_v3.txt"
     prompt_input = create_prompt_input(persona, target_persona, retrieved,
                                        test_input)
     prompt = generate_prompt(prompt_input, prompt_template)
@@ -1916,11 +1909,8 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
         return prompt_input
 
     def __func_clean_up(gpt_response, prompt=""):
-        gpt_response = "1) " + gpt_response.strip()
-        ret = []
-        for i in gpt_response.split("\n"):
-            ret += [i.split(") ")[-1]]
-        return ret
+        response = json.loads(gpt_response)
+        return response
 
     def __func_validate(gpt_response, prompt=""):
         try:
@@ -1932,38 +1922,11 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
     def get_fail_safe(n):
         return ["Who am I"] * n
 
-    # ChatGPT Plugin ===========================================================
-    def __chat_func_clean_up(gpt_response, prompt=""):
-        ret = ast.literal_eval(gpt_response)
-        return ret
-
-    def __chat_func_validate(gpt_response, prompt=""):
-        try:
-            __func_clean_up(gpt_response, prompt)
-            return True
-        except:
-            return False
-
     print("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 12")
-    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 16,
+    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 8196,
                  "temperature": 0, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v3_ChatGPT/generate_focal_pt_v1.txt"
-    prompt_input = create_prompt_input(persona, statements, n)
-    prompt = generate_prompt(prompt_input, prompt_template)
-    example_output = '["What should Jane do for lunch", "Does Jane like strawberry", "Who is Jane"]'
-    special_instruction = "Output must be a list of str."
-    fail_safe = get_fail_safe(n)
-    output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
-                                            __chat_func_validate, __chat_func_clean_up, True)
-    if output != False:
-        return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-    # ChatGPT Plugin ===========================================================
-
-    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 150,
-                 "temperature": 0, "top_p": 1, "stream": False,
-                 "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v4/generate_focal_pt_v1.txt"
+    prompt_template = "persona/prompt_template/v4/generate_focal_pt_v2.txt"
     prompt_input = create_prompt_input(persona, statements, n)
     prompt = generate_prompt(prompt_input, prompt_template)
 
@@ -1984,15 +1947,10 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
         return prompt_input
 
     def __func_clean_up(gpt_response, prompt=""):
-        gpt_response = "1. " + gpt_response.strip()
+        response = json.loads(gpt_response)
         ret = dict()
-        for i in gpt_response.split("\n"):
-            row = i.split(". ")[-1]
-            thought = row.split("(because of ")[0].strip()
-            evi_raw = row.split("(because of ")[1].split(")")[0].strip()
-            evi_raw = re.findall(r'\d+', evi_raw)
-            evi_raw = [int(i.strip()) for i in evi_raw]
-            ret[thought] = evi_raw
+        for i in response:
+            ret[i['insight']] = i['reasons']
         return ret
 
     def __func_validate(gpt_response, prompt=""):
@@ -2005,10 +1963,10 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
     def get_fail_safe(n):
         return ["I am hungry"] * n
 
-    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 150,
+    gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 8192,
                  "temperature": 0.5, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v4/insight_and_evidence_v1.txt"
+    prompt_template = "persona/prompt_template/v4/insight_and_evidence_v2.txt"
     prompt_input = create_prompt_input(persona, statements, n)
     prompt = generate_prompt(prompt_input, prompt_template)
 
@@ -2655,29 +2613,23 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
         return prompt_input
 
     def __chat_func_clean_up(gpt_response, prompt=""):
-        gpt_response = extract_first_json_dict(gpt_response)
+        response = json.loads(gpt_response)
 
         cleaned_dict = dict()
-        cleaned = []
-        for key, val in gpt_response.items():
-            cleaned += [val]
-        cleaned_dict["utterance"] = cleaned[0]
-        cleaned_dict["end"] = True
-        if "f" in str(cleaned[1]) or "F" in str(cleaned[1]):
-            cleaned_dict["end"] = False
+        cleaned_dict["utterance"] = response["utterance"]
+        cleaned_dict["end"] = response["ends_conversation"] == "yes"
 
         return cleaned_dict
 
     def __chat_func_validate(gpt_response, prompt=""):
         print("ugh...")
         try:
-            # print ("debug 1")
-            # print (gpt_response)
-            # print ("debug 2")
+            response = json.loads(gpt_response)
 
-            print(extract_first_json_dict(gpt_response))
-            # print ("debug 3")
-
+            if not isinstance(response["utterance"], str):
+                return False
+            if not response["ends_conversation"] in ["yes", "no"]:
+                return False
             return True
         except:
             return False
@@ -2689,7 +2641,7 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
         return cleaned_dict
 
     print("11")
-    prompt_template = "persona/prompt_template/v3_ChatGPT/iterative_convo_v1.txt"
+    prompt_template = "persona/prompt_template/v4/iterative_convo_v2.txt"
     prompt_input = create_prompt_input(
         maze, init_persona, target_persona, retrieved, curr_context, curr_chat)
     print("22")

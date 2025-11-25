@@ -8,4 +8,5 @@ Variables:
 !<INPUT 0>!
 
 Given only the information above, what are !<INPUT 1>! most salient high-level questions we can answer about the subjects grounded in the statements?
-1)
+Output the response to the prompt above as a JSON list with the structure: ["<QUESTION>", ..]
+E.g. ["What should Jane do for lunch", "Does Jane like strawberry", "Who is Jane"]
