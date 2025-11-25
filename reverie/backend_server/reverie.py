@@ -3,19 +3,19 @@ Author: Joon Sung Park (joonspk@stanford.edu)
 
 File: reverie.py
 Description: This is the main program for running generative agent simulations
-that defines the ReverieServer class. This class maintains and records all  
-states related to the simulation. The primary mode of interaction for those  
-running the simulation should be through the open_server function, which  
-enables the simulator to input command-line prompts for running and saving  
+that defines the ReverieServer class. This class maintains and records all
+states related to the simulation. The primary mode of interaction for those
+running the simulation should be through the open_server function, which
+enables the simulator to input command-line prompts for running and saving
 the simulation, among other tasks.
 
-Release note (June 14, 2023) -- Reverie implements the core simulation 
-mechanism described in my paper entitled "Generative Agents: Interactive 
-Simulacra of Human Behavior." If you are reading through these lines after 
-having read the paper, you might notice that I use older terms to describe 
-generative agents and their cognitive modules here. Most notably, I use the 
-term "personas" to refer to generative agents, "associative memory" to refer 
-to the memory stream, and "reverie" to refer to the overarching simulation 
+Release note (June 14, 2023) -- Reverie implements the core simulation
+mechanism described in my paper entitled "Generative Agents: Interactive
+Simulacra of Human Behavior." If you are reading through these lines after
+having read the paper, you might notice that I use older terms to describe
+generative agents and their cognitive modules here. Most notably, I use the
+term "personas" to refer to generative agents, "associative memory" to refer
+to the memory stream, and "reverie" to refer to the overarching simulation
 framework.
 """
 import json
@@ -157,11 +157,11 @@ class ReverieServer:
     def save(self):
         """
         Save all Reverie progress -- this includes Reverie's global state as well
-        as all the personas.  
+        as all the personas.
 
         INPUT
           None
-        OUTPUT 
+        OUTPUT
           None
           * Saves all relevant data to the designated memory directory
         """
@@ -190,17 +190,17 @@ class ReverieServer:
     def start_path_tester_server(self):
         """
         Starts the path tester server. This is for generating the spatial memory
-        that we need for bootstrapping a persona's state. 
+        that we need for bootstrapping a persona's state.
 
         To use this, you need to open server and enter the path tester mode, and
-        open the front-end side of the browser. 
+        open the front-end side of the browser.
 
-        INPUT 
+        INPUT
           None
-        OUTPUT 
+        OUTPUT
           None
           * Saves the spatial memory of the test agent to the path_tester_env.json
-            of the temp storage. 
+            of the temp storage.
         """
         def print_tree(tree):
             def _print_tree(tree, depth):
@@ -277,17 +277,17 @@ class ReverieServer:
 
             time.sleep(self.server_sleep * 10)
 
-    def start_server(self, int_counter):
+    def start_server(self, int_counter, run_detached):
         """
-        The main backend server of Reverie. 
-        This function retrieves the environment file from the frontend to 
-        understand the state of the world, calls on each personas to make 
+        The main backend server of Reverie.
+        This function retrieves the environment file from the frontend to
+        understand the state of the world, calls on each personas to make
         decisions based on the world state, and saves their moves at certain step
-        intervals. 
+        intervals.
         INPUT
           int_counter: Integer value for the number of steps left for us to take
-                       in this iteration. 
-        OUTPUT 
+                       in this iteration.
+        OUTPUT
           None
         """
         # <sim_folder> points to the current simulation folder.
@@ -303,6 +303,23 @@ class ReverieServer:
         # <game_obj_cleanup> is used for that.
         game_obj_cleanup = dict()
 
+        def get_env_file_location(sim_folder, step):
+            return f"{sim_folder}/environment/{step}.json"
+
+        def create_env_movements(maze_name, movements):
+            data = dict()
+
+            for persona_name, persona_data in movements['persona'].items():
+                data[persona_name] = {}
+                data[persona_name]["x"] = persona_data["movement"][0]
+                data[persona_name]["y"] = persona_data["movement"][1]
+                data[persona_name]["maze"] = maze_name
+
+            return data
+
+        if run_detached:
+            print("Running in detached mode")
+
         # The main while loop of Reverie.
         while (True):
             # Done with this iteration if <int_counter> reaches 0.
@@ -313,7 +330,7 @@ class ReverieServer:
             # frontend has done its job and moved the personas, then it will put a
             # new environment file that matches our step count. That's when we run
             # the content of this for loop. Otherwise, we just wait.
-            curr_env_file = f"{sim_folder}/environment/{self.step}.json"
+            curr_env_file = get_env_file_location(sim_folder, self.step)
             if check_if_file_exists(curr_env_file):
                 # If we have an environment file, it means we have a new perception
                 # input to our personas. So we first retrieve it.
@@ -412,8 +429,29 @@ class ReverieServer:
 
                     int_counter -= 1
 
-            # Sleep so we don't burn our machines.
-            time.sleep(self.server_sleep)
+                    # Run in a detached mode so we do not depend on the frontend as it has issues
+                    # NOTE(Friso): From what I understand right now the frontend does not check
+                    #              if the move made is actually possible so it's safe to skip it
+                    #              if not then whoops
+                    if run_detached:
+                        curr_env_file = get_env_file_location(
+                            sim_folder, self.step)
+                        env_movements = create_env_movements(
+                            "the_ville", movements)
+                        os.makedirs(os.path.dirname(
+                            curr_env_file), exist_ok=True)
+                        with open(curr_env_file, "w") as outfile:
+                            outfile.write(json.dumps(env_movements, indent=2))
+            # In theory this should be impossible but computers can be dumb
+            elif run_detached:
+                print(f"Missing environment file for step {self.step}")
+                return
+
+            # We create the environment file ourselves in detached mode so waiting for it to be
+            # created is not required
+            if not run_detached:
+                # Sleep so we don't burn our machines.
+                time.sleep(self.server_sleep)
 
     def open_server(self):
         """
@@ -467,8 +505,13 @@ class ReverieServer:
                 elif sim_command[:3].lower() == "run":
                     # Runs the number of steps specified in the prompt.
                     # Example: run 1000
-                    int_count = int(sim_command.split()[-1])
-                    rs.start_server(int_count)
+                    args = sim_command.split()[1:]
+                    if len(args) < 1:
+                        print(
+                            "Usage: run <amount>\n\tamount: amount of steps to run the simulation for")
+                    int_count = int(args[0])
+                    run_detached = "detached" in args
+                    rs.start_server(int_count, run_detached)
 
                 elif ("print persona schedule"
                       in sim_command[:22].lower()):

@@ -103,3 +103,10 @@ ENV/
 
 # VSCode stuff
 .vscode
+
+# Testing simulations
+environment/frontend_server/storage/test
+environment/frontend_server/storage/test2
+environment/frontend_server/storage/test3
+environment/frontend_server/storage/test4
+environment/frontend_server/storage/test5

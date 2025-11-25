@@ -1,4 +1,4 @@
-generate_event_triple_v1.txt
+generate_event_triple_v2.txt
 
 Variables: 
 !<INPUT 0>! -- Persona's full name. 
@@ -10,5 +10,6 @@ Task: Turn the input into (subject, predicate, object).
 
 Input: !<INPUT 0>! is !<INPUT 1>!.
 
-Output the response to the prompt above as a JSON object with the structure {"subject": "<SUBJECT>", "predicate": "<PREDICATE>", "object": "<OBJECT>"}. E.g. {"subject": "Jane Doe", "predicate": "cooking", "object": "breakfast"}.
+Output the response to the prompt above as a JSON object with the structure {"subject": "<SUBJECT>", "predicate": "<PREDICATE>", "object": "<OBJECT>"}. 
+E.g. "Jane Doe is cooking breakfast" should become {"subject": "Jane Doe", "predicate": "cooking", "object": "breakfast"}.
 The value for the output must ONLY contain the triple. If there is an incomplete element, just say 'None' but there needs to be three elements no matter what.

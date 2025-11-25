@@ -109,7 +109,8 @@ def perceive(persona, maze):
     ret_events = []
     for p_event in perceived_events:
         s, p, o, desc = p_event
-        if not p:
+        # TODO(Friso): they used to branch on absent predicated which seems like a bug but im not sure
+        if not o:
             # If the object is not present, then we default the event to "idle".
             p = "is"
             o = "idle"
