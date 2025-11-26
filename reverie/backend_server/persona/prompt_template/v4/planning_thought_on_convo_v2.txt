@@ -11,5 +11,5 @@ Variables:
 !<INPUT 0>!
 
 Write down if there is anything from the conversation that !<INPUT 1>! need to remember for her planning, from !<INPUT 2>!'s perspective, in a full sentence.
-
-"!<INPUT 3>!
+Respond with a JSON with the following structure:
+{"output": "!<INPUT 3>! <FILL IN>"}

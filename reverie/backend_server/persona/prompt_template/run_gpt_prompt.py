@@ -1264,6 +1264,8 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved, test_input
 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
+# TODO(Friso): Update this to operate via JSON as thats more stable
+
 
 def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved, test_input=None,
                                    verbose=False):
@@ -1528,7 +1530,7 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
     gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 16,
                  "temperature": 0, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v3_ChatGPT/summarize_conversation_v1.txt"
+    prompt_template = "persona/prompt_template/v4/summarize_conversation_v2.txt"
     prompt_input = create_prompt_input(conversation, test_input)
     prompt = generate_prompt(prompt_input, prompt_template)
     example_output = "conversing about what to eat for lunch"
@@ -2415,7 +2417,10 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
         return prompt_input
 
     def __func_clean_up(gpt_response, prompt=""):
-        return gpt_response.split('"')[0].strip()
+        response = json.loads(gpt_response)
+        if not isinstance(response['output'], str):
+            raise TypeError("GPT output field should be string")
+        return response['output']
 
     def __func_validate(gpt_response, prompt=""):
         try:
@@ -2430,7 +2435,7 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
     gpt_param = {"engine": "gpt-5-nano", "reasoning_effort": "low", "max_tokens": 50,
                  "temperature": 0, "top_p": 1, "stream": False,
                  "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-    prompt_template = "persona/prompt_template/v4/planning_thought_on_convo_v1.txt"
+    prompt_template = "persona/prompt_template/v4/planning_thought_on_convo_v2.txt"
     prompt_input = create_prompt_input(persona, all_utt)
     prompt = generate_prompt(prompt_input, prompt_template)
 
