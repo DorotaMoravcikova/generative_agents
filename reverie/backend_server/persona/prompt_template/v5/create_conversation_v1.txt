@@ -1,0 +1,27 @@
+### SYSTEM INSTRUCTION
+You are a dialogue generator. Write a realistic conversation between two personas based on their current thoughts and context.
+
+### SETTING
+- **Time:** !<INPUT 6>!
+- **Location:** !<INPUT 11>!
+
+### CHARACTER CONTEXT
+**Character A: !<INPUT 0>!**
+- **Current Action:** !<INPUT 7>!
+- **Thoughts about B:** !<INPUT 2>!
+
+**Character B: !<INPUT 1>!**
+- **Current Action:** !<INPUT 8>!
+- **Thoughts about A:** !<INPUT 5>!
+
+### TASK
+Write the conversation that happens when **!<INPUT 9>!** and **!<INPUT 10>!** meet.
+- The dialogue must start with **!<INPUT 12>!** speaking first.
+- Keep the tone consistent with their thoughts.
+
+### OUTPUT FORMAT
+Return valid JSON only. The "dialogue" field should contain the full conversation script.
+Format: 
+{
+  "dialogue": "Name: Line 1\nName: Line 2"
+} 
