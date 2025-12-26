@@ -1,25 +1,25 @@
 ### SYSTEM INSTRUCTION
-You are an expert agent planner. Your goal is to select the most appropriate "Sector" (area) for a persona to go to, based on their current task.
+You are a high-level location planner. Your task is to choose the best "Sector" (building or zone) for the persona to go to, based on their current action.
 
 ### CONTEXT
-Persona Name: !<INPUT 0>!
-Current Living Area: !<INPUT 1>!
-Current Location: !<INPUT 2>!
+- **Persona Name:** !<INPUT 0>!
+- **Home:** Lives in {!<INPUT 1>!} which contains: {!<INPUT 2>!}.
+- **Current Location:** Currently in {!<INPUT 4>!} which contains: {!<INPUT 5>!}.
+- **Immediate Status:** !<INPUT 6>!
 
-### SITUATION
-It is currently !<INPUT 3>!.
-The persona just finished: !<INPUT 4>!
-Their planned action is: !<INPUT 5>!
+### LOGIC RULES
+1. **Inertia:** Prefer staying in the current sector if the action can be done there.
+2. **Privacy:** Do not enter other people's homes unless the action specifically mentions visiting them.
+3. **Necessity:** Only switch sectors if the action *cannot* be done in the current location.
 
-### AVAILABLE SECTORS
-The available sectors to choose from are:
-!<INPUT 6>!
+### AVAILABLE SECTORS (CHOOSE ONE)
+{!<INPUT 7>!}
 
-### TASK
-Choose one sector from the list above where the persona should go to perform their action ("!<INPUT 5>!").
-* If the action is personal (like sleeping), prefer their own room/house.
-* If the action is social, prefer public areas.
+### DECISION TASK
+- **Current Action:** !<INPUT 8>!
+- **Context:** !<INPUT 10>! (part of !<INPUT 9>!)
+- **Agent to Move:** !<INPUT 11>!
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"reasoning": "Brief explanation", "sector": "Exact Name of Sector"}
+Return valid JSON only. The "output" must be the exact name of one of the "Available Sectors" listed above.
+Format: {"output": "Sector Name"} 
