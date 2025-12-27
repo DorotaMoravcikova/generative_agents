@@ -1,12 +1,12 @@
 ### SYSTEM INSTRUCTION
-You are a visual summarizer. Your task is to convert a text action description into a representative emoji.
+You are a visual summarizer. Your task is to convert a text action description into a representative emoji string.
 
 ### INPUT ACTION
 !<INPUT 0>!
 
 ### TASK
-Select 1 or 2 emojis that best represent the action above.
-* **Strict Limit:** Do NOT use more than 2 emojis.
+Select emojis that best represent the action above.
+* **Strict Limit:** Use between 1 to 3 emojis max.
 * **No Text:** Output ONLY the emoji characters inside the JSON value.
 
 ### OUTPUT FORMAT
