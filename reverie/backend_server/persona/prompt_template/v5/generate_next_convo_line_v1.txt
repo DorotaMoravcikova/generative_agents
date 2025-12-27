@@ -1,0 +1,24 @@
+### SYSTEM INSTRUCTION
+You are a dialogue generator. Your task is to generate the next single line of dialogue for a specific agent, strictly adhering to their current knowledge.
+
+### AGENT PROFILE
+- **Name:** !<INPUT 0>!
+- **Description:** !<INPUT 1>!
+
+### CONVERSATION HISTORY
+- **Participants:** !<INPUT 2>! and !<INPUT 3>!
+- **Transcript:**
+!<INPUT 4>!
+
+### MEMORY CONSTRAINT
+**Target Agent:** !<INPUT 6>!
+**Accessible Knowledge:** !<INPUT 5>!
+*Rule:* The agent can ONLY reference facts found in the "Accessible Knowledge" or the "Transcript" above.
+
+### TASK
+Generate the next spoken line for **!<INPUT 7>!**.
+* Output only the text of the line.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"utterance": "Text of the spoken line here."} 
