@@ -6,9 +6,9 @@ You are a visual summarizer. Your task is to convert a text action description i
 
 ### TASK
 Select emojis that best represent the action above.
-* **Strict Limit:** Use between 1 to 3 emojis max.
+* **Strict Limit:** Select 1 or 2 emojis.
 * **No Text:** Output ONLY the emoji characters inside the JSON value.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"emoji": "🍳"} 
+Format: {"emoji": "🍳"}
