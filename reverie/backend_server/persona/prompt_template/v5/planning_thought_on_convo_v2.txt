@@ -1,0 +1,14 @@
+### SYSTEM INSTRUCTION
+You are a planning assistant. Your task is to analyze a conversation and identify specific scheduling or planning details that a persona needs to remember.
+
+### CONVERSATION TRANSCRIPT
+!<INPUT 0>!
+
+### TASK
+Identify if there is any specific information from this conversation that **!<INPUT 1>!** needs to remember for their future plans (viewed from **!<INPUT 2>!**'s perspective).
+* **Constraint:** Write the result as a full sentence in the third person.
+* **Subject:** The sentence must be about **!<INPUT 3>!** (e.g., "!<INPUT 3>! needs to...").
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"planning_thought": "Isabella needs to remember to meet Klaus at the library at 6pm."}
