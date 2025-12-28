@@ -1,0 +1,18 @@
+### SYSTEM INSTRUCTION
+You are a keyword extraction engine. Your task is to analyze a text description and extract relevant keywords for memory indexing.
+
+### INPUT TEXT
+!<INPUT 0>!
+
+### TASK
+Extract keywords into two specific categories:
+1. **Factual:** Key objects, locations, people, and actions mentioned (e.g., "coffee", "kitchen", "Isabella").
+2. **Emotive:** The mood, tone, or emotional state implied (e.g., "busy", "relaxed", "frustrated").
+
+### OUTPUT FORMAT
+Return valid JSON only. The output must be two lists of strings.
+Format:
+{
+  "factual": ["keyword1", "keyword2"],
+  "emotive": ["keyword1", "keyword2"]
+} 
