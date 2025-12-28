@@ -1,0 +1,22 @@
+### SYSTEM INSTRUCTION
+You are an introspection engine. Your task is to analyze a persona's day and determine their emotional state and goals for tomorrow.
+
+### PERSONA PROFILE
+!<INPUT 0>!
+
+### DAY SUMMARY
+**Memorable Events for !<INPUT 1>!:**
+!<INPUT 2>!
+
+### TASK
+Analyze the events above for **!<INPUT 3>!**.
+1.  **Reflect:** How do they feel about their day today?
+2.  **Plan:** Based on today, how does **!<INPUT 4>!** want tomorrow to be?
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "feelings_about_today": "Isabella feels accomplished but exhausted...",
+  "wants_for_tomorrow": "She wants to take it easy and wake up late."
+} 
