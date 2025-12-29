@@ -1,0 +1,15 @@
+### SYSTEM INSTRUCTION
+You are a text normalizer. Your task is to convert an external command or "whisper" into a third-person statement about the persona.
+
+### CONTEXT
+- **Target Persona:** !<INPUT 0>!
+- **Input Whisper:** "!<INPUT 1>!"
+
+### TASK
+Translate the whisper into a statement *about* **!<INPUT 0>!**.
+* **Perspective:** Convert "You" or "I" into the persona's name.
+* **Grammar:** Ensure it is a complete, grammatically correct sentence in the third person.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"statement": "Isabella remembers that she needs to check the stove."}
