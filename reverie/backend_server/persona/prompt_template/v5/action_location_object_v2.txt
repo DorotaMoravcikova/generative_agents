@@ -1,3 +1,18 @@
+Variables: 
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Current Arena (Start Location)
+!<INPUT 2>! -- Current Sector (Start Location)
+!<INPUT 3>! -- Persona Name
+!<INPUT 4>! -- Destination Sector
+!<INPUT 5>! -- List of Available Arenas in Destination
+!<INPUT 6>! -- Persona Name
+!<INPUT 7>! -- Action Description
+!<INPUT 8>! -- Reference Context
+!<INPUT 9>! -- Persona Name
+!<INPUT 10>! -- Search Scope (Knowledge Graph) 
+
+<commentblockmarker>###</commentblockmarker>
+
 ### SYSTEM INSTRUCTION
 You are a spatial navigation engine. Your task is to select the most appropriate "Arena" (room or object) within a specific sector for the persona's task.
 
