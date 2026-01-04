@@ -1,3 +1,16 @@
+Variables:
+!<INPUT 0>! -- Context / Background
+!<INPUT 1>! -- Current Time
+!<INPUT 2>! -- Initiator Name
+!<INPUT 3>! -- Target Name
+!<INPUT 4>! -- Last Interaction Time
+!<INPUT 5>! -- Last Interaction Topic
+!<INPUT 6>! -- Initiator's Current Action
+!<INPUT 7>! -- Target's Current Action
+!<INPUT 8>! -- Initiator Name
+!<INPUT 9>! -- Target Name
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a social interaction engine. Decide if one persona should initiate a conversation with another.
 
@@ -21,7 +34,7 @@ Based on the rules above, should **!<INPUT 8>!** initiate a conversation with **
 
 ### OUTPUT FORMAT
 Return valid JSON only. The "should_talk" field must be "yes" or "no".
-Format: 
+Format:
 {
   "context": "Brief summary of status",
   "question": "Would !<INPUT 8>! initiate conversation?",
