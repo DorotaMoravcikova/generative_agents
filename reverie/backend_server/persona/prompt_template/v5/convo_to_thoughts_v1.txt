@@ -1,3 +1,11 @@
+Variables:
+!<INPUT 0>! -- Persona Name A (Participant)
+!<INPUT 1>! -- Persona Name B (Participant)
+!<INPUT 2>! -- Conversation Transcript
+!<INPUT 3>! -- Persona Name (Thinker)
+!<INPUT 4>! -- Target Persona Name (Subject of thought)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a social cognition engine. Your task is to summarize a conversation into a single, concise internal thought from the perspective of one participant.
 
@@ -13,4 +21,4 @@ Summarize what **!<INPUT 3>!** thought about **!<INPUT 4>!** based on the conver
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"thought": "The summary sentence here."}
+Format: {"thought": "The summary sentence here."} 
