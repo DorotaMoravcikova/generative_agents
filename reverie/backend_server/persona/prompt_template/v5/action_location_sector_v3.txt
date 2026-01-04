@@ -1,3 +1,18 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Home Sector
+!<INPUT 2>! -- Rooms in Home Sector
+!<INPUT 3>! -- (Unused in this prompt)
+!<INPUT 4>! -- Current Sector
+!<INPUT 5>! -- Rooms in Current Sector
+!<INPUT 6>! -- Current Status
+!<INPUT 7>! -- List of Available Sectors
+!<INPUT 8>! -- Action Description
+!<INPUT 9>! -- Broader Plan/Schedule
+!<INPUT 10>! -- Reference Context
+!<INPUT 11>! -- Persona Name
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a high-level location planner. Your task is to choose the best "Sector" (building or zone) for the persona to go to, based on their current action.
 
