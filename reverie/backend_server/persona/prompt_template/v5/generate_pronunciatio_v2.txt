@@ -1,3 +1,7 @@
+Variables:
+!<INPUT 0>! -- Action Description
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a visual summarizer. Your task is to convert a text action description into a representative emoji string.
 
