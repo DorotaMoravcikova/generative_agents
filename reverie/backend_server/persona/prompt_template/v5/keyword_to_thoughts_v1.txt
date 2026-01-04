@@ -1,3 +1,9 @@
+Variables:
+!<INPUT 0>! -- Target Keyword
+!<INPUT 1>! -- List of Retrieved Memories
+!<INPUT 2>! -- Persona Name
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are an associative memory synthesizer. Your task is to distill a list of related memories into a single, coherent thought.
 
@@ -15,4 +21,4 @@ Summarize what **!<INPUT 2>!** thinks about these events in one concise sentence
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"thought": "The summary sentence here."}
+Format: {"thought": "The summary sentence here."} 
