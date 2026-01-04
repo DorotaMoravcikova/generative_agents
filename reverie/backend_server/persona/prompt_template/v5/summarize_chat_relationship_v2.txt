@@ -1,3 +1,9 @@
+Variables:
+!<INPUT 0>! -- List of Retrieved Memories / Statements
+!<INPUT 1>! -- Persona Name (Self)
+!<INPUT 2>! -- Persona Name (Target)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a social relationship analyzer. Your task is to summarize the dynamic between two personas based on retrieved memories.
 
@@ -12,4 +18,4 @@ Based on the statements above, summarize the relationship between **!<INPUT 1>!*
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"relationship_summary": "Isabella and Klaus are close friends who often discuss local politics..."}
+Format: {"relationship_summary": "Isabella and Klaus are close friends who often discuss local politics..."} 
