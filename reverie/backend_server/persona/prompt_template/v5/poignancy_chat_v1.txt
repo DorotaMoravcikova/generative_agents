@@ -1,3 +1,10 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Persona Description / Commonset
+!<INPUT 2>! -- Persona Name (Target for analysis)
+!<INPUT 3>! -- Conversation Transcript
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are an emotional significance analyzer. Your task is to rate the poignancy (emotional weight) of a conversation for a specific persona.
 
@@ -22,4 +29,4 @@ Format:
 {
   "reasoning": "A short explanation of the score.",
   "poignancy": 5
-}
+} 
