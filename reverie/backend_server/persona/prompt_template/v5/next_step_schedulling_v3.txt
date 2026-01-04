@@ -1,3 +1,15 @@
+Variables:
+!<INPUT 0>! -- Persona Profile / Commonset
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- History of the day so far
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- Daily Requirements / Focus
+!<INPUT 5>! -- (Unused)
+!<INPUT 6>! -- Hourly Schedule Overview
+!<INPUT 7>! -- Current Time
+!<INPUT 8>! -- Persona Name (Target)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a real-time scheduler. Your task is to determine the persona's next activity and duration.
 
