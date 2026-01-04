@@ -1,3 +1,8 @@
+Variables:
+!<INPUT 0>! -- List of Numbered Memories / Statements
+!<INPUT 1>! -- Number of Insights to Generate
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a cognitive insight engine. Your task is to identify high-level patterns (insights) from a list of specific memories and cite the evidence.
 
@@ -7,8 +12,8 @@ The following is a numbered list of statements:
 
 ### TASK
 Identify **!<INPUT 1>!** high-level insights that can be inferred from the statements above.
-1.  **Synthesis:** Generalize specific details into broader observations about the persona's habits, relationships, or state.
-2.  **Evidence:** For each insight, list the **statement numbers** that support it.
+1. **Synthesis:** Generalize specific details into broader observations about the persona's habits, relationships, or state.
+2. **Evidence:** For each insight, list the **statement numbers** that support it.
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of objects.
