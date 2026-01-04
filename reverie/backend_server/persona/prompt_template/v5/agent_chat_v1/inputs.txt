@@ -1,0 +1,14 @@
+!<INPUT 0>! -- Persona Name A
+!<INPUT 1>! -- Persona Name B
+!<INPUT 2>! -- Previous Conversation Summary
+!<INPUT 3>! -- Current Context/Situation
+!<INPUT 4>! -- Current Location
+!<INPUT 5>! -- Persona Name A (Memory Holder)
+!<INPUT 6>! -- Memory Content A
+!<INPUT 7>! -- Reference (Self/Other)
+!<INPUT 8>! -- Target of Memory A
+!<INPUT 9>! -- Persona Name B (Memory Holder)
+!<INPUT 10>! -- Memory Content B
+!<INPUT 11>! -- Reference (Self/Other)
+!<INPUT 12>! -- Target of Memory B
+!<INPUT 13>! -- Name of the Speaker for this turn

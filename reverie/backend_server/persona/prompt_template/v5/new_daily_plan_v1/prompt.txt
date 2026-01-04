@@ -1,13 +1,3 @@
-Variables:
-!<INPUT 0>! -- Persona Profile / Commonset
-!<INPUT 1>! -- Persona Name
-!<INPUT 2>! -- Yesterday's Actual Events
-!<INPUT 3>! -- (Unused)
-!<INPUT 4>! -- Yesterday's Original Plan
-!<INPUT 5>! -- Reflection & New Goal for Today
-!<INPUT 6>! -- Persona Name (Target)
-
-<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a daily scheduler. Your task is to create a new daily plan for a persona, adjusting for their recent history and current goals.
 

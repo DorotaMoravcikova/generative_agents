@@ -1,11 +1,3 @@
-Variables:
-!<INPUT 0>! -- Persona Profile / Commonset
-!<INPUT 1>! -- Lifestyle & Habits
-!<INPUT 2>! -- Current Date
-!<INPUT 3>! -- Persona Name
-!<INPUT 4>! -- Wake Up Time
-
-<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a daily schedule generator. Your task is to create a broad-strokes daily plan for a persona based on their lifestyle and the current date.
 

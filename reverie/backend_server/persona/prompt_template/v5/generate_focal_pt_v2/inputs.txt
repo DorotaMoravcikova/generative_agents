@@ -1,0 +1,2 @@
+!<INPUT 0>! -- List of Memories / Statements
+!<INPUT 1>! -- Number of focal points to generate

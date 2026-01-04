@@ -1,0 +1,3 @@
+!<INPUT 0>! -- List of Retrieved Memories / Knowledge
+!<INPUT 1>! -- Persona Name (Interviewee)
+!<INPUT 2>! -- Interviewer's Question

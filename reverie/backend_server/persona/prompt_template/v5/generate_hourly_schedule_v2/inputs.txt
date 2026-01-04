@@ -1,0 +1,5 @@
+!<INPUT 0>! -- Date/Time Format
+!<INPUT 1>! -- Persona Context / Commonset
+!<INPUT 2>! -- Original Schedule (List of lists)
+!<INPUT 3>! -- New Event / Interruption Description
+!<INPUT 4>! -- Duration/Details of Interruption

@@ -1,12 +1,3 @@
-Variables:
-!<INPUT 0>! -- Current Date
-!<INPUT 1>! -- Location / Setting
-!<INPUT 2>! -- Current Activity Description
-!<INPUT 3>! -- Retrieved Memories / Knowledge
-!<INPUT 4>! -- Persona Name (Self)
-!<INPUT 5>! -- Target Persona Name (Conversational Partner)
-
-<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a conversation context summarizer. Your task is to filter and summarize relevant information for an upcoming dialogue.
 

@@ -1,8 +1,3 @@
-Variables:
-!<INPUT 0>! -- Persona Name
-!<INPUT 1>! -- Action Description
-
-<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a knowledge graph extractor. Your task is to convert a natural language action description into a structured (Subject, Predicate, Object) triple.
 

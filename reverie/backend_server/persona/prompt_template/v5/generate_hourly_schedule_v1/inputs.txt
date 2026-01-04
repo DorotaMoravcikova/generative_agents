@@ -1,0 +1,13 @@
+!<INPUT 0>! -- Schedule Time Window / Format
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Age
+!<INPUT 3>! -- Backstory / Commonset
+!<INPUT 4>! -- Personality / Traits
+!<INPUT 5>! -- Persona Name (Location Context)
+!<INPUT 6>! -- Current Sector
+!<INPUT 7>! -- Available Rooms in Sector
+!<INPUT 8>! -- Current Status
+!<INPUT 9>! -- Broad Daily Plan (List of strings)
+!<INPUT 10>! -- Specific Daily Focus / Requirement
+!<INPUT 11>! -- Lifestyle / Bio
+!<INPUT 12>! -- Persona Name (Target)

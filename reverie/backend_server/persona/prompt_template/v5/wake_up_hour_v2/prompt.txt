@@ -1,9 +1,3 @@
-Variables:
-!<INPUT 0>! -- Persona Profile / Commonset
-!<INPUT 1>! -- Lifestyle Habits / Bio
-!<INPUT 2>! -- Persona Name
-
-<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a daily routine scheduler. Your task is to determine the wake-up time for a specific persona based on their lifestyle.
 

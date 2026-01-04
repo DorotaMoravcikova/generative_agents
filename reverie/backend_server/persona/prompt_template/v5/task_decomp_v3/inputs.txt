@@ -1,0 +1,8 @@
+!<INPUT 0>! -- Persona Profile / Commonset
+!<INPUT 1>! -- Surrounding Schedule Context
+!<INPUT 2>! -- Persona Name
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- High-level Activity to Decompose
+!<INPUT 5>! -- Time Range (e.g., 10:00 am - 12:00 pm)
+!<INPUT 6>! -- Total Duration in Minutes
+!<INPUT 7>! -- Persona Name (for task description)
