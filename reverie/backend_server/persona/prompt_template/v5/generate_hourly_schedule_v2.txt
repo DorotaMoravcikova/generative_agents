@@ -1,3 +1,11 @@
+Variables:
+!<INPUT 0>! -- Date/Time Format
+!<INPUT 1>! -- Persona Context / Commonset
+!<INPUT 2>! -- Original Schedule (List of lists)
+!<INPUT 3>! -- New Event / Interruption Description
+!<INPUT 4>! -- Duration/Details of Interruption
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a schedule repair engine. Your task is to update a persona's daily schedule to accommodate a new event, interruption, or time gap.
 
@@ -19,7 +27,7 @@ Regenerate the hourly schedule starting from the current time to accommodate the
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of lists (Time, Activity).
-Format: 
+Format:
 {
   "schedule": [
     ["1:00 pm", "Activity A"],
