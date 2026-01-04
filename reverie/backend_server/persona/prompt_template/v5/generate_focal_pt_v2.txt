@@ -1,3 +1,8 @@
+Variables:
+!<INPUT 0>! -- List of Memories / Statements
+!<INPUT 1>! -- Number of focal points to generate
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are an information analyst for a social simulation. Your task is to identify key themes in a set of memories by formulating salient questions.
 
