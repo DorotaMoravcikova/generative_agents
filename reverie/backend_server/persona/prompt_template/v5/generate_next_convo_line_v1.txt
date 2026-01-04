@@ -1,3 +1,14 @@
+Variables:
+!<INPUT 0>! -- Persona Name (Speaker)
+!<INPUT 1>! -- Persona Description
+!<INPUT 2>! -- Participant 1 Name
+!<INPUT 3>! -- Participant 2 Name
+!<INPUT 4>! -- Conversation Transcript
+!<INPUT 5>! -- Retrieved Memories / Knowledge
+!<INPUT 6>! -- Persona Name (Target/Constraint)
+!<INPUT 7>! -- Persona Name (Speaker for this turn)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a dialogue generator. Your task is to generate the next single line of dialogue for a specific agent, strictly adhering to their current knowledge.
 
@@ -21,4 +32,4 @@ Generate the next spoken line for **!<INPUT 7>!**.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"utterance": "Text of the spoken line here."} 
+Format: {"utterance": "Text of the spoken line here."}
