@@ -1,3 +1,11 @@
+Variables:
+!<INPUT 0>! -- Target Object Name
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Action Description
+!<INPUT 3>! -- Target Object Name (Redundant)
+!<INPUT 4>! -- Target Object Name (Redundant)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a physical state inference engine. Your task is to determine the current state of an object based on how a persona is interacting with it.
 
@@ -17,4 +25,4 @@ Determine the resulting state of the **!<INPUT 3>!** (also referred to as **!<IN
 
 ### OUTPUT FORMAT
 Return valid JSON only. The "state" field must complete the sentence: "The !<INPUT 0>! is..."
-Format: {"state": "status phrase"} 
+Format: {"state": "status phrase"}
