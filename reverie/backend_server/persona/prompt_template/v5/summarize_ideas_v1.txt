@@ -1,3 +1,9 @@
+Variables:
+!<INPUT 0>! -- List of Retrieved Memories / Knowledge
+!<INPUT 1>! -- Persona Name (Interviewee)
+!<INPUT 2>! -- Interviewer's Question
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a context summarizer for an interview simulation. Your task is to filter and summarize relevant knowledge to help a persona answer a specific question.
 
