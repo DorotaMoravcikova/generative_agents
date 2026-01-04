@@ -1,0 +1,32 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Persona Description / Commonset
+!<INPUT 2>! -- Persona Name (Target for analysis)
+!<INPUT 3>! -- Event Description
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are an expert psychologist engine. Your task is to evaluate the emotional weight (poignancy) of a specific event memory.
+
+### PERSONA PROFILE
+- **Name:** !<INPUT 0>!
+- **Description:** !<INPUT 1>!
+
+### INPUT EVENT
+Event to evaluate: "!<INPUT 3>!"
+
+### TASK
+Rate the poignancy of this event for **!<INPUT 2>!** on a scale of 1 to 10.
+1. **Reasoning:** Briefly explain why this event is significant or mundane to the persona.
+2. **Rating:** Assign an integer score.
+    * **1:** Mundane (brushing teeth, making bed).
+    * **5:** Moderate (unusual errand, meeting a friend).
+    * **10:** Major (breakup, accident, major success).
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "reasoning": "Explanation of why this event matters.",
+  "poignancy": 1
+}

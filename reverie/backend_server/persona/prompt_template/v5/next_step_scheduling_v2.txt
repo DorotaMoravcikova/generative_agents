@@ -1,0 +1,51 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Age
+!<INPUT 2>! -- Backstory / Commonset
+!<INPUT 3>! -- Personality / Traits
+!<INPUT 4>! -- (Unused)
+!<INPUT 5>! -- Current Sector
+!<INPUT 6>! -- Accessible Areas / Rooms
+!<INPUT 7>! -- Current Status
+!<INPUT 8>! -- Daily Goal
+!<INPUT 9>! -- (Unused)
+!<INPUT 10>! -- History of the day so far
+!<INPUT 11>! -- (Unused)
+!<INPUT 12>! -- Daily Requirements / Focus
+!<INPUT 13>! -- (Unused)
+!<INPUT 14>! -- Hourly Schedule (Future)
+!<INPUT 15>! -- Current Time
+!<INPUT 16>! -- Persona Name (Target)
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are a real-time scheduler. Your task is to decide the persona's very next activity and its duration, based on their current schedule and location.
+
+### PERSONA IDENTITY
+- **Name:** !<INPUT 0>! (Age: !<INPUT 1>!)
+- **Backstory:** !<INPUT 2>!
+- **Personality:** !<INPUT 3>!
+
+### LOCATION CONTEXT
+- **Current Sector:** !<INPUT 5>!
+- **Accessible Areas:** !<INPUT 6>!
+- **Current Status:** !<INPUT 7>!
+
+### SCHEDULE CONTEXT
+- **Daily Goal:** !<INPUT 8>!
+- **History (So far):** !<INPUT 10>!
+- **Future Plan (Hourly):** !<INPUT 14>!
+- **Requirements:** !<INPUT 12>!
+
+### DECISION TASK
+It is now **[!<INPUT 15>!]**. What is **!<INPUT 16>!** doing right now?
+1.  **Action:** Describe the specific activity.
+2.  **Duration:** Decide how long this action lasts (Must be 5-60 minutes).
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "action": "walking to the kitchen to get water",
+  "duration_minutes": 15
+}

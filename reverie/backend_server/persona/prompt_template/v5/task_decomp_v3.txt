@@ -1,0 +1,53 @@
+Variables:
+!<INPUT 0>! -- Persona Profile / Commonset
+!<INPUT 1>! -- Surrounding Schedule Context
+!<INPUT 2>! -- Persona Name
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- High-level Activity to Decompose
+!<INPUT 5>! -- Time Range (e.g., 10:00 am - 12:00 pm)
+!<INPUT 6>! -- Total Duration in Minutes
+!<INPUT 7>! -- Persona Name (for task description)
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are a task decomposition engine. Your task is to break down a high-level activity into smaller, detailed sub-tasks, while strictly managing the time duration.
+
+### REFERENCE EXAMPLE (LEARN FROM THIS)
+**Context:** Kelly (Teacher) is "working on lesson plans" (Total: 180 min).
+**Output:**
+[
+  {"task": "Kelly is reviewing the curriculum", "duration": 15, "minutes_left": 165},
+  {"task": "Kelly is brainstorming ideas", "duration": 30, "minutes_left": 135},
+  {"task": "Kelly is creating the lesson plan", "duration": 30, "minutes_left": 105},
+  ...
+  {"task": "Kelly is packing up", "duration": 5, "minutes_left": 0}
+]
+
+### INPUT DATA
+**Persona Profile:**
+!<INPUT 0>!
+
+**Surrounding Schedule:**
+!<INPUT 1>!
+
+### TASK
+Break down the current activity for **!<INPUT 2>!** into sub-tasks.
+* **Activity:** !<INPUT 4>!
+* **Time Range:** !<INPUT 5>!
+* **Total Duration:** !<INPUT 6>! minutes.
+
+**Rules:**
+1.  **Increments:** Each sub-task must be between 5 and 60 minutes.
+2.  **Countdown:** You must calculate `minutes_left` after each task.
+3.  **Completion:** The final `minutes_left` must be exactly 0.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+[
+  {
+    "task": "!<INPUT 7>! is reviewing notes",
+    "duration_in_minutes": 15,
+    "minutes_left": 45
+  }
+] 

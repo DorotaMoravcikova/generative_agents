@@ -1,0 +1,24 @@
+Variables:
+!<INPUT 0>! -- Target Keyword
+!<INPUT 1>! -- List of Retrieved Memories
+!<INPUT 2>! -- Persona Name
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are an associative memory synthesizer. Your task is to distill a list of related memories into a single, coherent thought.
+
+### TOPIC
+**Target Keyword:** !<INPUT 0>!
+
+### RETRIEVED MEMORIES
+The following events/thoughts relate to the keyword above:
+!<INPUT 1>!
+
+### TASK
+Summarize what **!<INPUT 2>!** thinks about these events in one concise sentence.
+* **Constraint:** Write exactly one sentence.
+* **Constraint:** Use the third person (e.g., "Isabella enjoys cooking because...").
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"thought": "The summary sentence here."} 

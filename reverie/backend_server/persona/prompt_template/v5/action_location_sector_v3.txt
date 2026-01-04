@@ -1,0 +1,40 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Home Sector
+!<INPUT 2>! -- Rooms in Home Sector
+!<INPUT 3>! -- (Unused in this prompt)
+!<INPUT 4>! -- Current Sector
+!<INPUT 5>! -- Rooms in Current Sector
+!<INPUT 6>! -- Current Status
+!<INPUT 7>! -- List of Available Sectors
+!<INPUT 8>! -- Action Description
+!<INPUT 9>! -- Broader Plan/Schedule
+!<INPUT 10>! -- Reference Context
+!<INPUT 11>! -- Persona Name
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are a high-level location planner. Your task is to choose the best "Sector" (building or zone) for the persona to go to, based on their current action.
+
+### CONTEXT
+- **Persona Name:** !<INPUT 0>!
+- **Home:** Lives in {!<INPUT 1>!} which contains: {!<INPUT 2>!}.
+- **Current Location:** Currently in {!<INPUT 4>!} which contains: {!<INPUT 5>!}.
+- **Immediate Status:** !<INPUT 6>!
+
+### LOGIC RULES
+1. **Inertia:** Prefer staying in the current sector if the action can be done there.
+2. **Privacy:** Do not enter other people's homes unless the action specifically mentions visiting them.
+3. **Necessity:** Only switch sectors if the action *cannot* be done in the current location.
+
+### AVAILABLE SECTORS (CHOOSE ONE)
+{!<INPUT 7>!}
+
+### DECISION TASK
+- **Current Action:** !<INPUT 8>!
+- **Context:** !<INPUT 10>! (part of !<INPUT 9>!)
+- **Agent to Move:** !<INPUT 11>!
+
+### OUTPUT FORMAT
+Return valid JSON only. The "output" must be the exact name of one of the "Available Sectors" listed above.
+Format: {"output": "Sector Name"} 

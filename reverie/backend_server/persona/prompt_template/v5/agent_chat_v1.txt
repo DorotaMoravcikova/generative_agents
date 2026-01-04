@@ -1,0 +1,47 @@
+Variables:
+!<INPUT 0>! -- Persona Name A
+!<INPUT 1>! -- Persona Name B
+!<INPUT 2>! -- Previous Conversation Summary
+!<INPUT 3>! -- Current Context/Situation
+!<INPUT 4>! -- Current Location
+!<INPUT 5>! -- Persona Name A (Memory Holder)
+!<INPUT 6>! -- Memory Content A
+!<INPUT 7>! -- Reference (Self/Other)
+!<INPUT 8>! -- Target of Memory A
+!<INPUT 9>! -- Persona Name B (Memory Holder)
+!<INPUT 10>! -- Memory Content B
+!<INPUT 11>! -- Reference (Self/Other)
+!<INPUT 12>! -- Target of Memory B
+!<INPUT 13>! -- Name of the Speaker for this turn
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are a roleplay actor in a social simulation. Your task is to generate the next single line of dialogue for the target character.
+
+### CONTEXT & SETTING
+- **Location:** !<INPUT 4>!
+- **Current Situation:** !<INPUT 3>!
+- **Previous Conversation Summary:** !<INPUT 2>!
+
+### CHARACTERS
+- **Character A:** !<INPUT 0>!
+- **Character B:** !<INPUT 1>!
+
+### INTERNAL KNOWLEDGE (THEORY OF MIND)
+*Use ONLY the information below to guide the response. Do not assume outside knowledge.*
+
+**Knowledge Set for !<INPUT 5>! (Referenced as !<INPUT 7>!):**
+- What they know about !<INPUT 8>!: !<INPUT 6>!
+
+**Knowledge Set for !<INPUT 9>! (Referenced as !<INPUT 11>!):**
+- What they know about !<INPUT 12>!: !<INPUT 10>!
+
+### GENERATION TASK
+Generate the next spoken line for: **!<INPUT 13>!**
+* The tone should be natural and consistent with the context.
+* Respond directly to the previous exchange.
+* Do NOT act as the other character.
+
+### OUTPUT FORMAT
+Return valid JSON only. The "utterance" field should contain the spoken text.
+Format: {"utterance": "I'll go check the coffee machine now."}

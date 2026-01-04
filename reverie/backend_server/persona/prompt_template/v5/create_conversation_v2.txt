@@ -1,0 +1,58 @@
+Variables:
+!<INPUT 0>! -- Character 1 Description
+!<INPUT 1>! -- Character 2 Description
+!<INPUT 2>! -- Character 1 Name
+!<INPUT 3>! -- Character 2 Name (Target)
+!<INPUT 4>! -- Character 1's Thoughts
+!<INPUT 5>! -- Character 2 Name
+!<INPUT 6>! -- Character 1 Name (Target)
+!<INPUT 7>! -- Character 2's Thoughts
+!<INPUT 8>! -- Current Time
+!<INPUT 9>! -- Character 1 Action
+!<INPUT 10>! -- Character 2 Action
+!<INPUT 11>! -- Interaction History / Previous Context
+!<INPUT 12>! -- Character 1 Name
+!<INPUT 13>! -- Character 2 Name
+!<INPUT 14>! -- Location
+!<INPUT 15>! -- Name of First Speaker
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are an advanced dialogue engine. Your task is to continue or generate a conversation based on deep character profiles and interaction history.
+
+### CHARACTER PROFILES
+**Character 1 (Description):**
+!<INPUT 0>!
+
+**Character 2 (Description):**
+!<INPUT 1>!
+
+### MENTAL STATE & CONTEXT
+**Context for !<INPUT 2>!:**
+- **Thoughts about !<INPUT 3>!:** !<INPUT 4>!
+- **Current Action:** !<INPUT 9>!
+
+**Context for !<INPUT 5>!:**
+- **Thoughts about !<INPUT 6>!:** !<INPUT 7>!
+- **Current Action:** !<INPUT 10>!
+
+### ENVIRONMENT
+- **Time:** !<INPUT 8>!
+- **Location:** !<INPUT 14>!
+
+### INTERACTION HISTORY
+(Previous conversation or context):
+!<INPUT 11>!
+
+### TASK
+Generate the dialogue between **!<INPUT 12>!** and **!<INPUT 13>!**.
+- **Speaker:** **!<INPUT 15>!** must speak first.
+- **Continuity:** Ensure the dialogue follows logically from the "Interaction History" above.
+- **Tone:** Must reflect the "Character Profiles" provided.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "dialogue": "Name: Line 1\nName: Line 2"
+}

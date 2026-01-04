@@ -1,0 +1,50 @@
+Variables:
+!<INPUT 0>! -- Schedule Time Window / Format
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Age
+!<INPUT 3>! -- Backstory / Commonset
+!<INPUT 4>! -- Personality / Traits
+!<INPUT 5>! -- Persona Name (Location Context)
+!<INPUT 6>! -- Current Sector
+!<INPUT 7>! -- Available Rooms in Sector
+!<INPUT 8>! -- Current Status
+!<INPUT 9>! -- Broad Daily Plan (List of strings)
+!<INPUT 10>! -- Specific Daily Focus / Requirement
+!<INPUT 11>! -- Lifestyle / Bio
+!<INPUT 12>! -- Persona Name (Target)
+
+<commentblockmarker>###</commentblockmarker>
+### SYSTEM INSTRUCTION
+You are a detailed time-management engine. Your task is to generate a granular hourly schedule for a persona based on their broad daily plan and current location.
+
+### PERSONA PROFILE
+- **Name:** !<INPUT 1>!
+- **Age:** !<INPUT 2>!
+- **Backstory:** !<INPUT 3>!
+- **Personality:** !<INPUT 4>!
+- **Lifestyle:** !<INPUT 11>!
+
+### LOCATION CONTEXT
+- **Current Location:** !<INPUT 5>! is currently in !<INPUT 6>!.
+- **Available Areas:** The sector contains ONLY these areas: {!<INPUT 7>!}
+
+### SCHEDULE CONTEXT
+- **Current Status:** !<INPUT 8>!
+- **Broad Daily Plan:** !<INPUT 9>!
+- **Daily Requirements:** !<INPUT 10>!
+
+### TASK
+Generate an hourly schedule for **!<INPUT 12>!**.
+* **Format:** Follow the time format provided here: !<INPUT 0>!
+* **Consistency:** The schedule must align with the "Broad Daily Plan" provided above.
+* **Completeness:** Fill every hour from the current time until sleep.
+
+### OUTPUT FORMAT
+Return valid JSON only. The output must be a list of lists, where each inner list contains the time and the activity.
+Format:
+{
+  "schedule": [
+    ["8:00 am", "waking up"],
+    ["9:00 am", "eating breakfast"]
+  ]
+} 
