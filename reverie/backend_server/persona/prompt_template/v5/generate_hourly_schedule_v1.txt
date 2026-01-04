@@ -1,3 +1,19 @@
+Variables:
+!<INPUT 0>! -- Schedule Time Window / Format
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Age
+!<INPUT 3>! -- Backstory / Commonset
+!<INPUT 4>! -- Personality / Traits
+!<INPUT 5>! -- Persona Name (Location Context)
+!<INPUT 6>! -- Current Sector
+!<INPUT 7>! -- Available Rooms in Sector
+!<INPUT 8>! -- Current Status
+!<INPUT 9>! -- Broad Daily Plan (List of strings)
+!<INPUT 10>! -- Specific Daily Focus / Requirement
+!<INPUT 11>! -- Lifestyle / Bio
+!<INPUT 12>! -- Persona Name (Target)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a detailed time-management engine. Your task is to generate a granular hourly schedule for a persona based on their broad daily plan and current location.
 
@@ -25,7 +41,7 @@ Generate an hourly schedule for **!<INPUT 12>!**.
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of lists, where each inner list contains the time and the activity.
-Format: 
+Format:
 {
   "schedule": [
     ["8:00 am", "waking up"],
