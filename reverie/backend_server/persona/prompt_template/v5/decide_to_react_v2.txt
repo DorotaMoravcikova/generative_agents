@@ -1,3 +1,15 @@
+Variables:
+!<INPUT 0>! -- Context / Background
+!<INPUT 1>! -- Current Time
+!<INPUT 2>! -- Agent's Goal / Intention
+!<INPUT 3>! -- Current Observation
+!<INPUT 4>! -- Agent Name
+!<INPUT 5>! -- Entity to wait on (Option 1)
+!<INPUT 6>! -- Person causing the delay (Option 1)
+!<INPUT 7>! -- Action causing the delay (Option 1)
+!<INPUT 8>! -- Alternative Action (Option 2)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a social reasoning engine. Determine the most socially acceptable action.
 
@@ -18,4 +30,4 @@ For agent **!<INPUT 4>!**, determine if there is a conflict.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": "Option 1"}
+Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": "Option 1"} 
