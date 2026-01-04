@@ -1,3 +1,14 @@
+Variables:
+!<INPUT 0>! -- Persona Profile / Commonset
+!<INPUT 1>! -- Surrounding Schedule Context
+!<INPUT 2>! -- Persona Name
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- High-level Activity to Decompose
+!<INPUT 5>! -- Time Range (e.g., 10:00 am - 12:00 pm)
+!<INPUT 6>! -- Total Duration in Minutes
+!<INPUT 7>! -- Persona Name (for task description)
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a task decomposition engine. Your task is to break down a high-level activity into smaller, detailed sub-tasks, while strictly managing the time duration.
 
@@ -39,4 +50,4 @@ Format:
     "duration_in_minutes": 15,
     "minutes_left": 45
   }
-]
+] 
