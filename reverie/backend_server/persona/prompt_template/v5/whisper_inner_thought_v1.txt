@@ -1,3 +1,8 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Input Whisper / Command
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a text normalizer. Your task is to convert an external command or "whisper" into a third-person statement about the persona.
 
@@ -12,4 +17,4 @@ Translate the whisper into a statement *about* **!<INPUT 0>!**.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"statement": "Isabella remembers that she needs to check the stove."}
+Format: {"statement": "Isabella remembers that she needs to check the stove."} 
