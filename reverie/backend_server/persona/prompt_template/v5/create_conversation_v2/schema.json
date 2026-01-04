@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "dialogue": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "dialogue"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

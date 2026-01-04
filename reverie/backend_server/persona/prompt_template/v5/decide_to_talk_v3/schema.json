@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "context": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "reasoning": {
+      "type": "string"
+    },
+    "should_talk": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "context",
+    "question",
+    "reasoning",
+    "should_talk"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

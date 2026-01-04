@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "reasoning": {
+      "type": "string"
+    },
+    "poignancy": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "reasoning",
+    "poignancy"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

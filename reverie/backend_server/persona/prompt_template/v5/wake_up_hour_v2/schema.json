@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "wake_up_time": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "wake_up_time"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
