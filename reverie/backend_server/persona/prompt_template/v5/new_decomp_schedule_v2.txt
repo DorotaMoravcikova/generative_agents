@@ -1,3 +1,18 @@
+Variables:
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Start of Time Window
+!<INPUT 2>! -- End of Time Window
+!<INPUT 3>! -- Original Plan (Decomposed list)
+!<INPUT 4>! -- Subject of New Event
+!<INPUT 5>! -- Description of New Event / Interruption
+!<INPUT 6>! -- Duration in Minutes
+!<INPUT 7>! -- (Unused)
+!<INPUT 8>! -- Current Start Time
+!<INPUT 9>! -- (Unused)
+!<INPUT 10>! -- Hard End Time
+!<INPUT 11>! -- Mandatory Start Activity String
+
+<commentblockmarker>###</commentblockmarker>
 ### SYSTEM INSTRUCTION
 You are a schedule revision engine. An unexpected event has disrupted the original plan. Your task is to integrate the new event and adjust the remaining schedule.
 
