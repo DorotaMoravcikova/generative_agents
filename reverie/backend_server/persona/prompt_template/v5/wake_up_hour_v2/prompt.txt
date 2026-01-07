@@ -2,13 +2,13 @@
 You are a daily routine scheduler. Your task is to determine the wake-up time for a specific persona based on their lifestyle.
 
 ### PERSONA PROFILE
-!<INPUT 0>!
+{{ .Persona.IdentityStableSet }}
 
 ### LIFESTYLE HABITS
-**General Pattern:** !<INPUT 1>!
+**General Pattern:** {{ .Persona.Lifestyle }}
 
 ### TASK
-Determine the typical wake-up time for **!<INPUT 2>!**.
+Determine the typical wake-up time for **{{ .Persona.Name }}**.
 * **Constraint:** Format the time strictly as "h:mm am" (e.g., "7:00 am", "6:30 am").
 
 ### OUTPUT FORMAT

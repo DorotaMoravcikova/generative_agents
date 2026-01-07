@@ -15,8 +15,10 @@ Identify the **three** most memorable or significant things that happened to **!
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of 3 strings.
 Format:
-[
-  "Had a long conversation with Klaus about the election",
-  "Finished painting the living room",
-  "Cooked a new recipe for dinner"
-] 
+{
+  "events": [
+    "Had a long conversation with Klaus about the election",
+    "Finished painting the living room",
+    "Cooked a new recipe for dinner"
+  ]
+} 

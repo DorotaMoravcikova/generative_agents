@@ -4,15 +4,28 @@
     "schedule": {
       "type": "array",
       "items": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        }
-      }
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string"
+          },
+          "activity": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "time",
+          "activity"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 24,
+      "maxItems": 24
     }
   },
   "required": [
     "schedule"
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

@@ -1,28 +1,52 @@
 ### SYSTEM INSTRUCTION
-You are a schedule repair engine. Your task is to update a persona's daily schedule to accommodate a new event, interruption, or time gap.
+You are a detailed time-management engine. Your task is to generate a complete, realistic **hour-by-hour schedule** for a persona for a single day.
 
 ### PERSONA CONTEXT
-!<INPUT 1>!
+{{ .Persona.IdentityStableSet }}
 
-### ORIGINAL SCHEDULE (PRIOR STATE)
-The schedule up until this moment was:
-!<INPUT 2>!
-
-### THE INTERRUPTION / UPDATE
-An event or change has occurred:
-!<INPUT 3>! !<INPUT 4>!
+### DAILY PLAN (HIGH-LEVEL INTENT)
+The persona’s intended structure for the day is:
+{{- if .Persona.DailyPlan }}
+{{- range $i, $item := .Persona.DailyPlan }}
+{{ add1 $i }}. {{ $item }}
+{{- end }}
+{{- else }}
+(no daily plan provided)
+{{- end }}
 
 ### TASK
-Regenerate the hourly schedule starting from the current time to accommodate the interruption above.
-* **Format:** Use the time format: !<INPUT 0>!
-* **Logic:** Keep past events as they were. Insert the new interaction/event. Adjust future events (shift them or shorten them) to fit the remainder of the day.
+Generate a **full-day hourly schedule** for the persona.
+
+Rules:
+- **Time format:** Use **12-hour clock with AM/PM**, e.g. `"12:00 am"`, `"1:00 am"`, …, `"11:00 pm"`.
+- **Exactly 24 entries:** One entry for each hour of the day.
+- **Hour set:** Include **every hour exactly once**, starting at `"12:00 am"` and ending at `"11:00 pm"`.
+- **Ordering:** The schedule must be sorted from earliest time to latest time
+- **One activity per hour:** Each hour maps to exactly one activity.
+- **Sleep:** Outside waking hours, the activity must be `"sleeping"`, consistent with the persona’s lifestyle.
+- **Consistency:** The schedule must align with the persona’s daily requirements and the broad daily plan.
+- **No interruptions:** Do NOT introduce unexpected events or deviations.
+- **Natural phrasing:** Use clear, natural activity phrases. Avoid shorthand/abbreviations like "work counter", "cafe prep", "lunch", or using "morning routine" as a standalone label.
+- **Anchor reuse:** When an hour corresponds to a daily-plan item, reuse that wording (or a close paraphrase) rather than shortening it.
+- **Sleep enforcement:** The schedule must include "sleeping" during nighttime consistent with the persona’s lifestyle (e.g., if they go to bed around 11pm, the 11:00 pm entry should be "sleeping" unless explicitly overridden).
+- **No vague repeats:** Repeated activities are allowed, but they must remain descriptive (e.g., repeat "serve customers at the counter", not "work counter").
+- **Activity grammar:** Each "activity" must be written as a present-participle phrase ("-ing" form), so it can be naturally inserted into a sentence like "<name> is <activity>".
+  
+Examples of valid activity phrasing:
+- "waking up and completing the morning routine"
+- "serving customers at the counter"
+- "opening the cafe and preparing for service"
+- "relaxing and winding down"
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of lists (Time, Activity).
+Return valid JSON only. The output must be a list of objects, where each object contains the time and the activity.
+
 Format:
 {
   "schedule": [
-    ["1:00 pm", "Activity A"],
-    ["2:00 pm", "Activity B"]
+    {"time": "12:00 am", "activity": "sleeping"},
+    {"time": "1:00 am", "activity": "sleeping"},
+    ...
+    {"time": "11:00 pm", "activity": "sleeping"}
   ]
 }

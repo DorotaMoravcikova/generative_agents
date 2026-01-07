@@ -1,23 +1,33 @@
 {
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "task": {
-        "type": "string"
-      },
-      "duration_in_minutes": {
-        "type": "integer"
-      },
-      "minutes_left": {
-        "type": "integer"
+  "type": "object",
+  "properties": {
+    "schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "string"
+          },
+          "duration_in_minutes": {
+            "type": "integer"
+          },
+          "minutes_left": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "task",
+          "duration_in_minutes",
+          "minutes_left"
+        ],
+        "additionalProperties": false
       }
-    },
-    "required": [
-      "task",
-      "duration_in_minutes",
-      "minutes_left"
-    ]
+    }
   },
+  "required": [
+    "schedule"
+  ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

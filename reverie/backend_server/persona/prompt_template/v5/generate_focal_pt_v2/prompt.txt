@@ -17,4 +17,6 @@ Given *only* the statements above, generate **!<INPUT 1>!** high-level questions
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of strings.
-Format: ["Question 1", "Question 2", ...]
+Format: {
+	"questions": ["Question 1", "Question 2", ...]
+}

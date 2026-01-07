@@ -1,23 +1,33 @@
 {
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "start_time": {
-        "type": "string"
-      },
-      "end_time": {
-        "type": "string"
-      },
-      "action": {
-        "type": "string"
+  "type": "object",
+  "properties": {
+    "schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start_time": {
+            "type": "string"
+          },
+          "end_time": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "start_time",
+          "end_time",
+          "action"
+        ],
+        "additionalProperties": false
       }
-    },
-    "required": [
-      "start_time",
-      "end_time",
-      "action"
-    ]
+    }
   },
+  "required": [
+    "schedule"
+  ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

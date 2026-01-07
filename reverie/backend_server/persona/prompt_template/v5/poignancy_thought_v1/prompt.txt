@@ -2,14 +2,14 @@
 You are an emotional significance analyzer. Your task is to rate the poignancy (importance) of a specific internal thought for a persona.
 
 ### PERSONA PROFILE
-- **Name:** !<INPUT 0>!
-- **Description:** !<INPUT 1>!
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
 
 ### INTERNAL THOUGHT
-Thought: "!<INPUT 3>!"
+Thought: "{{ .Thought }}"
 
 ### TASK
-Rate the significance of this thought for **!<INPUT 2>!** on a scale of 1 to 10.
+Rate the significance of this thought for **{{ .Persona.Name }}** on a scale of 1 to 10.
 1.  **Reasoning:** Briefly explain why this thought is central to their identity or just a fleeting notion.
 2.  **Rating:** Assign an integer score.
     * **1:** Mundane (chores, "I need to do dishes").

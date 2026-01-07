@@ -21,6 +21,9 @@ Revise the schedule from **!<INPUT 8>!** to **!<INPUT 10>!**.
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of objects.
 Format:
-[
-  {"start_time": "HH:MM", "end_time": "HH:MM", "action": "Name of action"}
-] 
+{
+  "schedule": [
+    {"start_time": "HH:MM", "end_time": "HH:MM", "action": "Name of action"},
+    ...
+  ]
+}
