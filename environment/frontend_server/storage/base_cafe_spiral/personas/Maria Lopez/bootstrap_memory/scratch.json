@@ -23,7 +23,7 @@
   "recency_w": 1,
   "relevance_w": 1,
   "importance_w": 1,
-  # "valence_w": 0.0,
+  "valence_w": 0.0,
   "recency_decay": 0.99,
   "importance_trigger_max": 150,
   "importance_trigger_curr": 150,
@@ -37,10 +37,18 @@
   "act_duration": null,
   "act_description": null,
   "act_pronunciatio": null,
-  "act_event": ["Maria Lopez", null, null],
+  "act_event": [
+    "Maria Lopez",
+    null,
+    null
+  ],
   "act_obj_description": null,
   "act_obj_pronunciatio": null,
-  "act_obj_event": [null, null, null],
+  "act_obj_event": [
+    null,
+    null,
+    null
+  ],
   "chatting_with": null,
   "chat": null,
   "chatting_with_buffer": {},
