@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "planning_thought": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "planning_thought"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

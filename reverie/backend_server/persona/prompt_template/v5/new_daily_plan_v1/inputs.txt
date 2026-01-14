@@ -1,0 +1,7 @@
+!<INPUT 0>! -- Persona Profile / Commonset
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Yesterday's Actual Events
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- Yesterday's Original Plan
+!<INPUT 5>! -- Reflection & New Goal for Today
+!<INPUT 6>! -- Persona Name (Target)

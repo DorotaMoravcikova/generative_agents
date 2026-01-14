@@ -1,0 +1,25 @@
+### SYSTEM INSTRUCTION
+You are a knowledge graph extractor. Your task is to convert a natural language action description into a structured (Subject, Predicate, Object) triple.
+
+### INPUT STATEMENT
+!<INPUT 0>! is !<INPUT 1>!
+
+### PARSING RULES
+1. **Subject:** The main actor (usually !<INPUT 0>!).
+2. **Predicate:** The main action verb (e.g., "cooking", "playing", "watching").
+3. **Object:** The target of the action (e.g., "breakfast", "guitar", "TV").
+4. **Missing Data:** If there is no clear object (e.g., "Isabella is sleeping"), use the string "None" for the object field. Do NOT leave it empty.
+
+### FEW-SHOT EXAMPLES
+**Input:** Jane Doe is cooking breakfast.
+**Output:** {"subject": "Jane Doe", "predicate": "cooking", "object": "breakfast"}
+
+**Input:** Arthur is sleeping.
+**Output:** {"subject": "Arthur", "predicate": "sleeping", "object": "None"}
+
+**Input:** Klaus is writing a journal.
+**Output:** {"subject": "Klaus", "predicate": "writing", "object": "journal"}
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"subject": "<SUBJECT>", "predicate": "<PREDICATE>", "object": "<OBJECT>"} 

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "reasoning": {
+      "type": "string"
+    },
+    "choice": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "reasoning",
+    "choice"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,10 @@
+!<INPUT 0>! -- Context / Background
+!<INPUT 1>! -- Current Time
+!<INPUT 2>! -- Initiator Name
+!<INPUT 3>! -- Target Name
+!<INPUT 4>! -- Last Interaction Time
+!<INPUT 5>! -- Last Interaction Topic
+!<INPUT 6>! -- Initiator's Current Action
+!<INPUT 7>! -- Target's Current Action
+!<INPUT 8>! -- Initiator Name
+!<INPUT 9>! -- Target Name

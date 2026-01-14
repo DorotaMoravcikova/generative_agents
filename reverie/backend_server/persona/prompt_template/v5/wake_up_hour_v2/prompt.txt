@@ -1,0 +1,16 @@
+### SYSTEM INSTRUCTION
+You are a daily routine scheduler. Your task is to determine the wake-up time for a specific persona based on their lifestyle.
+
+### PERSONA PROFILE
+{{ .Persona.IdentityStableSet }}
+
+### LIFESTYLE HABITS
+**General Pattern:** {{ .Persona.Lifestyle }}
+
+### TASK
+Determine the typical wake-up time for **{{ .Persona.Name }}**.
+* **Constraint:** Format the time strictly as "h:mm am" (e.g., "7:00 am", "6:30 am").
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"wake_up_time": "7:00 am"}

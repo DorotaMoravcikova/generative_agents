@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "factual": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "emotive": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "factual",
+    "emotive"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

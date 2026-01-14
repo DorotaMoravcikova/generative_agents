@@ -1,0 +1,19 @@
+### SYSTEM INSTRUCTION
+You are a context summarizer for an interview simulation. Your task is to filter and summarize relevant knowledge to help a persona answer a specific question.
+
+### INTERVIEW CONTEXT
+- **Interviewee:** !<INPUT 1>!
+- **Interviewer's Question:** "!<INPUT 2>!"
+
+### RETRIEVED KNOWLEDGE
+The following statements are available in memory:
+!<INPUT 0>!
+
+### TASK
+Summarize the statements above that are most relevant to answering the Interviewer's question.
+* **Filter:** Ignore facts that have nothing to do with the question.
+* **Synthesis:** Combine the relevant facts into a concise summary paragraph.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"summary": "Isabella remembers that she bought the coffee beans yesterday and..."}

@@ -1,0 +1,4 @@
+!<INPUT 0>! -- Conversation Transcript
+!<INPUT 1>! -- Persona Name (The Observer)
+!<INPUT 2>! -- Conversational Partner Name
+!<INPUT 3>! -- Persona Name (The Subject of the memo)

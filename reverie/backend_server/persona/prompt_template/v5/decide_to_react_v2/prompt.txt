@@ -1,0 +1,21 @@
+### SYSTEM INSTRUCTION
+You are a social reasoning engine. Determine the most socially acceptable action.
+
+### SITUATION
+- **Context:** !<INPUT 0>!
+- **Time:** !<INPUT 1>!
+- **Agent's Goal:** !<INPUT 2>!
+- **Current Observation:** !<INPUT 3>!
+
+### OPTIONS
+- **Option 1:** Wait on !<INPUT 5>! until !<INPUT 6>! is done !<INPUT 7>!
+- **Option 2:** Continue on to !<INPUT 8>! now
+
+### ANALYSIS TASK
+For agent **!<INPUT 4>!**, determine if there is a conflict.
+- If the observed person is occupying a private/exclusive resource the agent needs -> **Wait (Option 1)**.
+- Otherwise -> **Continue (Option 2)**.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": "Option 1"} 

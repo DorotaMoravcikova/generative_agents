@@ -1,0 +1,13 @@
+!<INPUT 0>! -- Persona Name A
+!<INPUT 1>! -- Persona Name B
+!<INPUT 2>! -- A's Thoughts/Memory of B
+!<INPUT 3>! -- (Unused)
+!<INPUT 4>! -- (Unused)
+!<INPUT 5>! -- B's Thoughts/Memory of A
+!<INPUT 6>! -- Current Time
+!<INPUT 7>! -- A's Current Action
+!<INPUT 8>! -- B's Current Action
+!<INPUT 9>! -- Persona Name A
+!<INPUT 10>! -- Persona Name B
+!<INPUT 11>! -- Location
+!<INPUT 12>! -- Name of Initiator (Who speaks first)

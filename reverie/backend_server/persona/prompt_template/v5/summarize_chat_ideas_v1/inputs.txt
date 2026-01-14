@@ -1,0 +1,6 @@
+!<INPUT 0>! -- Current Date
+!<INPUT 1>! -- Location / Setting
+!<INPUT 2>! -- Current Activity Description
+!<INPUT 3>! -- Retrieved Memories / Knowledge
+!<INPUT 4>! -- Persona Name (Self)
+!<INPUT 5>! -- Target Persona Name (Conversational Partner)

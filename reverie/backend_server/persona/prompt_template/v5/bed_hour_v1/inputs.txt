@@ -1,0 +1,5 @@
+!<INPUT 0>! -- Schedule Context
+!<INPUT 1>! -- Persona Name
+!<INPUT 2>! -- Daily Plan/Priorities
+!<INPUT 3>! -- Lifestyle/Habits
+!<INPUT 4>! -- Persona Name
