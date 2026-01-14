@@ -3,10 +3,12 @@ You are an information analyst for a social simulation. Your task is to identify
 
 ### INPUT MEMORIES
 The following statements represent the persona's recent observations and thoughts:
-!<INPUT 0>!
+{{ range $item := .Statements }}
+    - {{ (.Persona.GetMemory $item).EmbeddingKey }}
+{{ end }}
 
 ### TASK
-Given *only* the statements above, generate **!<INPUT 1>!** high-level questions that represent the most important information contained in the text.
+Given *only* the statements above, generate **{{ .Count }}** high-level questions that represent the most important information contained in the text.
 * **Grounding:** The questions must be answerable using the provided statements.
 * **Focus:** Prioritize questions about the persona's daily plans, relationships, and emotional state.
 * **Abstraction:** Avoid trivial details. Ask about the "Big Picture."
@@ -16,7 +18,5 @@ Given *only* the statements above, generate **!<INPUT 1>!** high-level questions
 **Salient Questions:** ["What is Jane doing for lunch?", "Where is Jane located?"]
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of strings.
-Format: {
-	"questions": ["Question 1", "Question 2", ...]
-}
+Return valid JSON only. 
+Format: { "questions": ["Question 1", "Question 2", ...] }

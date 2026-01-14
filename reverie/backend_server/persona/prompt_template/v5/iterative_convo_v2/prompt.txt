@@ -2,25 +2,41 @@
 You are a conversational dialogue engine. Your task is to generate the next response in an ongoing chat and determine if the conversation has reached a natural conclusion.
 
 ### PERSONA IDENTITY
-- **Who you are:** !<INPUT 0>!
-- **Relevant Memories:** !<INPUT 2>! (This is what !<INPUT 1>! is thinking about).
+- **Who you are:** {{ .Init.Name }}
+- **Relevant Memories:** (This is what {{ .Init.Name }} is thinking about).
+{{ range $item := .Relevant }}
+    - {{ (.Init.GetMemory $item).EmbeddingKey }}
+{{ end }}
+
+### PERSONA PROFILES
+**{{ .Init.Name }}**
+{{ .Init.IdentityStableSet }}
+
+**{{ .Target.Name }}**
+{{ .Target.IdentityStableSet }}
 
 ### CONTEXT & SETTING
-- **Location:** !<INPUT 4>!
-- **Immediate Context:** !<INPUT 5>!
-- **Relationship/Past Context:** !<INPUT 3>!
+- **Location:** {{ .CurrentLocation }}.
+- **Immediate Context:** {{ .Init.Name }} was {{ .Init.ActivityDescription }} when {{ .Init.Name }} saw {{ .Target.Name }} in the middle of {{ .Target.ActivityDescription }}.
+- **Relationship/Past Context:** {{ .RelationshipSummary }}.
 
 ### CURRENT TRANSCRIPT
-The conversation between !<INPUT 6>! and !<INPUT 7>! so far:
-!<INPUT 8>!
+The conversation between {{ .Init.Name }} and {{ .Target.Name }} so far:
+{{ if .Conversation }}
+{{ range $item := .Conversation }}
+- {{ $item.Speaker }}: {{ $item.Sentence }}
+{{ end }}
+{{ else }}
+(The conversation has not started yet -- start it!)
+{{ end }}
 
 ### TERMINATION LOGIC
-- If the other person said "bye", "see you", or indicated they are leaving -> **ends_conversation: "yes"**.
-- If the conversation has reached a natural lull or the goal is complete -> **ends_conversation: "yes"**.
-- Otherwise -> **ends_conversation: "no"**.
+- If the other person said "bye", "see you", or indicated they are leaving -> **ends_conversation: true**.
+- If the conversation has reached a natural lull or the goal is complete -> **ends_conversation: true**.
+- Otherwise -> **ends_conversation: false**.
 
 ### GENERATION TASK
-1.  Generate the next response for **!<INPUT 9>!** speaking to **!<INPUT 10>!**.
+1.  Generate the next response for **{{ .Init.Name }}** speaking to **{{ .Target.Name }}**.
 2.  Decide if this response ends the conversation.
 
 ### OUTPUT FORMAT
@@ -28,5 +44,5 @@ Return valid JSON only.
 Format:
 {
   "utterance": "Text of the response here",
-  "ends_conversation": "yes or no"
+  "ends_conversation": <true or false>
 } 

@@ -5,7 +5,7 @@
       "type": "string"
     },
     "ends_conversation": {
-      "type": "string"
+      "type": "boolean"
     }
   },
   "required": [

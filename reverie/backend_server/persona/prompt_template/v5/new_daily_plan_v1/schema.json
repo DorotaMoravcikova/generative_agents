@@ -1,16 +1,7 @@
 {
-  "type": "object",
-  "properties": {
-    "plans": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
+  "type": "array",
+  "items": {
+    "type": "string"
   },
-  "required": [
-    "plans"
-  ],
-  "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

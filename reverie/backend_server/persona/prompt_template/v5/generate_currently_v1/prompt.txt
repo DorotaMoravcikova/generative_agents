@@ -1,0 +1,30 @@
+### SYSTEM INSTRUCTION
+You are a status update engine. Your task is to write an updated "currently" status for a persona based on their identity, previous status, and end-of-day reflections.
+
+### PERSONA PROFILE
+{{ .Persona.IdentityStableSet }}
+
+### CONTEXT
+**{{ .Persona.Name }}'s status from {{ .YesterdayDate }}:**
+{{ .Persona.CurrentPlans }}
+
+**{{ .Persona.Name }}'s thoughts at the end of {{ .YesterdayDate }}:**
+{{ .PlanNote }} {{ .ThoughtNote }}
+
+It is now {{ .CurrentDate }}.
+
+### STATUS UPDATE TASK
+Write **{{ .Persona.Name }}'s** current status for **{{ .CurrentDate }}**, ensuring it is consistent with their identity and reflects their thoughts at the end of **{{ .YesterdayDate }}**.
+
+- Write in **third-person**, talking about **{{ .Persona.Name }}**.
+- Maintain continuity with the persona’s established traits and current state.
+- If there is any **scheduling-related information**, be as specific as possible.
+- Include **date**, **time**, and **location** if they are stated in the inputs.
+- Do not invent new events, commitments, or personality traits.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "status": "..."
+}

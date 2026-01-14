@@ -2,11 +2,13 @@
 You are an emotional significance analyzer. Your task is to rate the poignancy (emotional weight) of a conversation for a specific persona.
 
 ### PERSONA PROFILE
-- **Name:** !<INPUT 0>!
-- **Description:** !<INPUT 1>!
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
 
 ### CONVERSATION TRANSCRIPT
-!<INPUT 3>!
+{{ range .Conversation }}
+  {{ .Speaker }}: {{ .Sentence }}
+{{ end }}
 
 ### TASK
 Analyze the conversation above for **!<INPUT 2>!**.

@@ -4,15 +4,15 @@
     "reasoning": {
       "type": "string"
     },
-    "choice": {
-      "type": "number",
-      "minimum": 1,
-      "maximum": 2
+    "valence": {
+      "type": "integer",
+      "minimum": -10,
+      "maximum": 10
     }
   },
   "required": [
     "reasoning",
-    "choice"
+    "valence"
   ],
   "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"

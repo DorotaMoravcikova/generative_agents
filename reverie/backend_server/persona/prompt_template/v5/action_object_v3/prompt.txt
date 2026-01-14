@@ -2,14 +2,14 @@
 You are an object interaction engine. Your task is to select the single most relevant object from the provided list that the persona should use for their current activity.
 
 ### CONTEXT
-- **Current Activity:** !<INPUT 0>!
+- **Current Activity:** {{ .Activity }}
 
 ### AVAILABLE OBJECTS
 The only objects available in the immediate vicinity are:
-{!<INPUT 1>!}
+{ {{ join (.Persona.KnownObjects (.TargetLocation) ) ", " }} }
 
 ### TASK
-Identify the object from the list above that is strictly necessary or most standard for performing the activity ("!<INPUT 0>!").
+Identify the object from the list above that is strictly necessary or most standard for performing the activity ("{{ .Activity }}").
 * If the activity implies a specific object (e.g., "brewing coffee" -> "coffee machine"), choose that.
 * Choose the most logical primary tool.
 

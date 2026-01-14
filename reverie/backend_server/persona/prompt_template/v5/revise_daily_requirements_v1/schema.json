@@ -1,18 +1,12 @@
 {
   "type": "object",
   "properties": {
-    "reasoning": {
+    "day": {
       "type": "string"
-    },
-    "choice": {
-      "type": "number",
-      "minimum": 1,
-      "maximum": 2
     }
   },
   "required": [
-    "reasoning",
-    "choice"
+    "day"
   ],
   "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"

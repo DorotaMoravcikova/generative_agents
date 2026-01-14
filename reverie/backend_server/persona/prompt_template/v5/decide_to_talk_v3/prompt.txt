@@ -2,14 +2,13 @@
 You are a social interaction engine. Decide if one persona should initiate a conversation with another.
 
 ### CONTEXT
-- **Background:** !<INPUT 0>!
-- **Time:** !<INPUT 1>!
-- **Relationship:** !<INPUT 2>! and !<INPUT 3>!.
-- **Last Interaction:** !<INPUT 4>! (Topic: !<INPUT 5>!)
+- **Context:** {{ .Context }}
+- **Time:** {{ .CurrentTime }}
+- **Last Interaction:** {{ .Initiator.Name }} and {{ .Target.Name }} last chatted at {{ .LastChatTime }} (Topic: {{ .LastChatTopic }})
 
 ### CURRENT STATES
-- **Initiator (!<INPUT 8>!) Status:** !<INPUT 6>!
-- **Target (!<INPUT 9>!) Status:** !<INPUT 7>!
+- **Initiator ({{ .Initiator.Name }}) Status:** {{ .InitiatorStatus }}
+- **Target ({{ .Target.Name }}) Status:** {{ .TargetStatus }}
 
 ### LOGIC RULES FOR "YES"
 1. **Novelty:** It has been a reasonable amount of time since they last spoke.
@@ -17,14 +16,14 @@ You are a social interaction engine. Decide if one persona should initiate a con
 3. **Relevance:** The Initiator is not currently doing something urgent (like running to work late).
 
 ### TASK
-Based on the rules above, should **!<INPUT 8>!** initiate a conversation with **!<INPUT 9>!** right now?
+Based on the rules above, should **{{ .Initiator.Name }}** initiate a conversation with **{{ .Target.Name }}** right now?
 
 ### OUTPUT FORMAT
 Return valid JSON only. The "should_talk" field must be "yes" or "no".
 Format:
 {
   "context": "Brief summary of status",
-  "question": "Would !<INPUT 8>! initiate conversation?",
+  "question": "Would {{ .Initiator.Name }} initiate conversation?",
   "reasoning": "Step-by-step logic",
   "should_talk": "yes"
 }

@@ -2,7 +2,9 @@
 You are a dialogue summarizer. Your task is to condense a conversation transcript into a single, descriptive sentence.
 
 ### CONVERSATION TRANSCRIPT
-!<INPUT 0>!
+{{ range $item := .Conversation }}
+	- {{ $item.Speaker }}: {{ $item.Sentence }}
+{{ end }}
 
 ### TASK
 Summarize the conversation above in exactly one sentence.

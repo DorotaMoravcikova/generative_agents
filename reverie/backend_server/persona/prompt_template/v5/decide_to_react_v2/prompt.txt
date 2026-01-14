@@ -2,20 +2,19 @@
 You are a social reasoning engine. Determine the most socially acceptable action.
 
 ### SITUATION
-- **Context:** !<INPUT 0>!
-- **Time:** !<INPUT 1>!
-- **Agent's Goal:** !<INPUT 2>!
-- **Current Observation:** !<INPUT 3>!
+- **Context:** {{ .Context }}
+- **Time:** {{ .CurrentTime }}
+- **Agent's Goal:** {{ .InitiatorStatus }}
 
 ### OPTIONS
-- **Option 1:** Wait on !<INPUT 5>! until !<INPUT 6>! is done !<INPUT 7>!
-- **Option 2:** Continue on to !<INPUT 8>! now
+- **Option 1:** Wait on {{ .Target.Name }} until {{ .TargetEndTime }} is done {{ .TargetStatus }}
+- **Option 2:** Continue on to {{ .InitiatorStatus }} now
 
 ### ANALYSIS TASK
-For agent **!<INPUT 4>!**, determine if there is a conflict.
+For agent **{{ .Initiator.Name }}**, determine if there is a conflict.
 - If the observed person is occupying a private/exclusive resource the agent needs -> **Wait (Option 1)**.
 - Otherwise -> **Continue (Option 2)**.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": "Option 1"} 
+Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": <option 1 or 2>} 

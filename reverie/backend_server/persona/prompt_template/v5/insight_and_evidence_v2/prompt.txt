@@ -3,20 +3,25 @@ You are a cognitive insight engine. Your task is to identify high-level patterns
 
 ### INPUT MEMORIES
 The following is a numbered list of statements:
-!<INPUT 0>!
+{{- range $i, $item := .Statements }}
+{{ add1 $i }}. {{ (.Persona.GetMemory $item).EmbeddingKey }}
+{{- end }}
 
 ### TASK
-Identify **!<INPUT 1>!** high-level insights that can be inferred from the statements above.
+Identify **{{ .Count }}** high-level insights that can be inferred from the statements above.
 1. **Synthesis:** Generalize specific details into broader observations about the persona's habits, relationships, or state.
 2. **Evidence:** For each insight, list the **statement numbers** that support it.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of objects.
+Return valid JSON only. 
 Format:
-[
-  {
-    "insight": "Write the high-level insight here",
-    "reasons": [1, 5, 3] 
-  }
-]
+{
+  "insights": [
+    {
+      "insight": "Write the high-level insight here",
+      "reasons": [1, 5, 3] 
+    },
+    ...
+  ]
+}
 *Note: The "reasons" array must contain ONLY the integers corresponding to the line numbers above.* 

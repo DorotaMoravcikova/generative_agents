@@ -2,12 +2,14 @@
 You are a memory extractor. Your task is to identify key insights or interesting details from a conversation for a specific persona to remember.
 
 ### CONVERSATION TRANSCRIPT
-!<INPUT 0>!
+{{ range $item := .Conversation }}
+	- {{ $item.Speaker }}: {{ $item.Sentence }}
+{{ end }}
 
 ### TASK
-Identify one specific thing that **!<INPUT 1>!** found interesting or noteworthy from this conversation with **!<INPUT 2>!**.
+Identify one specific thing that **{{ .Persona.Name }}** found interesting or noteworthy from this conversation.
 * **Constraint:** Write it as a full sentence in the third person.
-* **Subject:** The sentence must be about **!<INPUT 3>!** (e.g., "!<INPUT 3>! learned that...").
+* **Subject:** The sentence must be about **{{ .Persona.Name }}** (e.g., "{{ .Persona.Name }} learned that...").
 
 ### OUTPUT FORMAT
 Return valid JSON only.

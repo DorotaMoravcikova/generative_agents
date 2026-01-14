@@ -1,29 +1,48 @@
 ### SYSTEM INSTRUCTION
-You are a schedule revision engine. An unexpected event has disrupted the original plan. Your task is to integrate the new event and adjust the remaining schedule.
+You are a schedule revision engine. An unexpected event occurred at the planning boundary.
+The past is fixed and must not be changed. Your task is to integrate the new event and adjust
+ONLY the remaining schedule from the planning start time onward.
 
 ### ORIGINAL CONTEXT
-- **Persona:** !<INPUT 0>!
-- **Time Window:** !<INPUT 1>! to !<INPUT 2>!
-- **Original Plan:**
-!<INPUT 3>!
+- **Persona:** {{ .Persona.Name }}
+- **Time Window:** {{ .OriginalStartTime }} to {{ .OriginalEndTime }}
+- **Planning From:** {{ .PlanningFromTime }}
 
-### THE DISRUPTION
-- **New Event:** !<INPUT 4>! ended up !<INPUT 5>! (Duration: !<INPUT 6>! min).
-- **Mandatory Start Item:** !<INPUT 11>!
+- **Original Plan (Reference Only):**
+{{ range .OriginalPlans }}
+  {{ .StartTime }} ~ {{ .EndTime }} -- `{{ .Activity }}`
+{{ end }}
+
+### FIXED PAST (DO NOT OUTPUT)
+The following activities have already occurred and will be prepended by the system.
+Do NOT repeat or modify these items.
+{{ range .TruncatedPlans }}
+  {{ .StartTime }} ~ {{ .EndTime }} -- `{{ .Activity }}`
+{{ end }}
+
+### THE DISRUPTION (MUST BE INCLUDED)
+- **New Event:** {{ .Persona.Name }} ended up `{{ .Inserted.Activity }}` (Duration: {{ .Inserted.Duration }} min).
+- This event starts exactly at **{{ .PlanningFromTime }}** and MUST be the first item in the output.
 
 ### TASK
-Revise the schedule from **!<INPUT 8>!** to **!<INPUT 10>!**.
-1.  **Start:** You MUST begin with the "Mandatory Start Item" provided above (!<INPUT 11>!).
-2.  **Adapt:** Fit the remaining activities from the "Original Plan" into the time left.
-    * If the original task was interrupted, resume it after the new event.
-    * Shorten activities if necessary to fit the hard stop at !<INPUT 10>!.
+Revise the schedule ONLY for the interval **{{ .PlanningFromTime }}** to **{{ .OriginalEndTime }}**.
+1. **Start:** You MUST begin at **{{ .PlanningFromTime }}** with the inserted event described above.
+2. **Adapt:** Fit the remaining activities from the original plan into the time left.
+   * Preserve the original order as much as possible.
+   * Shorten or drop activities if necessary to fit the hard stop at {{ .OriginalEndTime }}.
+3. **Constraint:** Do NOT output any activity that starts before {{ .PlanningFromTime }}.
+4. **Constraint:** Do NOT repeat any activity already listed in the fixed past.
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of objects.
 Format:
 {
   "schedule": [
-    {"start_time": "HH:MM", "end_time": "HH:MM", "action": "Name of action"},
-    ...
+    {
+      "start_time": "HH:MM",
+      "end_time": "HH:MM",
+      "duration_in_minutes": <duration>,
+      "action": "Name of action"
+    }
   ]
 }

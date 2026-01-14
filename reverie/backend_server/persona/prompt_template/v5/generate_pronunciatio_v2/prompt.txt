@@ -2,7 +2,7 @@
 You are a visual summarizer. Your task is to convert a text action description into a representative emoji string.
 
 ### INPUT ACTION
-!<INPUT 0>!
+{{ .Activity }}
 
 ### TASK
 Select emojis that best represent the action above.

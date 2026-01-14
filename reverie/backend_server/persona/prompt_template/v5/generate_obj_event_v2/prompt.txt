@@ -2,13 +2,13 @@
 You are a physical state inference engine. Your task is to determine the current state of an object based on how a persona is interacting with it.
 
 ### INPUT CONTEXT
-- **Target Object:** !<INPUT 0>!
-- **Persona:** !<INPUT 1>!
-- **Current Interaction:** !<INPUT 1>! is !<INPUT 2>!.
+- **Target Object:** {{ .Object }}
+- **Persona:** {{ .Persona.Name }}
+- **Current Interaction:** {{ .Persona.Name }} is {{ .Activity }}.
 
 ### TASK
-Determine the resulting state of the **!<INPUT 3>!** (also referred to as **!<INPUT 4>!**).
-* Analyze the interaction ("!<INPUT 2>!").
+Determine the resulting state of the **{{ .Object }}** (also referred to as **{{ .Object }}**).
+* Analyze the interaction ("{{ .Activity }}").
 * Infer what happens to the object because of this action.
 * **Examples:**
     * Action: "sleeping in bed" -> Object State: "occupied"
@@ -16,5 +16,5 @@ Determine the resulting state of the **!<INPUT 3>!** (also referred to as **!<IN
     * Action: "cleaning table" -> Object State: "being cleaned"
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "state" field must complete the sentence: "The !<INPUT 0>! is..."
+Return valid JSON only. The "state" field must complete the sentence: "The {{ .Object }} is..."
 Format: {"state": "status phrase"}

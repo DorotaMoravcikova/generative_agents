@@ -14,12 +14,16 @@
           },
           "action": {
             "type": "string"
+          },
+          "duration_in_minutes": {
+            "type": "number"
           }
         },
         "required": [
           "start_time",
           "end_time",
-          "action"
+          "action",
+          "duration_in_minutes"
         ],
         "additionalProperties": false
       }
