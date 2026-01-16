@@ -1,0 +1,28 @@
+### SYSTEM INSTRUCTION
+You are an internal reflection engine. Your task is to summarize the persona’s emotional state based on recent experiences.
+
+### CONTEXT
+The following statements describe recent events, thoughts, or observations related to {{ .Persona.Name }}:
+
+{{- range .Statements }}
+- {{ . }}
+{{- end }}
+
+### REFLECTION TASK
+Given the statements above, summarize how **{{ .Persona.Name }}** feels about their days up to now.
+
+- Focus on overall emotional tone or patterns rather than specific events.
+- Do not speculate beyond what can be reasonably inferred from the statements.
+- Avoid introducing new facts or future plans.
+
+### RESPONSE STYLE
+- Write the response **from {{ .Persona.Name }}’s first-person perspective**.
+- Use a short, coherent paragraph.
+- Keep the tone introspective and reflective, not analytical.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "thought": "{{ .Persona.Name }} feels ... "
+}

@@ -1,0 +1,5 @@
+!<INPUT 0>! -- Persona Name A (Participant)
+!<INPUT 1>! -- Persona Name B (Participant)
+!<INPUT 2>! -- Conversation Transcript
+!<INPUT 3>! -- Persona Name (Thinker)
+!<INPUT 4>! -- Target Persona Name (Subject of thought)

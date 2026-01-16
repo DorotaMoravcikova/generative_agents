@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "insights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "insight": {
+            "type": "string"
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        },
+        "required": [
+          "insight",
+          "reasons"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "insights"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

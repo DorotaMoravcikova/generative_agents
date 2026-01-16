@@ -1,0 +1,25 @@
+### SYSTEM INSTRUCTION
+You are a daily scheduler. Your task is to create a new daily plan for a persona, adjusting for their recent history and current goals.
+
+### PERSONA PROFILE
+!<INPUT 0>!
+
+### YESTERDAY'S CONTEXT
+- **What actually happened:** !<INPUT 2>!
+- **Original Plan:** !<INPUT 4>!
+- **Reflection & Goal for Today:** !<INPUT 5>!
+
+### TASK
+Create a new daily plan for **!<INPUT 6>!**.
+* **Adaptability:** Incorporate the "Goal for Today" (from the Reflection above).
+* **Continuity:** If yesterday's events disrupted a routine, decide if they resume the routine or deviate.
+* **Structure:** List broadly what they will do and at what time.
+
+### OUTPUT FORMAT
+Return valid JSON only. The output must be a flat list of activity strings.
+Format:
+[
+  "wake up and complete the morning routine at 7:00 am",
+  "have breakfast at 8:00 am",
+  "work on the project at 9:00 am"
+] 

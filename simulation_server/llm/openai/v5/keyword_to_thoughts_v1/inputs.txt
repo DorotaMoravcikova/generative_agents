@@ -1,0 +1,3 @@
+!<INPUT 0>! -- Target Keyword
+!<INPUT 1>! -- List of Retrieved Memories
+!<INPUT 2>! -- Persona Name

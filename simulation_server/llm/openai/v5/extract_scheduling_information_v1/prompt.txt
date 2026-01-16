@@ -1,0 +1,28 @@
+### SYSTEM INSTRUCTION
+You are a memory reflection engine. Your task is to determine whether any of the information above should be remembered for future planning.
+
+### CONTEXT
+The following statements describe recent events, thoughts, or observations relevant to {{ .Persona.Name }}:
+
+{{- range .Statements }}
+- {{ . }}
+{{- end }}
+
+### PLANNING TASK
+Given the statements above, is there anything that **{{ .Persona.Name }}** should remember as they plan for **{{ .CurrentDate }}**?
+
+- If there is any **scheduling-related information**, be as specific as possible.
+- Include **date**, **time**, and **location** if they are stated in the statements.
+
+### RESPONSE STYLE
+- Write the response **from {{ .Persona.Name }}’s first-person perspective**.
+- Be concise and factual.
+- Do not invent information not present in the statements.
+- If no concrete or actionable information is present, explicitly say so rather than inventing a vague reminder.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "memory": "{{ .Persona.Name }} should remember ... "
+}

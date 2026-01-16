@@ -1,0 +1,16 @@
+### SYSTEM INSTRUCTION
+You are a social cognition engine. Your task is to summarize a conversation into a single, concise internal thought from the perspective of one participant.
+
+### CONTEXT
+- **Participants:** !<INPUT 0>! and !<INPUT 1>!
+- **Transcript:**
+!<INPUT 2>!
+
+### TASK
+Summarize what **!<INPUT 3>!** thought about **!<INPUT 4>!** based on the conversation above.
+* Constraint: Write exactly one short sentence.
+* Constraint: Use the third person (e.g., "Isabella found the conversation helpful").
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"thought": "The summary sentence here."} 

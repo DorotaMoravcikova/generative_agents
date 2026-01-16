@@ -1,0 +1,3 @@
+!<INPUT 0>! -- Date/Time Format
+!<INPUT 1>! -- Persona Context / Stable Set
+!<INPUT 2>! -- Broad Daily Plan (List of strings)

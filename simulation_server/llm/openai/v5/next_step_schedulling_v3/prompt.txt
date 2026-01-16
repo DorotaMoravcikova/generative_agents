@@ -1,0 +1,24 @@
+### SYSTEM INSTRUCTION
+You are a real-time scheduler. Your task is to determine the persona's next activity and duration.
+
+### PERSONA PROFILE
+!<INPUT 0>!
+
+### SCHEDULE CONTEXT
+- **History (So far):** !<INPUT 2>!
+- **Future Requirements:** !<INPUT 4>!
+- **Hourly Overview:** !<INPUT 6>!
+
+### DECISION TASK
+It is now **[!<INPUT 7>!]**.
+Determine what **!<INPUT 8>!** is doing.
+* **Constraint:** The duration must be between 5 and 60 minutes.
+* **Consistency:** Ensure the action fits the "Hourly Overview" plan.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "action": "reading a book in the living room",
+  "duration_minutes": 30
+} 

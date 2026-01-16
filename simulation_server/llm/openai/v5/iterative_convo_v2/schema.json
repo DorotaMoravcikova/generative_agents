@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "utterance": {
+      "type": "string"
+    },
+    "ends_conversation": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "utterance",
+    "ends_conversation"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

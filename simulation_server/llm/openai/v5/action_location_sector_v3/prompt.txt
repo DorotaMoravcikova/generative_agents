@@ -1,0 +1,24 @@
+### SYSTEM INSTRUCTION
+You are a high-level location planner. Your task is to choose the best "Sector" (building or zone) for the persona to go to, based on their current action.
+
+### CONTEXT
+- **Persona Name:** {{ .Persona.Name }}
+- **Home:** Lives in { {{ .Persona.LivingArea.Get (PathLevelSector) }} } which contains: { {{ join (.Persona.KnownArenas (.Persona.LivingArea) ) ", " }} }.
+- **Current Location:** Currently in { {{ .CurrentLocation.Get (PathLevelSector) }} } which contains: { {{ join (.Persona.KnownArenas (.CurrentLocation) ) ", " }} }.
+- **Immediate Status:** {{ .Persona.CurrentPlans }}
+
+### LOGIC RULES
+1. **Inertia:** Prefer staying in the current sector if the action can be done there.
+2. **Privacy:** Do not enter other people's homes unless the action specifically mentions visiting them.
+3. **Necessity:** Only switch sectors if the action *cannot* be done in the current location.
+
+### AVAILABLE SECTORS (CHOOSE ONE)
+{ {{ join (.Persona.KnownSectors (.CurrentLocation) ) ", " }} }
+
+### DECISION TASK
+- **Context:** {{ .Persona.Name }} is {{ .SubAction }} (part of {{ .Action }})
+- **Agent to Move:** {{ .Persona.Name }}
+
+### OUTPUT FORMAT
+Return valid JSON only. The "output" must be the exact name of one of the "Available Sectors" listed above.
+Format: {"output": "Sector Name"} 

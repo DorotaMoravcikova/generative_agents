@@ -1,0 +1,32 @@
+### SYSTEM INSTRUCTION
+You are an emotional valence analyzer. Your task is to assess the emotional valence of a conversation for a specific persona.
+
+### PERSONA PROFILE
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
+
+### CONVERSATION TRANSCRIPT
+{{ range .Conversation }}
+  {{ .Speaker }}: {{ .Sentence }}
+{{ end }}
+
+### TASK
+Analyze the conversation above from the perspective of **{{ .Persona.Name }}**.
+
+1. **Reasoning:** Briefly explain the overall emotional tone of the conversation for them (e.g., positive, neutral, negative, conflicted), and why it would feel that way given their identity and context.
+2. **Valence Rating:** Assign a single integer score on a scale from **–10 to +10**, where:
+   - **–10:** Extremely negative (distressing, threatening, humiliating, or emotionally damaging).
+   - **–5:** Moderately negative (tense, disappointing, uncomfortable).
+   - **0:** Neutral or emotionally flat (purely informational, routine interaction).
+   - **+5:** Moderately positive (pleasant, affirming, encouraging).
+   - **+10:** Extremely positive (deeply joyful, validating, or emotionally uplifting).
+
+The score should reflect **how the persona feels as a result of this interaction**, not how important or memorable it is.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format:
+{
+  "reasoning": "A short explanation of the emotional valence.",
+  "valence": 0
+}

@@ -1,0 +1,4 @@
+!<INPUT 0>! -- Persona Name
+!<INPUT 1>! -- Persona Description / Commonset
+!<INPUT 2>! -- Persona Name (Target for analysis)
+!<INPUT 3>! -- Conversation Transcript

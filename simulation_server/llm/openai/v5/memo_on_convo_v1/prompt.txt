@@ -1,0 +1,16 @@
+### SYSTEM INSTRUCTION
+You are a memory extractor. Your task is to identify key insights or interesting details from a conversation for a specific persona to remember.
+
+### CONVERSATION TRANSCRIPT
+{{ range $item := .Conversation }}
+	- {{ $item.Speaker }}: {{ $item.Sentence }}
+{{ end }}
+
+### TASK
+Identify one specific thing that **{{ .Persona.Name }}** found interesting or noteworthy from this conversation.
+* **Constraint:** Write it as a full sentence in the third person.
+* **Subject:** The sentence must be about **{{ .Persona.Name }}** (e.g., "{{ .Persona.Name }} learned that...").
+
+### OUTPUT FORMAT
+Return valid JSON only.
+Format: {"memo": "Isabella learned that Klaus is planning a surprise party."}

@@ -1,0 +1,4 @@
+!<INPUT 0>! -- Conversation Transcript
+!<INPUT 1>! -- Persona Name (The Observer)
+!<INPUT 2>! -- Persona Name (The Observer's Perspective)
+!<INPUT 3>! -- Persona Name (The Subject)
