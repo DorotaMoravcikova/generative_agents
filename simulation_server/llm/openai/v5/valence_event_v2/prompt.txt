@@ -1,0 +1,38 @@
+### SYSTEM INSTRUCTION
+You are an expert psychology engine. Your task is to evaluate the emotional valence of a specific event memory.
+
+### PERSONA PROFILE
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
+
+### INPUT EVENT
+Event to evaluate: "{{ .Event }}"
+
+### TASK
+Assess how this event emotionally affects **{{ .Persona.Name }}**.
+
+IDLE RULE:
+- If the event contains the exact phrase "is idle", the valence MUST be 0.
+
+Otherwise:
+- Determine the persona’s likely emotional reaction based on their identity and circumstances.
+- Assign 0 if the event produces no emotional reaction.
+- Use small magnitudes (±1 or ±2) for mild feelings.
+- Use larger magnitudes for stronger emotional impact.
+
+1. **Reasoning:** Briefly explain the emotional direction and intensity.
+2. **Valence Rating:** Assign a single integer score on a scale from **–10 to +10**, where:
+   - **–10:** Extremely negative (distressing, threatening, humiliating, or emotionally damaging).
+   - **–5:** Moderately negative (frustrating, disappointing, uncomfortable).
+   - **0:** Neutral or emotionally flat (routine action, factual occurrence).
+   - **+5:** Moderately positive (pleasant, satisfying, encouraging).
+   - **+10:** Extremely positive (deeply joyful, validating, or emotionally uplifting).
+
+The score must reflect how the persona feels as a result of the event.
+
+### OUTPUT FORMAT
+Return valid JSON only.
+{
+  "reasoning": "Short explanation.",
+  "valence": 0
+}

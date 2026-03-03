@@ -44,7 +44,7 @@ func (c *Client) generateImportanceThought(p llm.Persona, thought string) int {
 }
 
 func (c *Client) generateImportanceEvent(p llm.Persona, event string) int {
-	prompt := prompts["poignancy_event_v1"]
+	prompt := prompts["poignancy_event_v2"]
 
 	in := GeneratePoignancyEventV1Input{
 		Persona: p,
@@ -108,7 +108,7 @@ func (c *Client) generateValenceThought(p llm.Persona, description string) int {
 }
 
 func (c *Client) generateValenceEvent(p llm.Persona, description string) int {
-	prompt := prompts["valence_event_v1"]
+	prompt := prompts["valence_event_v2"]
 
 	in := GenerateValenceEventV1Input{
 		Persona: p,
