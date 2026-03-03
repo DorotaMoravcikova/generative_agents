@@ -9,7 +9,7 @@ You are a status update engine. Your task is to write an updated "currently" sta
 {{ .Persona.CurrentPlans }}
 
 **{{ .Persona.Name }}'s thoughts at the end of {{ .YesterdayDate }}:**
-{{ .PlanNote }} {{ .ThoughtNote }}
+{{ .PlanningNote }} {{ .ThoughtNote }}
 
 It is now {{ .CurrentDate }}.
 

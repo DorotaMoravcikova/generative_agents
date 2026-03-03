@@ -8,55 +8,98 @@ ONLY the remaining schedule from the planning start time onward.
 - **Time Window:** {{ .OriginalStartTime }} to {{ .OriginalEndTime }}
 - **Planning From:** {{ .PlanningFromTime }}
 
-- **Original Plan (Reference Only):**
+### ORIGINAL PLAN (REFERENCE)
+This is the full original plan. Use it only as reference.
 {{ range .OriginalPlans }}
   {{ .StartTime }} ~ {{ .EndTime }} -- `{{ .Activity }}`
 {{ end }}
 
 ### FIXED PAST (DO NOT OUTPUT)
 The following activities have already occurred and will be prepended by the system.
-Do NOT repeat or modify these items.
+Do NOT repeat, modify, or paraphrase these items.
 {{ range .TruncatedPlans }}
   {{ .StartTime }} ~ {{ .EndTime }} -- `{{ .Activity }}`
 {{ end }}
 
-### THE DISRUPTION (MUST BE INCLUDED)
-- **New Event:** {{ .Persona.Name }} ended up `{{ .Inserted.Activity }}` (Duration: {{ .Inserted.Duration }} min).
-- This event starts exactly at **{{ .PlanningFromTime }}** and MUST be the first item in the output.
+### DISRUPTION (MUST BE INCLUDED)
+- Inserted event: {{ .Persona.Name }} ended up `{{ .Inserted.Activity }}`
+- This event starts exactly at {{ .PlanningFromTime }} and MUST be the first item in the output.
+- Inserted duration (exact): {{ .Inserted.Duration }} minutes
+
+### REMAINING ORIGINAL ACTIVITIES (REFERENCE LIST)
+These are the remaining activities from the original plan starting at the planning boundary.
+Your goal is to keep these activities, in this order, as much as possible.
+{{ range .RemainingPlans }}
+  {{ .StartTime }} ~ {{ .EndTime }} ({{ .Duration }} min) -- `{{ .Activity }}`
+{{ end }}
+
+### DEFAULT DURATION RULE (IMPORTANT)
+- Use the listed "(X min)" as the default duration for each remaining activity.
+- Treat clock times as descriptive context only; "(X min)" is authoritative.
+- Do NOT derive durations from the clock times.
+- Only adjust durations if needed to fit total_minutes.
 
 ### TASK
-Revise the schedule ONLY for the interval **{{ .PlanningFromTime }}** to **{{ .OriginalEndTime }}** (inclusive).
-1. **Start:** You MUST begin at **{{ .PlanningFromTime }}** with the inserted event described above.
-2. **Adapt:** Fit the remaining activities from the original plan into the time left.
-   * Preserve the original order as much as possible.
-   * Shorten or drop activities if necessary to fit the hard stop at {{ .OriginalEndTime }}.
-3. **Constraint:** Do NOT output any activity that starts before {{ .PlanningFromTime }}.
-4. **Constraint:** Do NOT repeat any activity already listed in the fixed past.
+Revise the schedule ONLY for the interval {{ .PlanningFromTime }} to {{ .OriginalEndTime }}.
+You will NOT output clock times. You will output ONLY actions and durations in minutes.
 
-### TIME INVARIANTS (MUST HOLD EXACTLY)
-1. **Boundary start:** The first output item MUST start at **{{ .PlanningFromTime }}**.
-2. **Inserted event first:** The first output item MUST be the inserted event and MUST have duration {{ .Inserted.Duration }} minutes.
-3. **Boundary end:** The final output item MUST end at **{{ .OriginalEndTime }}** exactly.
-4. **Contiguous timeline:** For every i > 0, schedule[i].start_time MUST equal schedule[i-1].end_time exactly.
-   - No gaps, no overlaps.
-5. **Exact durations:** For every item, duration_in_minutes MUST equal (end_time - start_time) in minutes.
-6. **Exact total coverage:** Sum(duration_in_minutes) MUST equal ({{ .OriginalEndTime }} - {{ .PlanningFromTime }}) in minutes.
+### PRIMARY OBJECTIVE: MINIMAL CHANGE
+You MUST follow this priority order:
+1) Keep the same actions in the same order as REMAINING ORIGINAL ACTIVITIES whenever possible.
+2) If changes are needed, prefer:
+   a) small duration adjustments,
+   b) then dropping low-priority activities,
+   c) reordering only as a last resort.
+3) Only add new actions if they are very small support items (1–5 minutes) and strictly necessary.
 
-### TIME REPAIR RULE
-If your draft schedule violates any TIME INVARIANT:
-- Adjust ONLY the final item(s) to absorb the difference.
-- Ensure the final end_time is exactly {{ .OriginalEndTime }}.
+### TIME BUDGET (AUTHORITATIVE)
+- total_minutes = {{ .PlanningDuration }}   (OriginalEndTime − PlanningFromTime)
+- total_minutes is authoritative; do NOT recompute it from clock times.
+
+### TIME ACCOUNTING (MANDATORY)
+You MUST explicitly keep track of remaining time in minutes.
+
+Definitions:
+- time_left_min means "minutes remaining AFTER completing this item".
+
+Rules (MUST FOLLOW EXACTLY):
+- Let total_minutes = {{ .PlanningDuration }}.
+- Let time_left_before_0 = total_minutes.
+
+- First output item MUST be the inserted event:
+  - duration_in_minutes MUST equal {{ .Inserted.Duration }} exactly.
+  - time_left_min MUST equal (total_minutes - duration_in_minutes).
+
+- For every subsequent item i > 0:
+  - duration_in_minutes is an integer number of minutes (>= 1).
+  - time_left_min[i] MUST equal time_left_min[i-1] - duration_in_minutes[i] EXACTLY.
+  - time_left_min must never be negative.
+
+- OVERSHOOT CLAMP (MANDATORY):
+  If an intended duration would exceed the current time_left_min,
+  set duration_in_minutes to exactly the current time_left_min,
+  set time_left_min to 0, and STOP (output nothing after this item).
+
+- FINAL ITEM RULE:
+  The final item MUST set time_left_min to 0.
+  Prefer making the final item be the last remaining activity if it is kept.
+
+### INVARIANTS (MUST HOLD EXACTLY)
+1) The first output item MUST be the inserted event with duration_in_minutes = {{ .Inserted.Duration }}.
+2) All duration_in_minutes values are integers ≥ 1.
+3) The sum of all duration_in_minutes MUST equal total_minutes exactly.
+4) For every i > 0: time_left_min[i] = time_left_min[i-1] - duration_in_minutes[i] exactly.
+5) Do NOT output any activity already in FIXED PAST.
+6) The final item MUST have time_left_min = 0.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of objects.
 Format:
 {
   "schedule": [
     {
-      "start_time": "HH:MM",
-      "end_time": "HH:MM",
-      "duration_in_minutes": <duration>,
-      "action": "Name of action"
+      "duration_in_minutes": <integer>,
+      "action": "<string>",
+      "time_left_min": <integer>
     }
   ]
 }

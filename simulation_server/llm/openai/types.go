@@ -51,17 +51,21 @@ type GenerateHourlyScheduleV2Input struct {
 	Persona llm.Persona
 }
 
+type NewDecompScheduleV2InputPlans struct {
+	StartTime string
+	EndTime   string
+	Duration  int
+	Activity  string
+}
+
 type NewDecompScheduleV2Input struct {
-	Persona                       llm.Persona
-	OriginalStartTime             string
-	OriginalEndTime               string
-	PlanningFromTime              string
-	OriginalPlans, TruncatedPlans []struct {
-		StartTime string
-		EndTime   string
-		Activity  string
-	}
-	Inserted llm.Plan
+	Persona                                       llm.Persona
+	OriginalStartTime                             string
+	OriginalEndTime                               string
+	PlanningFromTime                              string
+	PlanningDuration                              int
+	OriginalPlans, TruncatedPlans, RemainingPlans []NewDecompScheduleV2InputPlans
+	Inserted                                      llm.Plan
 }
 
 type TaskDecompV3Input struct {
@@ -346,8 +350,8 @@ type NewDailyPlanV1Output []string
 // NewDecompScheduleV2Output represents the output for NewDecompScheduleV2 prompt
 type NewDecompScheduleV2Output struct {
 	Schedule []struct {
-		StartTime       string `json:"start_time"`
-		EndTime         string `json:"end_time"`
+		StartTime int `json:"time_left_min"`
+		// EndTime         string `json:"end_time"`
 		Action          string `json:"action"`
 		DurationMinutes int    `json:"duration_in_minutes"`
 	} `json:"schedule"`

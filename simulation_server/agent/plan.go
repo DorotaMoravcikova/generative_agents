@@ -375,6 +375,13 @@ func (p *Persona) shouldReact(focussedEvent relevantNodes, personas map[string]*
 	return "", false
 }
 
+func (p *Persona) SumPlanDir(plans []llm.Plan) (out int) {
+	for _, plan := range plans {
+		out += plan.Duration
+	}
+	return out
+}
+
 func (p *Persona) createReact(summary string, duration int, address memory.Path, spo memory.SPO, actStartTime time.Time, pronunciato string, chattingWith string, chat []memory.Utterance, chattingWithBuffer map[string]int, chatEndTime time.Time) {
 	minSum := 0
 	for i := 0; i < p.state.GetOriginalDailyPlanIndex(); i += 1 {
@@ -398,13 +405,20 @@ func (p *Persona) createReact(summary string, duration int, address memory.Path,
 	startIndex := -1
 	endIndex := -1
 	for i, plan := range p.state.DailySchedule {
-		if !durSum.Before(startTime) && startIndex == -1 {
+		end := durSum.Add(time.Duration(plan.Duration) * time.Minute)
+		if (!durSum.Before(startTime) || end.After(startTime)) && startIndex == -1 {
 			startIndex = i
 		}
 		if !durSum.Before(endTime) && endIndex == -1 {
 			endIndex = i
 		}
-		durSum = durSum.Add(time.Duration(plan.Duration) * time.Minute)
+		durSum = end
+	}
+	if startIndex == -1 {
+		startIndex = 0
+	}
+	if endIndex == -1 {
+		endIndex = len(p.state.DailySchedule)
 	}
 
 	newPlans := p.cognition.GenerateReactionScheduleUpdate(p, llm.Plan{Duration: duration, Activity: summary}, startTime, endTime)
@@ -418,6 +432,25 @@ func (p *Persona) createReact(summary string, duration int, address memory.Path,
 		p.state.DailySchedule,
 		after...,
 	)
+
+	const dayDuration = 24 * time.Hour
+	scheduledDuration := time.Duration(0)
+	for _, plan := range p.state.DailySchedule {
+		scheduledDuration += time.Duration(plan.Duration) * time.Minute
+	}
+
+	if scheduledDuration < dayDuration {
+		p.ctx.Log.Warn("schedule_time_mismatch",
+			"scheduled_duration", scheduledDuration,
+			"day_duration", dayDuration)
+		p.state.DailySchedule = append(p.state.DailySchedule,
+			llm.Plan{
+				Activity: "sleeping",
+				Duration: int(dayDuration.Minutes()) - int(scheduledDuration.Minutes()),
+			})
+	} else if scheduledDuration > dayDuration {
+		panic("TODO: handle daily plan longer than day")
+	}
 
 	dur := time.Duration(duration) * time.Minute
 	if chattingWith != "" {

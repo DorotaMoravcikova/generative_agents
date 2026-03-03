@@ -110,6 +110,8 @@ func SpecialPath(state PathState, arg string) Path {
 	case PathStateRandom:
 		return ParsePath(arg).
 			Copy(PathWithObject("<random>"))
+	case PathStateWaiting:
+		return Path{world: fmt.Sprintf("%s %s", state.ToString(), arg)}
 	default:
 		return ParsePath(fmt.Sprintf("%s %s", state.ToString(), arg))
 	}

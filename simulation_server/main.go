@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"path"
 	"strconv"
@@ -30,6 +31,30 @@ type Config struct {
 	EmbeddingModel string
 
 	BackupInterval int
+}
+
+func RetryPanic(fn func(), retries int) error {
+	var last any
+
+	for i := 0; i < retries; i++ {
+		var pan any
+
+		func() {
+			defer func() {
+				pan = recover()
+			}()
+			fn()
+		}()
+
+		if pan == nil {
+			return nil
+		}
+
+		last = pan
+	}
+
+	log.Fatal("function panicked after %d retries: %v", retries, last)
+	return nil
 }
 
 func main() {
@@ -94,7 +119,7 @@ func main() {
 	}
 	embedder := openai.New(embedderOpts...)
 
-	sim, err := simulationloader.LoadSimulation(path.Join(conf.SimulationDir, conf.SimulationName), conf.MazeDir, client, embedder, rl.Log)
+	sim, err := simulationloader.LoadSimulation(path.Join(conf.SimulationDir, conf.SimulationName), conf.MazeDir, embedder, client, rl.Log)
 	if err != nil {
 		panic(fmt.Sprintf("Could not load maze: %v\n", err))
 	}
@@ -109,7 +134,9 @@ func main() {
 	sim.Storage = &storage
 
 	sim.BackupInterval = conf.BackupInterval
-	if err := sim.Run(720); err != nil {
-		panic(fmt.Sprintf("Could not run simulation: %v", err))
-	}
+	RetryPanic(func() {
+		if err := sim.Run(100000); err != nil {
+			panic(fmt.Sprintf("Could not run simulation: %v", err))
+		}
+	}, 10)
 }

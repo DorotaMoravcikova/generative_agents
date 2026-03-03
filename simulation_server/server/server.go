@@ -99,11 +99,16 @@ func (s *Server) ExecuteStep() {
 		s.Maze.RemoveEventFromTile(persona.Position(), maze.Event{SPO: memory.SPO{Subject: ev.SPO.Subject}})
 	}
 
-	for name, persona := range s.Personas {
+	for _, persona := range s.Personas {
 		ctx := agent.MoveCtx{
 			Log: stepLog,
 		}
-		next, pronunciato, event := persona.Move(ctx, s.Maze, s.Personas, s.PersonaPositions[name], s.CurrentTime)
+
+		persona.SetCtx(ctx)
+	}
+
+	for name, persona := range s.Personas {
+		next, pronunciato, event := persona.Move(s.Maze, s.Personas, s.PersonaPositions[name], s.CurrentTime)
 
 		movements.Personas[name] = PersonaMovement{
 			Tile:        next,

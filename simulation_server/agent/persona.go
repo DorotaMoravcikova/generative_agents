@@ -233,6 +233,11 @@ type Persona struct {
 	ctx MoveCtx
 }
 
+func (p *Persona) SetCtx(ctx MoveCtx) {
+	p.ctx = ctx
+	p.ctx.Log = p.ctx.Log.With(slog.String("persona", p.name))
+}
+
 func (p *Persona) State() State {
 	return p.state
 }
@@ -313,10 +318,7 @@ type MoveCtx struct {
 	Log *slog.Logger
 }
 
-func (p *Persona) Move(ctx MoveCtx, maze *maze.Maze, personas map[string]*Persona, pos maze.TilePos, currTime time.Time) (next_tile maze.TilePos, pronunciato string, event maze.Event) {
-	p.ctx = ctx
-	p.ctx.Log = p.ctx.Log.With(slog.String("persona", p.name))
-
+func (p *Persona) Move(maze *maze.Maze, personas map[string]*Persona, pos maze.TilePos, currTime time.Time) (next_tile maze.TilePos, pronunciato string, event maze.Event) {
 	start := time.Now()
 	p.ctx.Log.Info("persona_step_start",
 		slog.String("event", "persona_step_start"),

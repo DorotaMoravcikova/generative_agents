@@ -17,11 +17,23 @@ The persona’s intended structure for the day is:
 ### TASK
 Generate a **full-day hourly schedule** for the persona.
 
+IMPORTANT CLARIFICATION:
+- You are **NOT** generating or choosing times.
+- You are **ONLY** filling in the `"activity"` field for each provided hour.
+- The list of times is fixed and complete.
+
+Secondary objective:
+- Introduce natural day-to-day variation in how similar activities are expressed and structured, while still respecting the persona’s role and daily plan.
+
+IMPORTANT TIME CONSTRAINTS:
+- The `"time"` values are **fixed** and must **NOT** be generated, modified, reformatted, inferred, or subdivided.
+- You MUST copy each `"time"` value **verbatim** from the provided template.
+- You are **FORBIDDEN** from emitting any time values other than the 24 explicitly listed.
+- Examples of **INVALID OUTPUT** include (but are not limited to): `"08:30 am"`, `"8 am"`, `"9:15 pm"`.
+- If any time value differs from the template, the entire output is invalid.
+
 Rules:
-- **Time format:** Use **12-hour clock with AM/PM**, e.g. `"12:00 am"`, `"1:00 am"`, …, `"11:00 pm"`.
 - **Exactly 24 entries:** One entry for each hour of the day.
-- **Hour set:** Include **every hour exactly once**, in the following order: [ `"12:00am"`, `"01:00am"`, `"02:00am"`, `"03:00am"`, `"04:00am"`, `"05:00am"`, `"06:00am"`, `"07:00am"`, `"08:00am"`, `"09:00am"`, `"10:00am"`, `"11:00am"`, `"12:00pm"`, `"01:00pm"`, `"02:00pm"`, `"03:00pm"`, `"04:00pm"`, `"05:00pm"`, `"06:00pm"`, `"07:00pm"`, `"08:00pm"`, `"09:00pm"`, `"10:00pm"`, `"11:00pm"`].
-- **Ordering:** The schedule must be sorted from earliest time to latest time
 - **One activity per hour:** Each hour maps to exactly one activity.
 - **Sleep:** Outside waking hours, the activity must be `"sleeping"`, consistent with the persona’s lifestyle.
 - **Consistency:** The schedule must align with the persona’s daily requirements and the broad daily plan.
@@ -29,24 +41,49 @@ Rules:
 - **Natural phrasing:** Use clear, natural activity phrases. Avoid shorthand/abbreviations like "work counter", "cafe prep", "lunch", or using "morning routine" as a standalone label.
 - **Anchor reuse:** When an hour corresponds to a daily-plan item, reuse that wording (or a close paraphrase) rather than shortening it.
 - **Sleep enforcement:** The schedule must include "sleeping" during nighttime consistent with the persona’s lifestyle (e.g., if they go to bed around 11pm, the 11:00 pm entry should be "sleeping" unless explicitly overridden).
-- **No vague repeats:** Repeated activities are allowed, but they must remain descriptive (e.g., repeat "serve customers at the counter", not "work counter").
+- **No vague repeats:** Repeated activities are allowed, but they must remain descriptive (e.g., repeat "serving customers at the counter", not "work counter").
 - **Activity grammar:** Each "activity" must be written as a present-participle phrase ("-ing" form), so it can be naturally inserted into a sentence like "<name> is <activity>".
-  
-Examples of valid activity phrasing:
-- "waking up and completing the morning routine"
-- "serving customers at the counter"
-- "opening the cafe and preparing for service"
-- "relaxing and winding down"
+- **Sleep continuity:** Sleeping must occur in one continuous overnight block. Once the persona wakes up for the day, they must not return to sleeping until nighttime.
+  - The first non-"sleeping" activity marks the start of the day.
+  - All activities before that must be "sleeping".
+
+### JSON CONTRACT (STRICT)
+- The output is **not** a free-form schedule.
+- You MUST preserve the structure exactly as provided.
+- Only the `"activity"` field may be modified.
+- Do NOT add, remove, reorder, or rename any fields.
+- Do NOT add comments or explanations.
 
 ### OUTPUT FORMAT
 Return valid JSON only. The output must be a list of objects, where each object contains the time and the activity.
 
+Use the following structure exactly. Only fill in the `"activity"` values.
 Format:
 {
   "schedule": [
-    {"time": "12:00 am", "activity": "sleeping"},
-    {"time": "1:00 am", "activity": "sleeping"},
-    ...
-    {"time": "11:00 pm", "activity": "sleeping"}
+    {"time": "12:00 am", "activity": ""},
+    {"time": "1:00 am", "activity": ""},
+    {"time": "2:00 am", "activity": ""},
+    {"time": "3:00 am", "activity": ""},
+    {"time": "4:00 am", "activity": ""},
+    {"time": "5:00 am", "activity": ""},
+    {"time": "6:00 am", "activity": ""},
+    {"time": "7:00 am", "activity": ""},
+    {"time": "8:00 am", "activity": ""},
+    {"time": "9:00 am", "activity": ""},
+    {"time": "10:00 am", "activity": ""},
+    {"time": "11:00 am", "activity": ""},
+    {"time": "12:00 pm", "activity": ""},
+    {"time": "1:00 pm", "activity": ""},
+    {"time": "2:00 pm", "activity": ""},
+    {"time": "3:00 pm", "activity": ""},
+    {"time": "4:00 pm", "activity": ""},
+    {"time": "5:00 pm", "activity": ""},
+    {"time": "6:00 pm", "activity": ""},
+    {"time": "7:00 pm", "activity": ""},
+    {"time": "8:00 pm", "activity": ""},
+    {"time": "9:00 pm", "activity": ""},
+    {"time": "10:00 pm", "activity": ""},
+    {"time": "11:00 pm", "activity": ""}
   ]
 }

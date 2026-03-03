@@ -6,22 +6,18 @@
       "items": {
         "type": "object",
         "properties": {
-          "start_time": {
-            "type": "string"
-          },
-          "end_time": {
-            "type": "string"
-          },
           "action": {
             "type": "string"
           },
           "duration_in_minutes": {
             "type": "number"
+          },
+          "time_left_min": {
+            "type": "number"
           }
         },
         "required": [
-          "start_time",
-          "end_time",
+          "time_left_min",
           "action",
           "duration_in_minutes"
         ],
