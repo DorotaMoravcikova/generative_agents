@@ -2,16 +2,25 @@
 ### SYSTEM INSTRUCTION
 You are a cognitive insight engine. Your task is to identify high-level patterns (insights) from a list of specific memories and cite the evidence.
 
+### PERSONA PROFILE
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
+
 ### INPUT MEMORIES
 The following is a numbered list of statements:
 {{- range $i, $item := .Statements }}
 {{ add1 $i }}. {{ ($root.Persona.GetMemory $item).EmbeddingKey }}
 {{- end }}
 
-### TASK
-Identify **{{ .Count }}** high-level insights that can be inferred from the statements above.
-1. **Synthesis:** Generalize specific details into broader observations about the persona's habits, relationships, or state.
-2. **Evidence:** For each insight, list the **statement numbers** that support it.
+### TASK  
+Identify **{{ .Count }}** high-level insights that **{{ .Persona.Name }}** would personally draw from the statements above.
+1. **Synthesis:** Generalize specific details into broader observations about how these experiences shape {{ .Persona.Name }}’s:
+   - sense of self  
+   - emotional patterns  
+   - relationships with others  
+   - worldview or expectations  
+2. **Perspective:** Frame each insight as something {{ .Persona.Name }} might consciously or subconsciously believe, feel, or conclude based on these experiences.
+3. **Evidence:** For each insight, list the **statement numbers** that support it.
 
 ### OUTPUT FORMAT
 Return valid JSON only. 

@@ -346,7 +346,7 @@ func (store *Associative) RetrieveRelevantEvents(subject string, predicate strin
 	ret := map[NodeId]struct{}{}
 
 	for _, i := range [3]string{subject, predicate, object} {
-		if thoughts, ok := store.kwToThoughts[i]; ok {
+		if thoughts, ok := store.kwToEvents[i]; ok {
 			for _, thought := range thoughts {
 				ret[thought] = struct{}{}
 			}

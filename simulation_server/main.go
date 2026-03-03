@@ -53,7 +53,7 @@ func RetryPanic(fn func(), retries int) error {
 		last = pan
 	}
 
-	log.Fatal("function panicked after %d retries: %v", retries, last)
+	log.Fatalf("function panicked after %d retries: %v", retries, last)
 	return nil
 }
 

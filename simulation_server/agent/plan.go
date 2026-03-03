@@ -532,7 +532,7 @@ func (p *Persona) chatReact(maze *maze.Maze, reactionMode string, personas map[s
 			Object:    other.name,
 		}
 
-		chattingWith := map[string]int{other.name: 800}
+		chattingWith := map[string]int{other.name: p.state.ChattingCooldown}
 		pronunciato := "💬"
 
 		p.createReact(summary, duration, address, spo, p.state.ActivityStartTime, pronunciato, other.name, conversation, chattingWith, chatEndTime)

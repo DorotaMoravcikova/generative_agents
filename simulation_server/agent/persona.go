@@ -97,6 +97,8 @@ type State struct {
 	// The amount of timesteps since we last initiated a conversationg with this Persona,
 	// prevents Personas from engaging in endless loops of conversation.
 	ChattingWithBuffer map[string]int
+	// The cooldown of 2 agents chatting in steps
+	ChattingCooldown int
 
 	RecencyWeight    float64
 	ImportanceWeight float64

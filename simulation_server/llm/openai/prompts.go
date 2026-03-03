@@ -1034,7 +1034,7 @@ func (c *Client) GeneratePlanningFeelings(p llm.Persona, statements []string) st
 
 // GeneratePlanningNote implements llm.Cognition.
 func (c *Client) GeneratePlanningNote(p llm.Persona, statements []string) string {
-	prompt := prompts["describe_agent_feelings_v1"]
+	prompt := prompts["extract_scheduling_information_v1"]
 
 	in := ExtractSchedulingInformationV1Input{
 		Persona:     p,

@@ -2,6 +2,10 @@
 ### SYSTEM INSTRUCTION
 You are an information analyst for a social simulation. Your task is to identify key themes in a set of memories by formulating salient questions.
 
+### PERSONA PROFILE
+- **Name:** {{ .Persona.Name }}
+- **Description:** {{ .Persona.IdentityStableSet }}
+
 ### INPUT MEMORIES
 The following statements represent the persona's recent observations and thoughts:
 {{ range $item := .Statements }}
@@ -9,10 +13,12 @@ The following statements represent the persona's recent observations and thought
 {{ end }}
 
 ### TASK
-Given *only* the statements above, generate **{{ .Count }}** high-level questions that represent the most important information contained in the text.
-* **Grounding:** The questions must be answerable using the provided statements.
-* **Focus:** Prioritize questions about the persona's daily plans, relationships, and emotional state.
-* **Abstraction:** Avoid trivial details. Ask about the "Big Picture."
+Given {{ .Persona.Name }}'s personality and the memories above,
+generate {{ .Count }} high-level questions about how these experiences
+are affecting {{ .Persona.Name }} emotionally and shaping their
+relationships with others.
+- **Focus**: Prioritize questions about emotional impact, interpersonal conflict, self-perception, and relationship dynamics.
+- **Grounding**: Questions must be answerable from the statements.
 
 ### FEW-SHOT EXAMPLES
 **Input Statements:** "Jane is hungry. Jane buys a sandwich. Jane sits in the park."
