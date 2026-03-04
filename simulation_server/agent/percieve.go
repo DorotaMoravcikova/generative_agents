@@ -74,6 +74,7 @@ func (p *Persona) percieve(m *maze.Maze) []memory.NodeId {
 			percievedEvent.SPO.Predicate = "is"
 			percievedEvent.SPO.Object = "idle"
 			percievedEvent.Description = "idle"
+			continue
 		}
 		percievedEvent.Description = fmt.Sprintf("%s is %s", percievedEvent.SPO.Subject, percievedEvent.Description)
 
