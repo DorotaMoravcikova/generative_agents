@@ -264,7 +264,7 @@ func (p *Persona) retrieveForFocalPoints(focalPoints []string, retrievalOpts ...
 				slog.String("retrieval_type", "focal_points"),
 				slog.String("focal_point", focalPoint),
 				slog.Int("count", config.count),
-				slog.Group("retrieved", logOut),
+				slog.Any("retrieved", slog.GroupValue(logOut...)),
 			)
 		}
 

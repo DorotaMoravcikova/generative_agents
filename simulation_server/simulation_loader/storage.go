@@ -60,6 +60,10 @@ func (fs *FileStorage) backupFolder(step int) string {
 	return path.Join(fs.BackupFolder, fs.Simulation, strconv.Itoa(step))
 }
 
+func (fs *FileStorage) backupStateFolder() string {
+	return path.Join(fs.BackupFolder, fs.Simulation, "_state")
+}
+
 func (fs *FileStorage) SaveMovements(step int, personaMovements map[string]server.PersonaMovement, currTime time.Time) error {
 	movements := Movements{
 		Personas: map[string]MovementPersona{},
@@ -364,7 +368,44 @@ func writeFileWithDirs(path string, data []byte, perm os.FileMode) error {
 }
 
 func (fs *FileStorage) Backup(step int) error {
-	return copyDirFilesOnly(path.Join(fs.SimulationsFolder, fs.Simulation), fs.backupFolder(step))
+	srcSim := path.Join(fs.SimulationsFolder, fs.Simulation)
+	dstSim := fs.backupFolder(step)
+
+	if err := copyDirFilesOnly(path.Join(srcSim, "personas"), path.Join(dstSim, "personas")); err != nil {
+		return fmt.Errorf("could not backup personas: %w", err)
+	}
+
+	metaSrc := path.Join(srcSim, "reverie", "meta.json")
+	metaInfo, err := os.Stat(metaSrc)
+	if err != nil {
+		return fmt.Errorf("could not stat meta file: %w", err)
+	}
+
+	metaDst := path.Join(dstSim, "reverie", "meta.json")
+	if err := copyFile(metaSrc, metaDst, metaInfo.Mode()); err != nil {
+		return fmt.Errorf("could not backup meta file: %w", err)
+	}
+
+	if err := fs.backupLatestStateFile(
+		path.Join(srcSim, "environment", fmt.Sprintf("%d.json", step)),
+		path.Join(fs.backupStateFolder(), "environment"),
+		path.Join(dstSim, "environment", fmt.Sprintf("%d.json", step)),
+	); err != nil {
+		return fmt.Errorf("could not backup environment file for step %d: %w", step, err)
+	}
+
+	movementStep := step - 1
+	if movementStep >= 0 {
+		if err := fs.backupLatestStateFile(
+			path.Join(srcSim, "movement", fmt.Sprintf("%d.json", movementStep)),
+			path.Join(fs.backupStateFolder(), "movement"),
+			path.Join(dstSim, "movement", fmt.Sprintf("%d.json", movementStep)),
+		); err != nil {
+			return fmt.Errorf("could not backup movement file for step %d: %w", movementStep, err)
+		}
+	}
+
+	return nil
 }
 
 func copyDirFilesOnly(src, dst string) error {
@@ -441,4 +482,30 @@ func copyFile(src, dst string, perm fs.FileMode) error {
 		return err
 	}
 	return out.Sync()
+}
+
+func (fs *FileStorage) backupLatestStateFile(src, sharedDir, snapshotDst string) error {
+	srcInfo, err := os.Stat(src)
+	if err != nil {
+		return err
+	}
+	if !srcInfo.Mode().IsRegular() {
+		return fmt.Errorf("state file is not regular: %s", src)
+	}
+
+	sharedDst := filepath.Join(sharedDir, filepath.Base(src))
+	if _, err := os.Stat(sharedDst); err != nil {
+		if !os.IsNotExist(err) {
+			return err
+		}
+		if err := copyFile(src, sharedDst, srcInfo.Mode()); err != nil {
+			return err
+		}
+	}
+
+	if err := os.MkdirAll(filepath.Dir(snapshotDst), 0o755); err != nil {
+		return err
+	}
+
+	return copyFile(sharedDst, snapshotDst, srcInfo.Mode())
 }
