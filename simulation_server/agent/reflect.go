@@ -46,16 +46,17 @@ func (p *Persona) runReflect() {
 
 	for _, nodes := range retrieved {
 		thoughts := p.cognition.GenerateInsightAndEvidence(p, nodes, 5)
-		for thought, evidence := range thoughts {
+		for originalThought, evidence := range thoughts {
 			created := p.state.CurrentTime
 			expiration := p.state.CurrentTime.Add(time.Hour * 24 * 30)
-			spo := p.cognition.GenerateActivitySPO(p, thought)
+			spo := p.cognition.GenerateActivitySPO(p, originalThought)
 			keywords := []string{spo.Subject, spo.Predicate, spo.Object}
-			importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, thought)
-			valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, thought)
+			importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, originalThought)
+			valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, originalThought)
+			thought := p.expandMemoryDescription(valence, nil, originalThought)
 			embedding := p.GetEmbedding(thought)
 
-			p.addThoughtToMemory(spo, thought, keywords, importance, valence, evidence, created, &expiration, thought, embedding)
+			p.addThoughtToMemory(spo, thought, originalThought, keywords, importance, valence, evidence, created, &expiration, thought, embedding)
 		}
 	}
 }
@@ -85,34 +86,38 @@ func (p *Persona) reflect() {
 			evidence = []memory.NodeId{id}
 		}
 
-		planningThought := p.cognition.GeneratePlanningThoughtAfterConversation(p, p.state.Chat)
-		planningThought = fmt.Sprintf("For %s's planning: %s", p.name, planningThought)
+		origPlanningThought := p.cognition.GeneratePlanningThoughtAfterConversation(p, p.state.Chat)
+		origPlanningThought = fmt.Sprintf("For %s's planning: %s", p.name, origPlanningThought)
 
 		created := p.state.CurrentTime
 		expired := p.state.CurrentTime.Add(time.Hour * 24 * 30)
 
-		spo := p.cognition.GenerateActivitySPO(p, planningThought)
+		spo := p.cognition.GenerateActivitySPO(p, origPlanningThought)
 		keywords := []string{spo.Subject, spo.Predicate, spo.Object}
 
-		importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, planningThought)
-		valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, planningThought)
+		importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, origPlanningThought)
+		valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, origPlanningThought)
+
+		planningThought := p.expandMemoryDescription(valence, nil, origPlanningThought)
 		embedding := p.GetEmbedding(planningThought)
 
-		p.addThoughtToMemory(spo, planningThought, keywords, importance, valence, evidence, created, &expired, planningThought, embedding)
+		p.addThoughtToMemory(spo, planningThought, origPlanningThought, keywords, importance, valence, evidence, created, &expired, planningThought, embedding)
 
-		memoThought := p.cognition.GenerateMemoAfterConversation(p, p.state.Chat)
-		memoThought = fmt.Sprintf("%s %s", p.name, memoThought)
+		origMemoThought := p.cognition.GenerateMemoAfterConversation(p, p.state.Chat)
+		origMemoThought = fmt.Sprintf("%s %s", p.name, origMemoThought)
 
 		created2 := p.state.CurrentTime
 		expired2 := p.state.CurrentTime.Add(time.Hour * 24 * 30)
 
-		spo2 := p.cognition.GenerateActivitySPO(p, memoThought)
+		spo2 := p.cognition.GenerateActivitySPO(p, origMemoThought)
 		keywords2 := []string{spo2.Subject, spo2.Predicate, spo2.Object}
 
-		importance2 := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, memoThought)
-		valence2 := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, memoThought)
-		embedding2 := p.GetEmbedding(memoThought)
+		importance2 := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, origMemoThought)
+		valence2 := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, origMemoThought)
 
-		p.addThoughtToMemory(spo2, memoThought, keywords2, importance2, valence2, evidence, created2, &expired2, memoThought, embedding2)
+		memoThought := p.expandMemoryDescription(valence, nil, origPlanningThought)
+		embedding2 := p.GetEmbedding(origMemoThought)
+
+		p.addThoughtToMemory(spo2, memoThought, origMemoThought, keywords2, importance2, valence2, evidence, created2, &expired2, memoThought, embedding2)
 	}
 }

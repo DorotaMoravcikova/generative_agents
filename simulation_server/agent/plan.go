@@ -78,7 +78,7 @@ func (p *Persona) longTermPlanning(newDay NewDayType) {
 	p.state.DailySchedule = p.cognition.GenerateHourlySchedule(p, wakeUpHour)
 	p.state.OriginalDailySchedule = slices.Clone(p.state.DailySchedule)
 
-	thought := fmt.Sprintf(
+	originalThought := fmt.Sprintf(
 		"This is %s's plan for %s: %s.",
 		p.name,
 		p.state.CurrentTime.Format("Monday January 02"),
@@ -91,12 +91,12 @@ func (p *Persona) longTermPlanning(newDay NewDayType) {
 		Object:    p.state.CurrentTime.Format("Monday January 02"),
 	}
 	keywords := []string{"plan"}
-	// NOTE(Friso): I feel like we should probably get the agents to generate this value for themselves,
-	// a daily planning of them studying all day should be less important than them going an a date for example.
-	importance := 5
-	valence := 0
+
+	importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, originalThought)
+	valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, originalThought)
+	thought := p.expandMemoryDescription(valence, nil, originalThought)
 	embedding := p.GetEmbedding(thought)
-	p.addThoughtToMemory(spo, thought, keywords, importance, valence, make([]memory.NodeId, 0), createdAt, &expiratesAt, thought, embedding)
+	p.addThoughtToMemory(spo, thought, originalThought, keywords, importance, valence, make([]memory.NodeId, 0), createdAt, &expiratesAt, thought, embedding)
 }
 
 func (p *Persona) determineActivity(maze *maze.Maze) {

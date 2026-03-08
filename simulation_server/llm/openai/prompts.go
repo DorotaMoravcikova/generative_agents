@@ -1085,3 +1085,20 @@ func (c *Client) GenerateNewDailyRequirements(p llm.Persona) string {
 
 	return out.Day
 }
+
+func (c *Client) GenerateExpandedMemoryDescription(p llm.Persona, chat []memory.Utterance, description string) string {
+	prompt := prompts["expand_memory_description_v1"]
+
+	in := GenerateExpandedMemoryDescriptionV1Input{
+		Persona:     p,
+		chat:        chat,
+		Description: description,
+	}
+
+	var out GenerateExpandedMemoryDescriptionV1Output
+	if err := c.doRequestWithRetry(context.Background(), prompt, in, &out, nil); err != nil {
+		panic(fmt.Sprintf("could not perform request: %v", err))
+	}
+
+	return out.Description
+}

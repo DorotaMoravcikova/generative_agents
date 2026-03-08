@@ -202,6 +202,12 @@ type ReviseDailyRequirementsV1Input struct {
 	CurrentDate string
 }
 
+type GenerateExpandedMemoryDescriptionV1Input struct {
+	Persona     llm.Persona
+	chat        []memory.Utterance
+	Description string
+}
+
 // Output structs for prompts
 // ActionLocationObjectV2Output represents the output for ActionLocationObjectV2 prompt
 type ActionLocationObjectV2Output struct {
@@ -471,4 +477,8 @@ type ValenceEventV1Output struct {
 type ValenceThoughtV1Output struct {
 	Reasoning string `json:"reasoning"`
 	Valence   int    `json:"valence"`
+}
+
+type GenerateExpandedMemoryDescriptionV1Output struct {
+	Description string `json:"description"`
 }

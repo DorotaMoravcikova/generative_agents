@@ -104,6 +104,9 @@ type State struct {
 	ImportanceWeight float64
 	RelevanceWeight  float64
 	ValenceWeight    float64
+
+	// Do we create more detailed descriptions after generating them?
+	AsymetricEncoding bool
 }
 
 func (s *State) SetActivity(plog *slog.Logger, activityAddress memory.Path, duration time.Duration, activityDescription string, activityPronunciato string, activitySPO memory.SPO, activityObjectDescription string, activityObjectPronunciato string, activityObjectSPO memory.SPO) {
@@ -263,10 +266,18 @@ func New(name string, assocMem *memory.Associative, spatialMem *memory.Spatial, 
 	}
 }
 
-func (p *Persona) addChatToMemory(spo memory.SPO, description string, keywords []string, importance, valence int, chat []memory.Utterance, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) memory.ConceptNode {
-	node := p.associativeMemory.AddChat(spo, description, keywords, importance, valence, chat, created, expiration, embeddingKey, embedding)
+func (p *Persona) expandMemoryDescription(valence int, chat []memory.Utterance, description string) string {
+	if valence < 0 && !p.state.AsymetricEncoding {
+		return description
+	}
+
+	return p.cognition.GenerateExpandedMemoryDescription(p, chat, description)
+}
+
+func (p *Persona) addChatToMemory(spo memory.SPO, description, original string, keywords []string, importance, valence int, chat []memory.Utterance, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) memory.ConceptNode {
+	node := p.associativeMemory.AddChat(spo, description, original, keywords, importance, valence, chat, created, expiration, embeddingKey, embedding)
 	p.ctx.Log.Info(
-		"add_thought",
+		"add_chat",
 		slog.String("type", "memory_append"),
 		slog.Int("node_id", int(node.Id)),
 		slog.String("node_type", "chat"),
@@ -279,8 +290,8 @@ func (p *Persona) addChatToMemory(spo memory.SPO, description string, keywords [
 	return node
 }
 
-func (p *Persona) addThoughtToMemory(spo memory.SPO, description string, keywords []string, importance, valence int, evidence []memory.NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) memory.ConceptNode {
-	node := p.associativeMemory.AddThought(spo, description, keywords, importance, valence, evidence, created, expiration, embeddingKey, embedding)
+func (p *Persona) addThoughtToMemory(spo memory.SPO, description, original string, keywords []string, importance, valence int, evidence []memory.NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) memory.ConceptNode {
+	node := p.associativeMemory.AddThought(spo, description, original, keywords, importance, valence, evidence, created, expiration, embeddingKey, embedding)
 	p.ctx.Log.Info(
 		"add_thought",
 		slog.String("type", "memory_append"),
@@ -296,8 +307,8 @@ func (p *Persona) addThoughtToMemory(spo memory.SPO, description string, keyword
 	return node
 }
 
-func (p *Persona) addEventToMemory(event maze.Event, keywords []string, importance, valence int, evidence []memory.NodeId, embeddingKey string, embedding []float64) memory.ConceptNode {
-	node := p.associativeMemory.AddEvent(event.SPO, event.Description, keywords, importance, valence, evidence, p.state.CurrentTime, nil, embeddingKey, embedding)
+func (p *Persona) addEventToMemory(spo memory.SPO, description, original string, keywords []string, importance, valence int, evidence []memory.NodeId, embeddingKey string, embedding []float64) memory.ConceptNode {
+	node := p.associativeMemory.AddEvent(spo, description, original, keywords, importance, valence, evidence, p.state.CurrentTime, nil, embeddingKey, embedding)
 
 	p.ctx.Log.Info(
 		"add_event",

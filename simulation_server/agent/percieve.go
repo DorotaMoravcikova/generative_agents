@@ -90,10 +90,13 @@ func (p *Persona) percieve(m *maze.Maze) []memory.NodeId {
 		keywords = append(keywords, subject)
 		keywords = append(keywords, object)
 
-		var embedding []float64 = p.GetEmbedding(percievedEvent.Description)
-
 		importance := p.cognition.GenerateImportanceScore(p, memory.NodeTypeEvent, percievedEvent.Description)
 		valence := p.cognition.GenerateValenceScore(p, memory.NodeTypeEvent, percievedEvent.Description)
+
+		originalDescription := percievedEvent.Description
+		description := p.expandMemoryDescription(valence, nil, percievedEvent.Description)
+
+		var embedding []float64 = p.GetEmbedding(description)
 
 		chatNodes := make([]memory.NodeId, 0, 1)
 		if subject == p.name && percievedEvent.SPO.Predicate == "chat with" {
@@ -104,11 +107,13 @@ func (p *Persona) percieve(m *maze.Maze) []memory.NodeId {
 			chatImportance := p.cognition.GenerateImportanceScoreChat(p, p.state.Chat, p.state.ActivityDescription)
 			chatValence := p.cognition.GenerateValenceScoreChat(p, p.state.Chat, p.state.ActivityDescription)
 
-			chatNode := p.addChatToMemory(currentEvent, p.state.ActivityDescription, keywords, chatImportance, chatValence, p.state.Chat, p.state.CurrentTime, nil, p.state.ActivityDescription, chatEmbedding)
+			chatDescription := p.expandMemoryDescription(chatValence, p.state.Chat, p.state.ActivityDescription)
+
+			chatNode := p.addChatToMemory(currentEvent, p.state.ActivityDescription, chatDescription, keywords, chatImportance, chatValence, p.state.Chat, p.state.CurrentTime, nil, chatDescription, chatEmbedding)
 			chatNodes = append(chatNodes, chatNode.Id)
 		}
 
-		memories = append(memories, p.addEventToMemory(percievedEvent, keywords, importance, valence, chatNodes, percievedEvent.Description, embedding).Id)
+		memories = append(memories, p.addEventToMemory(percievedEvent.SPO, description, originalDescription, keywords, importance, valence, chatNodes, description, embedding).Id)
 
 	}
 

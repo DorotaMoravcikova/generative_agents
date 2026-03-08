@@ -130,4 +130,7 @@ type Cognition interface {
 	GenerateCurrentPlans(p Persona, plans, thoughts string) string
 	// Generates new daily requirements
 	GenerateNewDailyRequirements(p Persona) string
+
+	// Generates a expanded memory description based off of a chat (if any) and a description
+	GenerateExpandedMemoryDescription(p Persona, chat []memory.Utterance, description string) string
 }

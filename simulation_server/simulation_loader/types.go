@@ -140,21 +140,22 @@ type KwStength struct {
 }
 
 type MemoryNode struct {
-	NodeCount    int         `json:"node_count"`
-	TypeCount    int         `json:"type_count"`
-	Type         string      `json:"type"`
-	Depth        int         `json:"depth"`
-	Created      MemoryTime  `json:"created"`
-	Expiration   *MemoryTime `json:"expiration"`
-	Subject      string      `json:"subject"`
-	Predicate    string      `json:"predicate"`
-	Object       string      `json:"object"`
-	Description  string      `json:"description"`
-	EmbeddingKey string      `json:"embedding_key"`
-	Poignancy    int         `json:"poignancy"`
-	Valence      int         `json:"valence"`
-	Keywords     []string    `json:"keywords"`
-	Filling      interface{} `json:"filling"`
+	NodeCount           int         `json:"node_count"`
+	TypeCount           int         `json:"type_count"`
+	Type                string      `json:"type"`
+	Depth               int         `json:"depth"`
+	Created             MemoryTime  `json:"created"`
+	Expiration          *MemoryTime `json:"expiration"`
+	Subject             string      `json:"subject"`
+	Predicate           string      `json:"predicate"`
+	Object              string      `json:"object"`
+	Description         string      `json:"description"`
+	OriginalDescription string      `json:"original_description"`
+	EmbeddingKey        string      `json:"embedding_key"`
+	Poignancy           int         `json:"poignancy"`
+	Valence             int         `json:"valence"`
+	Keywords            []string    `json:"keywords"`
+	Filling             interface{} `json:"filling"`
 }
 
 type PersonaState struct {
@@ -183,6 +184,7 @@ type PersonaState struct {
 	RelevanceW              float64        `json:"relevance_w"`
 	ImportanceW             float64        `json:"importance_w"`
 	ValenceW                float64        `json:"valence_w"`
+	ExpandDescriptions      bool           `json:"expand_descriptions"`
 	RecencyDecay            float64        `json:"recency_decay"`
 	ImportanceTriggerMax    int            `json:"importance_trigger_max"`
 	ImportanceTriggerCurr   int            `json:"importance_trigger_curr"`

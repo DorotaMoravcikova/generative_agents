@@ -66,10 +66,11 @@ type ConceptNode struct {
 	Predicate string
 	Object    string
 
-	Description  string
-	EmbeddingKey string
-	Importance   int
-	Valence      int
+	Description         string
+	OriginalDescription string
+	EmbeddingKey        string
+	Importance          int
+	Valence             int
 
 	// Set of keywords related to this memory
 	Keywords []string
@@ -161,7 +162,7 @@ func (store *Associative) SaveEmbedding(str string, embedding []float64) {
 	store.embeddings[str] = embedding
 }
 
-func (store *Associative) AddEvent(spo SPO, description string, keywords []string, importance, valence int, evidence []NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
+func (store *Associative) AddEvent(spo SPO, description, original string, keywords []string, importance, valence int, evidence []NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
 	nodeCount := len(store.nodes)
 	typeCount := len(store.events)
 	nodeType := NodeTypeEvent
@@ -173,24 +174,25 @@ func (store *Associative) AddEvent(spo SPO, description string, keywords []strin
 	// I'm not sure why they do it so I won't add it for now
 
 	node := ConceptNode{
-		Id:           nodeId,
-		NodeCount:    nodeCount,
-		TypeCount:    typeCount,
-		Type:         nodeType,
-		Depth:        depth,
-		Created:      created,
-		LastAccessed: created,
-		Expiration:   expiration,
-		Subject:      spo.Subject,
-		Predicate:    spo.Predicate,
-		Object:       spo.Object,
-		Description:  description,
-		EmbeddingKey: embeddingKey,
-		Importance:   importance,
-		Valence:      valence,
-		Keywords:     keywords,
-		Evidence:     evidence,
-		Chat:         make([]Utterance, 0),
+		Id:                  nodeId,
+		NodeCount:           nodeCount,
+		TypeCount:           typeCount,
+		Type:                nodeType,
+		Depth:               depth,
+		Created:             created,
+		LastAccessed:        created,
+		Expiration:          expiration,
+		Subject:             spo.Subject,
+		Predicate:           spo.Predicate,
+		Object:              spo.Object,
+		Description:         description,
+		OriginalDescription: original,
+		EmbeddingKey:        embeddingKey,
+		Importance:          importance,
+		Valence:             valence,
+		Keywords:            keywords,
+		Evidence:            evidence,
+		Chat:                make([]Utterance, 0),
 	}
 
 	store.nodes = append(store.nodes, node)
@@ -219,7 +221,7 @@ func (store *Associative) AddEvent(spo SPO, description string, keywords []strin
 	return node
 }
 
-func (store *Associative) AddThought(spo SPO, description string, keywords []string, importance, valence int, evidence []NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
+func (store *Associative) AddThought(spo SPO, description, original string, keywords []string, importance, valence int, evidence []NodeId, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
 	nodeCount := len(store.nodes)
 	typeCount := len(store.thoughts)
 	nodeType := NodeTypeThought
@@ -235,24 +237,25 @@ func (store *Associative) AddThought(spo SPO, description string, keywords []str
 	depth += maxDepth
 
 	node := ConceptNode{
-		Id:           nodeId,
-		NodeCount:    nodeCount,
-		TypeCount:    typeCount,
-		Type:         nodeType,
-		Depth:        depth,
-		Created:      created,
-		LastAccessed: created,
-		Expiration:   expiration,
-		Subject:      spo.Subject,
-		Predicate:    spo.Predicate,
-		Object:       spo.Object,
-		Description:  description,
-		EmbeddingKey: embeddingKey,
-		Importance:   importance,
-		Valence:      valence,
-		Keywords:     keywords,
-		Evidence:     evidence,
-		Chat:         make([]Utterance, 0),
+		Id:                  nodeId,
+		NodeCount:           nodeCount,
+		TypeCount:           typeCount,
+		Type:                nodeType,
+		Depth:               depth,
+		Created:             created,
+		LastAccessed:        created,
+		Expiration:          expiration,
+		Subject:             spo.Subject,
+		Predicate:           spo.Predicate,
+		Object:              spo.Object,
+		Description:         description,
+		OriginalDescription: original,
+		EmbeddingKey:        embeddingKey,
+		Importance:          importance,
+		Valence:             valence,
+		Keywords:            keywords,
+		Evidence:            evidence,
+		Chat:                make([]Utterance, 0),
 	}
 
 	store.nodes = append(store.nodes, node)
@@ -281,7 +284,7 @@ func (store *Associative) AddThought(spo SPO, description string, keywords []str
 	return node
 }
 
-func (store *Associative) AddChat(spo SPO, description string, keywords []string, importance, valence int, chat []Utterance, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
+func (store *Associative) AddChat(spo SPO, description, original string, keywords []string, importance, valence int, chat []Utterance, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
 	nodeCount := len(store.nodes)
 	typeCount := len(store.thoughts)
 	nodeType := NodeTypeChat
@@ -290,24 +293,25 @@ func (store *Associative) AddChat(spo SPO, description string, keywords []string
 	depth := 0
 
 	node := ConceptNode{
-		Id:           nodeId,
-		NodeCount:    nodeCount,
-		TypeCount:    typeCount,
-		Type:         nodeType,
-		Depth:        depth,
-		Created:      created,
-		LastAccessed: created,
-		Expiration:   expiration,
-		Subject:      spo.Subject,
-		Predicate:    spo.Predicate,
-		Object:       spo.Object,
-		Description:  description,
-		EmbeddingKey: embeddingKey,
-		Importance:   importance,
-		Valence:      valence,
-		Keywords:     keywords,
-		Evidence:     make([]NodeId, 0),
-		Chat:         chat,
+		Id:                  nodeId,
+		NodeCount:           nodeCount,
+		TypeCount:           typeCount,
+		Type:                nodeType,
+		Depth:               depth,
+		Created:             created,
+		LastAccessed:        created,
+		Expiration:          expiration,
+		Subject:             spo.Subject,
+		Predicate:           spo.Predicate,
+		Object:              spo.Object,
+		Description:         description,
+		OriginalDescription: original,
+		EmbeddingKey:        embeddingKey,
+		Importance:          importance,
+		Valence:             valence,
+		Keywords:            keywords,
+		Evidence:            make([]NodeId, 0),
+		Chat:                chat,
 	}
 
 	store.nodes = append(store.nodes, node)

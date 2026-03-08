@@ -300,21 +300,22 @@ func (fs *FileStorage) saveAssociativeMemory(name string, store *memory.Associat
 		}
 
 		nodes[fmt.Sprintf("node_%d", node.Id)] = MemoryNode{
-			NodeCount:    node.NodeCount,
-			TypeCount:    node.TypeCount,
-			Type:         node.Type.ToString(),
-			Depth:        node.Depth,
-			Created:      MemoryTime(node.Created),
-			Expiration:   (*MemoryTime)(node.Expiration),
-			Subject:      node.Subject,
-			Predicate:    node.Predicate,
-			Object:       node.Object,
-			Description:  node.Description,
-			EmbeddingKey: node.EmbeddingKey,
-			Poignancy:    node.Importance,
-			Valence:      node.Valence,
-			Keywords:     node.Keywords,
-			Filling:      filling,
+			NodeCount:           node.NodeCount,
+			TypeCount:           node.TypeCount,
+			Type:                node.Type.ToString(),
+			Depth:               node.Depth,
+			Created:             MemoryTime(node.Created),
+			Expiration:          (*MemoryTime)(node.Expiration),
+			Subject:             node.Subject,
+			Predicate:           node.Predicate,
+			Object:              node.Object,
+			Description:         node.Description,
+			OriginalDescription: node.OriginalDescription,
+			EmbeddingKey:        node.EmbeddingKey,
+			Poignancy:           node.Importance,
+			Valence:             node.Valence,
+			Keywords:            node.Keywords,
+			Filling:             filling,
 		}
 	}
 
