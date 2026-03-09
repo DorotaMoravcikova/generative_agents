@@ -204,7 +204,7 @@ type ReviseDailyRequirementsV1Input struct {
 
 type GenerateExpandedMemoryDescriptionV1Input struct {
 	Persona     llm.Persona
-	chat        []memory.Utterance
+	Chat        []memory.Utterance
 	Description string
 }
 

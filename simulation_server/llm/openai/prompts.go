@@ -1091,7 +1091,7 @@ func (c *Client) GenerateExpandedMemoryDescription(p llm.Persona, chat []memory.
 
 	in := GenerateExpandedMemoryDescriptionV1Input{
 		Persona:     p,
-		chat:        chat,
+		Chat:        chat,
 		Description: description,
 	}
 

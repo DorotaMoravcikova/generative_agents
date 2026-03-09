@@ -119,14 +119,14 @@ func highestNValues[K comparable, V float32 | float64](m map[K]V, n int) map[K]V
 	return out
 }
 
-func clampAndFlip[K comparable, V float32 | float64](m map[K]V, clamp V) map[K]V {
+func neverValence[K comparable, V float32 | float64](m map[K]V) map[K]V {
 	out := make(map[K]V, len(m))
 
 	for k, v := range m {
 		if v < 0 {
-			out[k] = -v
+			out[k] = V(-v) * 1.5
 		} else {
-			out[k] = min(v, clamp)
+			out[k] = v
 		}
 	}
 
@@ -219,7 +219,7 @@ func (p *Persona) retrieveForFocalPoints(focalPoints []string, retrievalOpts ...
 		relevanceScores := extractRelevance(p, nodes, focalPoint)
 		relevanceScores = normalizeMap(relevanceScores, 0, 1)
 		valenceScores := extractValence(p, nodes)
-		valenceScores = clampAndFlip(valenceScores, 0)
+		valenceScores = neverValence(valenceScores)
 		valenceScores = normalizeMap(valenceScores, 0, 1)
 
 		out := map[memory.NodeId]float64{}

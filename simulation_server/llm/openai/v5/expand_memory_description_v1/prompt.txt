@@ -8,7 +8,7 @@ how a person physically and sensorily experienced it.
 - *Description:* {{ .Persona.IdentityStableSet }}
 
 ### ORIGINAL EVENT
-"{{ .Event }}"
+"{{ .Description }}"
 
 {{ if .Chat}}
 ### WHAT WAS SAID
@@ -38,4 +38,4 @@ Write in third person.
 
 ### OUTPUT FORMAT
 Return valid JSON only.
-Format: { "elaborated": "Expanded version of the provided segment with sensory details." }
+Format: { "description": "Expanded version of the provided segment with sensory details." }
