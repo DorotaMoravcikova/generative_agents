@@ -284,16 +284,20 @@ func (c *Client) GeneratePlanDecomposition(p llm.Persona, plan llm.Plan) []llm.P
 
 	// Validation function to check task decomposition constraints
 	validationFn := func() error {
-		totalTime := plan.Duration
-		for _, task := range out.Schedule {
-			totalTime -= task.DurationMinutes
-			if totalTime != task.MinutesLeft {
-				return fmt.Errorf("task time left does not match, expected: %d, got: %d", totalTime, task.MinutesLeft)
+		total := 0
+		for i, task := range out.Schedule {
+			if task.DurationMinutes < 1 {
+				return fmt.Errorf("the generated schedule has an invalid duration at index %d: %d — all durations must be at least 1 minute", i, task.DurationMinutes)
 			}
+			total += task.DurationMinutes
 		}
 
-		if totalTime != 0 {
-			return fmt.Errorf("tasks do not add up to expected time, expected: %d, got: %d", plan.Duration, plan.Duration-totalTime)
+		if total != plan.Duration {
+			return fmt.Errorf(
+				"the generated task durations total %d minutes but must total exactly %d minutes — "+
+					"use the minutes_left field to track remaining time as you generate each task to ensure the durations add up correctly",
+				total, plan.Duration,
+			)
 		}
 		return nil
 	}
@@ -423,10 +427,18 @@ func (c *Client) GenerateReactionScheduleUpdate(p llm.Persona, inserted llm.Plan
 		for i := range out.Schedule {
 			if out.Schedule[i].DurationMinutes < 1 {
 				return fmt.Errorf(
-					"invalid duration_in_minutes at index %d: %d",
+					"the generated schedule has an invalid duration at index %d: %d — all durations must be at least 1 minute",
 					i, out.Schedule[i].DurationMinutes,
 				)
 			}
+		}
+
+		if out.Schedule[0].Action != inserted.Activity {
+			return fmt.Errorf(
+				"the first activity in the generated schedule must be exactly %q but got %q; "+
+					"stick as close as possible to the original schedule",
+				inserted.Activity, out.Schedule[0].Action,
+			)
 		}
 
 		sumOut := 0
@@ -434,34 +446,26 @@ func (c *Client) GenerateReactionScheduleUpdate(p llm.Persona, inserted llm.Plan
 			sumOut += plan.DurationMinutes
 		}
 
-		// delta > 0  => need to ADD minutes to last item
-		// delta < 0  => need to REMOVE minutes from last item
 		delta := planningDuration - sumOut
 		if delta == 0 {
 			return nil
 		}
 
-		last := len(out.Schedule) - 1
-		lastDur := out.Schedule[last].DurationMinutes
-
-		if lastDur+delta < 1 {
-			return fmt.Errorf("cannot repair: last item would become < 1 (lastDur=%d, delta=%d)", lastDur, delta)
-		}
-
-		out.Schedule[last].DurationMinutes += delta
-
-		finalSum := 0
-		for _, plan := range out.Schedule {
-			finalSum += plan.DurationMinutes
-		}
-		if finalSum != planningDuration {
+		if delta > 0 {
 			return fmt.Errorf(
-				"repair failed: expected %d, got %d",
-				planningDuration, finalSum,
+				"the generated schedule totals %d minutes but must be exactly %d minutes; "+
+					"it is under by %d minutes — ensure all activities are included and adjust durations to reach exactly %d minutes total; "+
+					"stick as close as possible to the original schedule",
+				sumOut, planningDuration, delta, planningDuration,
 			)
 		}
 
-		return nil
+		return fmt.Errorf(
+			"the generated schedule totals %d minutes but must be exactly %d minutes; "+
+				"it is over by %d minutes — reduce durations so the total is exactly %d minutes; "+
+				"stick as close as possible to the original schedule",
+			sumOut, planningDuration, -delta, planningDuration,
+		)
 	}
 
 	if err := c.doRequestWithRetry(context.Background(), prompt, in, &out, validationFn); err != nil {
@@ -522,7 +526,8 @@ func (c *Client) GenerateActivitySector(p llm.Persona, maze llm.Maze, activity s
 	validationFn := func() error {
 		new := path.AtLevel(memory.PathLevelSector).Copy(memory.PathWithSector(out.Output))
 		if !maze.Exists(new) {
-			return fmt.Errorf("path does not exist: %s", new.ToString())
+			valid := p.KnownSectors(path)
+			return fmt.Errorf("sector %q does not exist. Valid sectors are: %s", out.Output, strings.Join(valid, ", "))
 		}
 		return nil
 	}
@@ -565,7 +570,8 @@ func (c *Client) GenerateActivityArena(p llm.Persona, maze llm.Maze, activity st
 	validationFn := func() error {
 		new := path.AtLevel(memory.PathLevelArena).Copy(memory.PathWithSector(sector), memory.PathWithArena(out.Output))
 		if !maze.Exists(new) {
-			return fmt.Errorf("path does not exist: %s", new.ToString())
+			valid := p.KnownArenas(memory.NewPath(memory.PathWithWorld(world), memory.PathWithSector(sector)))
+			return fmt.Errorf("arena %q does not exist in sector %q. Valid arenas are: %s", out.Output, sector, strings.Join(valid, ", "))
 		}
 		return nil
 	}
@@ -593,7 +599,8 @@ func (c *Client) GenerateActivityObject(p llm.Persona, maze llm.Maze, activity s
 	validationFn := func() error {
 		new := path.AtLevel(memory.PathLevelObject).Copy(memory.PathWithObject(out.Output))
 		if !maze.Exists(new) {
-			return fmt.Errorf("path does not exist: %s", new.ToString())
+			valid := p.KnownObjects(path)
+			return fmt.Errorf("object %q does not exist. Valid objects are: %s", out.Output, strings.Join(valid, ", "))
 		}
 		return nil
 	}
@@ -989,7 +996,7 @@ func (c *Client) GenerateInsightAndEvidence(p llm.Persona, nodes []memory.NodeId
 		for _, i := range out.Insights {
 			for _, e := range i.Reasons {
 				if e-1 >= len(nodes) {
-					return fmt.Errorf("insight %s has reason not in nodes, maximum: %d, got: %d", i.Insight, len(nodes), e-1)
+					return fmt.Errorf("insight %q references statement index %d which is out of range — valid indices are 1 to %d", i.Insight, e, len(nodes))
 				}
 			}
 		}

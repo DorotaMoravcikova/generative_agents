@@ -181,16 +181,14 @@ func (c *Client) newID() string {
 	return fmt.Sprintf("llm-%d", n)
 }
 
-func (c *Client) responseParams(prompt string, schema schema) responses.ResponseNewParams {
+func (c *Client) responseParams(input responses.ResponseNewParamsInputUnion, schema schema) responses.ResponseNewParams {
 	var r responses.ResponseNewParams
 
 	if c.textModel == "gpt-5-nano" {
 		r = responses.ResponseNewParams{
 			Model:     c.textModel,
 			Reasoning: shared.ReasoningParam{Effort: "low"},
-			Input: responses.ResponseNewParamsInputUnion{
-				OfString: param.NewOpt(prompt),
-			},
+			Input:     input,
 			Text: responses.ResponseTextConfigParam{
 				Format: responses.ResponseFormatTextConfigParamOfJSONSchema(schema.Name, schema.Schema),
 			},
@@ -199,13 +197,11 @@ func (c *Client) responseParams(prompt string, schema schema) responses.Response
 		r = responses.ResponseNewParams{
 			Model:     c.textModel,
 			Reasoning: shared.ReasoningParam{Effort: "low"},
-			Input: responses.ResponseNewParamsInputUnion{
-				OfString: param.NewOpt(prompt),
-			},
+			Input:     input,
 			Text: responses.ResponseTextConfigParam{
 				Format: responses.ResponseFormatTextConfigParamOfJSONSchema(schema.Name, schema.Schema),
 			},
-			Temperature: param.NewOpt(0.9),
+			Temperature: param.NewOpt(0.5),
 			TopP:        param.NewOpt(0.9),
 		}
 	}
@@ -213,8 +209,52 @@ func (c *Client) responseParams(prompt string, schema schema) responses.Response
 	return r
 }
 
-func (c *Client) doRequest(ctx context.Context, promptText string, schema schema, output any) (*responses.Response, error) {
-	resp, err := c.client.Responses.New(ctx, c.responseParams(promptText, schema))
+func inputMsg(role responses.EasyInputMessageRole, content string) responses.ResponseInputItemUnionParam {
+	return responses.ResponseInputItemUnionParam{
+		OfMessage: &responses.EasyInputMessageParam{
+			Role: role,
+			Type: responses.EasyInputMessageTypeMessage,
+			Content: responses.EasyInputMessageContentUnionParam{
+				OfString: param.NewOpt(content),
+			},
+		},
+	}
+}
+
+func outputMsg(id, text string) responses.ResponseInputItemUnionParam {
+	return responses.ResponseInputItemUnionParam{
+		OfOutputMessage: &responses.ResponseOutputMessageParam{
+			ID:     id,
+			Status: responses.ResponseOutputMessageStatusCompleted,
+			Content: []responses.ResponseOutputMessageContentUnionParam{
+				{
+					OfOutputText: &responses.ResponseOutputTextParam{
+						Text:        text,
+						Annotations: []responses.ResponseOutputTextAnnotationUnionParam{},
+					},
+				},
+			},
+		},
+	}
+}
+
+func appendRetryMessages(current responses.ResponseInputParam, id, badResponse string, errMsgs []string) responses.ResponseInputParam {
+	var sb strings.Builder
+	sb.WriteString("The generated response was invalid. Please fix the following errors and return only valid JSON:\n")
+	for _, e := range errMsgs {
+		sb.WriteString("- ")
+		sb.WriteString(e)
+		sb.WriteByte('\n')
+	}
+
+	return append(current,
+		outputMsg(id, badResponse),
+		inputMsg(responses.EasyInputMessageRoleUser, sb.String()),
+	)
+}
+
+func (c *Client) doRequest(ctx context.Context, input responses.ResponseNewParamsInputUnion, schema schema, output any) (*responses.Response, error) {
+	resp, err := c.client.Responses.New(ctx, c.responseParams(input, schema))
 	if err != nil {
 		return resp, fmt.Errorf("could not execute prompt: %w", err)
 	}
@@ -222,10 +262,34 @@ func (c *Client) doRequest(ctx context.Context, promptText string, schema schema
 	raw := resp.OutputText()
 
 	if err := json.Unmarshal([]byte(raw), output); err != nil {
+		// The model may have wrapped the JSON in surrounding text; try extracting
+		// the content between the first { or [ and the last } or ]
+		extracted := extractJSON(raw)
+		if extracted != raw {
+			if err2 := json.Unmarshal([]byte(extracted), output); err2 == nil {
+				return resp, nil
+			}
+		}
 		return resp, fmt.Errorf("could not unmarshal json: %w", err)
 	}
 
 	return resp, nil
+}
+
+func extractJSON(s string) string {
+	start := strings.IndexAny(s, "{[")
+	if start == -1 {
+		return s
+	}
+	var close byte = '}'
+	if s[start] == '[' {
+		close = ']'
+	}
+	end := strings.LastIndexByte(s, close)
+	if end <= start {
+		return s
+	}
+	return s[start : end+1]
 }
 
 func isJSONUnmarshalError(err error) bool {
@@ -278,10 +342,16 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 	)
 
 	start := time.Now()
+	conversation := responses.ResponseInputParam{
+		inputMsg(responses.EasyInputMessageRoleUser, promptText),
+	}
+	currentInput := responses.ResponseNewParamsInputUnion{
+		OfInputItemList: conversation,
+	}
 	var resp *responses.Response
 	var err error
 	for attempt := 0; attempt < c.maxRetries; attempt++ {
-		resp, err = c.doRequest(ctx, promptText, prompt.schema, output)
+		resp, err = c.doRequest(ctx, currentInput, prompt.schema, output)
 		lastResp = resp
 
 		l := log
@@ -298,8 +368,10 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 		if err != nil {
 			lastErr = err
 
-			// retry on JSON unmarshalling errors
-			if isJSONUnmarshalError(err) {
+			// retry on JSON unmarshalling errors, feeding the bad response + error back
+			if isJSONUnmarshalError(err) && resp != nil {
+				conversation = appendRetryMessages(conversation, fmt.Sprintf("resp_%d", attempt), resp.OutputText(), []string{err.Error(), "Hint: only return a valid JSON object, _DO NOT_ include surrounding markdown or text"})
+				currentInput = responses.ResponseNewParamsInputUnion{OfInputItemList: conversation}
 				l.Warn("llm_retry",
 					slog.String("phase", "retry"),
 					slog.Int("attempt", attempt+1),
@@ -330,8 +402,14 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 			)
 		}
 
-		// retry on schema validation failure
+		// retry on schema validation failure, feeding errors back to the model
 		if !valid {
+			errMsgs := make([]string, len(errs))
+			for i, e := range errs {
+				errMsgs[i] = fmt.Sprintf("%s: %s", e.Field(), e.Description())
+			}
+			conversation = appendRetryMessages(conversation, fmt.Sprintf("resp_%d", attempt), resp.OutputText(), errMsgs)
+			currentInput = responses.ResponseNewParamsInputUnion{OfInputItemList: conversation}
 			l.Warn("llm_retry",
 				slog.String("phase", "retry"),
 				slog.Int("attempt", attempt+1),
@@ -346,6 +424,8 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 		if validationFn != nil {
 			if err := validationFn(); err != nil {
 				lastErr = err
+				conversation = appendRetryMessages(conversation, fmt.Sprintf("resp_%d", attempt), resp.OutputText(), []string{err.Error()})
+				currentInput = responses.ResponseNewParamsInputUnion{OfInputItemList: conversation}
 				l.Warn("llm_retry",
 					"type", "llm_call",
 					"phase", "retry",
@@ -354,14 +434,6 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 					"err", err,
 					"response_hash", hashString(resp.OutputText()),
 					"response_len", len(resp.OutputText()),
-				)
-				l.Warn("llm_retry",
-					"type", "llm_call",
-					"phase", "retry",
-					"attempt", attempt+1,
-					"reason", "validation",
-					"err", err,
-					"response", resp.OutputText(),
 				)
 				continue
 			}
