@@ -10,8 +10,11 @@ Extract keywords into two specific categories:
 2. **Emotive:** The mood, tone, or emotional state implied (e.g., "busy", "relaxed", "frustrated").
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be two lists of strings.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The output must be two lists of strings.
+Use this exact schema:
 {
   "factual": ["keyword1", "keyword2"],
   "emotive": ["keyword1", "keyword2"]

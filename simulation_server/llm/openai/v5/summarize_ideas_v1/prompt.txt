@@ -15,5 +15,8 @@ Summarize the statements above that are most relevant to answering the Interview
 * **Synthesis:** Combine the relevant facts into a concise summary paragraph.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"summary": "Isabella remembers that she bought the coffee beans yesterday and..."}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"summary": "Isabella remembers that she bought the coffee beans yesterday and..."}

@@ -19,8 +19,11 @@ You are a social interaction engine. Decide if one persona should initiate a con
 Based on the rules above, should **{{ .Initiator.Name }}** initiate a conversation with **{{ .Target.Name }}** right now?
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "should_talk" field must be "yes" or "no".
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "should_talk" field must be "yes" or "no".
+Use this exact schema:
 {
   "context": "Brief summary of status",
   "question": "Would {{ .Initiator.Name }} initiate conversation?",

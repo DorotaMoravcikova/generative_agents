@@ -16,5 +16,8 @@ For agent **{{ .Initiator.Name }}**, determine if there is a conflict.
 - Otherwise -> **Continue (Option 2)**.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"reasoning": "Explanation of conflict or lack thereof", "choice": <option (1 or 2)} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"reasoning": "Explanation of conflict or lack thereof", "choice": <option (1 or 2)} 

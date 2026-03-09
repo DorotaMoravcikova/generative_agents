@@ -12,5 +12,8 @@ Summarize what **!<INPUT 3>!** thought about **!<INPUT 4>!** based on the conver
 * Constraint: Use the third person (e.g., "Isabella found the conversation helpful").
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"thought": "The summary sentence here."} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"thought": "The summary sentence here."} 

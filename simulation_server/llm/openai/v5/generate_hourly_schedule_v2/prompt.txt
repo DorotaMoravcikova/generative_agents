@@ -55,10 +55,13 @@ Rules:
 - Do NOT add comments or explanations.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of objects, where each object contains the time and the activity.
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The output must be a list of objects, where each object contains the time and the activity.
 
 Use the following structure exactly. Only fill in the `"activity"` values.
-Format:
+Use this exact schema:
 {
   "schedule": [
     {"time": "12:00 am", "activity": ""},

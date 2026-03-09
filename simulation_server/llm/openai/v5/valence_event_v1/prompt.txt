@@ -22,8 +22,11 @@ Assess how this event emotionally affects **{{ .Persona.Name }}**.
 The score should reflect **how the persona feels as a result of the event**, not how important or memorable it is.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "reasoning": "A short explanation of the emotional valence of the event.",
   "valence": 0

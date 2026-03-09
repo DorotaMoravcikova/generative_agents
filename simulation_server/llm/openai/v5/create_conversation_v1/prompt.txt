@@ -20,8 +20,11 @@ Write the conversation that happens when **!<INPUT 9>!** and **!<INPUT 10>!** me
 - Keep the tone consistent with their thoughts.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "dialogue" field should contain the full conversation script.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "dialogue" field should contain the full conversation script.
+Use this exact schema:
 {
   "dialogue": "Name: Line 1\nName: Line 2"
 } 

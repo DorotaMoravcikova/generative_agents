@@ -41,8 +41,11 @@ The conversation between {{ .Init.Name }} and {{ .Target.Name }} so far:
 2.  Decide if this response ends the conversation.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "utterance": "Text of the response here",
   "ends_conversation": <true or false>

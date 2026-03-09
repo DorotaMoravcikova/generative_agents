@@ -12,5 +12,8 @@ Determine the typical wake-up time for **{{ .Persona.Name }}**.
 * **Constraint:** Format the time strictly as "h:mm am" (e.g., "7:00 am", "6:30 am").
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"wake_up_time": "7:00 am"}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"wake_up_time": "7:00 am"}

@@ -2,6 +2,7 @@ package server
 
 import (
 	"fmt"
+	"log"
 	"log/slog"
 	"strings"
 	"time"
@@ -62,7 +63,8 @@ func (s *Server) Run(i int) error {
 
 		s.ExecuteStep()
 		if err := s.Storage.SaveSimulation(s); err != nil {
-			return fmt.Errorf("could not save simulation: %w", err)
+			log.Fatalf("could not save simulation: %v", err)
+			panic("unreachable")
 		}
 	}
 

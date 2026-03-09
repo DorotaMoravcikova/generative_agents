@@ -50,7 +50,7 @@ func (p prompt) validateJSON(json string) ([]gojsonschema.ResultError, bool, err
 
 	res, err := p.jsonSchema.Validate(doc)
 	if err != nil {
-		return nil, false, fmt.Errorf("schema validation failed: %w", err)
+		return nil, false, fmt.Errorf("json schema validation failed: %w", err)
 	}
 
 	return res.Errors(), res.Valid(), nil

@@ -21,7 +21,10 @@ Identify the object from the list above that is strictly necessary or most stand
 * If multiple objects could apply, choose the most standard one from the list.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
 The "output" MUST be the exact name of one of the "Available Objects" verbatim.
-Format: {"output": "Exact Object Name"}
+Use this exact schema: {"output": "Exact Object Name"}
 

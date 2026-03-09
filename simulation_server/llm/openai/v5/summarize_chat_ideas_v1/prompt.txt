@@ -13,8 +13,11 @@ The following statements are available in memory:
 ### TASK
 Summarize the statements above that are most relevant for **!<INPUT 4>!** to use in a conversation with **!<INPUT 5>!**.
 * **Focus:** Only include details pertinent to the current context and the relationship with !<INPUT 5>!.
-* **Format:** Write a concise summary paragraph.
+* **Use this exact schema:** Write a concise summary paragraph.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"summary": "Isabella remembers that she promised to help Klaus with his project..."} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"summary": "Isabella remembers that she promised to help Klaus with his project..."} 

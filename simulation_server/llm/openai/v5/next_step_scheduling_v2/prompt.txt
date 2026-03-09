@@ -23,8 +23,11 @@ It is now **[!<INPUT 15>!]**. What is **!<INPUT 16>!** doing right now?
 2.  **Duration:** Decide how long this action lasts (Must be 5-60 minutes).
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "action": "walking to the kitchen to get water",
   "duration_minutes": 15

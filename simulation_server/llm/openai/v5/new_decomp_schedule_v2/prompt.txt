@@ -93,7 +93,7 @@ Rules (MUST FOLLOW EXACTLY):
 6) The final item MUST have time_left_min = 0.
 
 ### OUTPUT FORMAT
-Format:
+Use this exact schema:
 {
   "schedule": [
     {

@@ -17,8 +17,11 @@ Rate the poignancy of this event for **{{ .Persona.Name }}** on a scale of 1 to 
     * **10:** Major (breakup, accident, major success).
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "reasoning": "Explanation of why this event matters.",
   "poignancy": 1

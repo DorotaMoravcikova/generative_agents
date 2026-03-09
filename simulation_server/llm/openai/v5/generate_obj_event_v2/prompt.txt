@@ -24,5 +24,8 @@ Determine the resulting state of the **{{ .Object }}**.
 
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "state" field must contain **ONLY** the phrase that goes in <FILL IN>: "The {{ .Object }} is <FILL IN>"
-Format: {"state": "status phrase"}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "state" field must contain **ONLY** the phrase that goes in <FILL IN>: "The {{ .Object }} is <FILL IN>"
+Use this exact schema: {"state": "status phrase"}

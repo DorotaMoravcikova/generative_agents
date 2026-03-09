@@ -12,5 +12,8 @@ Identify if there is any specific information from this conversation that **{{ .
 * **Subject:** The sentence must be about **{{ .Persona.Name }}** (e.g., "{{ .Persona.Name }} needs to...").
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"planning_thought": "Isabella needs to remember to meet Klaus at the library at 6pm."} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"planning_thought": "Isabella needs to remember to meet Klaus at the library at 6pm."} 

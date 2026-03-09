@@ -29,8 +29,11 @@ Summarize the conversation above as a **single descriptive phrase** that can be 
 - "grappling with unresolved tension following a failed collaboration"
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "summary": "phrase"
 }

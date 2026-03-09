@@ -16,8 +16,11 @@ Determine what **!<INPUT 8>!** is doing.
 * **Consistency:** Ensure the action fits the "Hourly Overview" plan.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "action": "reading a book in the living room",
   "duration_minutes": 30

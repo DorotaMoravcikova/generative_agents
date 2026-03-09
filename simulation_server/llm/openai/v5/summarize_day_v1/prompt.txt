@@ -10,11 +10,14 @@ You are a daily activity summarizer. Your task is to review a persona's daily sc
 ### TASK
 Identify the **three** most memorable or significant things that happened to **!<INPUT 2>!** today based on the schedule above.
 * **Criteria:** Choose non-routine events, major social interactions, or completed goals.
-* **Format:** Write each as a concise sentence.
+* **Use this exact schema:** Write each as a concise sentence.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of 3 strings.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The output must be a list of 3 strings.
+Use this exact schema:
 [
   "Had a long conversation with Klaus about the election",
   "Finished painting the living room",

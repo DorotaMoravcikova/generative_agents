@@ -37,5 +37,8 @@ Important rules:
 Write in third person.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: { "description": "Expanded version of the provided segment with sensory details." }
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: { "description": "Expanded version of the provided segment with sensory details." }

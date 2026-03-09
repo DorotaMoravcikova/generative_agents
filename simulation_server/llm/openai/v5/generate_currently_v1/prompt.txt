@@ -23,8 +23,11 @@ Write **{{ .Persona.Name }}'s** current status for **{{ .CurrentDate }}**, ensur
 - Do not invent new events, commitments, or personality traits.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "status": "..."
 }

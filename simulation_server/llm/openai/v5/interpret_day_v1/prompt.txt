@@ -14,8 +14,11 @@ Analyze the events above for **!<INPUT 3>!**.
 2. **Plan:** Based on today, how does **!<INPUT 4>!** want tomorrow to be?
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "feelings_about_today": "Isabella feels accomplished but exhausted...",
   "wants_for_tomorrow": "She wants to take it easy and wake up late."

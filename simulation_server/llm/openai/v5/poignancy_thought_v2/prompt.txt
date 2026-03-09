@@ -17,8 +17,11 @@ Rate the **significance (importance for remembering)** of this thought for **{{ 
    - **10:** Structurally important (core beliefs, commitments, long-term goals, or thoughts likely to influence future behavior).
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "reasoning": "Explanation of why this thought is important or not.",
   "poignancy": 1

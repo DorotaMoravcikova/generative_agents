@@ -12,5 +12,8 @@ Identify one specific thing that **{{ .Persona.Name }}** found interesting or no
 * **Subject:** The sentence must be about **{{ .Persona.Name }}** (e.g., "{{ .Persona.Name }} learned that...").
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"memo": "Isabella learned that Klaus is planning a surprise party."}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"memo": "Isabella learned that Klaus is planning a surprise party."}

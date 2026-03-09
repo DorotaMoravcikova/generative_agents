@@ -28,5 +28,8 @@ You are a conflict resolution engine. Your task is to decide if a persona should
 Analyze the "Observation" relative to "My Intention". Choose the best option for **!<INPUT 4>!**.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "choice" must be exactly "Option 1" or "Option 2".
-Format: {"reasoning": "Brief explanation", "choice": "Option 1"}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "choice" must be exactly "Option 1" or "Option 2".
+Use this exact schema: {"reasoning": "Brief explanation", "choice": "Option 1"}

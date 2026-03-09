@@ -20,5 +20,8 @@ You are a high-level location planner. Your task is to choose the best "Sector" 
 - **Agent to Move:** {{ .Persona.Name }}
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "output" must be the exact name of one of the "Available Sectors" listed above.
-Format: {"output": "Sector Name"} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "output" must be the exact name of one of the "Available Sectors" listed above.
+Use this exact schema: {"output": "Sector Name"} 

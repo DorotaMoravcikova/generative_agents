@@ -21,5 +21,8 @@ You are a knowledge graph extractor. Your task is to convert a natural language 
 **Output:** {"subject": "Klaus", "predicate": "writing", "object": "journal"}
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"subject": "<SUBJECT>", "predicate": "<PREDICATE>", "object": "<OBJECT>"} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"subject": "<SUBJECT>", "predicate": "<PREDICATE>", "object": "<OBJECT>"} 

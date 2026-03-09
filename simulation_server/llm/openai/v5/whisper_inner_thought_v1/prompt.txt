@@ -11,5 +11,8 @@ Translate the whisper into a statement *about* **!<INPUT 0>!**.
 * **Grammar:** Ensure it is a complete, grammatically correct sentence in the third person.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"statement": "Isabella remembers that she needs to check the stove."} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"statement": "Isabella remembers that she needs to check the stove."} 

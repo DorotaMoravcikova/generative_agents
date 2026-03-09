@@ -32,8 +32,11 @@ Generate the dialogue between **!<INPUT 12>!** and **!<INPUT 13>!**.
 - **Tone:** Must reflect the "Character Profiles" provided.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "dialogue": "Name: Line 1\nName: Line 2"
 }

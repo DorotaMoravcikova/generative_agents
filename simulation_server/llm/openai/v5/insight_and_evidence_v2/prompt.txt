@@ -23,8 +23,11 @@ Identify **{{ .Count }}** high-level insights that **{{ .Persona.Name }}** would
 3. **Evidence:** For each insight, list the **statement numbers** that support it.
 
 ### OUTPUT FORMAT
-Return valid JSON only. 
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. 
+Use this exact schema:
 {
   "insights": [
     {

@@ -21,5 +21,8 @@ The destination sector contains ONLY these areas:
 - **Agent:** {{ .Persona.Name }}
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "output" must be one of the "Available Arenas" verbatim.
-Format: {"output": "Exact Arena Name"} 
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "output" must be one of the "Available Arenas" verbatim.
+Use this exact schema: {"output": "Exact Arena Name"} 

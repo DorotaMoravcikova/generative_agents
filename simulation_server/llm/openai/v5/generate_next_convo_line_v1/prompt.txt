@@ -20,5 +20,8 @@ Generate the next spoken line for **!<INPUT 7>!**.
 * Output only the text of the line.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format: {"utterance": "Text of the spoken line here."}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema: {"utterance": "Text of the spoken line here."}

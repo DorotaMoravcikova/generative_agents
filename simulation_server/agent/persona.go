@@ -267,7 +267,7 @@ func New(name string, assocMem *memory.Associative, spatialMem *memory.Spatial, 
 }
 
 func (p *Persona) expandMemoryDescription(valence int, chat []memory.Utterance, description string) string {
-	if valence < 0 && !p.state.AsymetricEncoding {
+	if valence >= -3 || !p.state.AsymetricEncoding {
 		return description
 	}
 

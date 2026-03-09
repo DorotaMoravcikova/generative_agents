@@ -19,8 +19,11 @@ Analyze the conversation above for **{{ .Persona.Name }}**.
     * **10:** Major (breakups, fights, life-changing news).
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "reasoning": "A short explanation of the score.",
   "poignancy": 5

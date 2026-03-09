@@ -19,13 +19,16 @@ You are a detailed time-management engine. Your task is to generate a granular h
 
 ### TASK
 Generate an hourly schedule for **!<INPUT 12>!**.
-* **Format:** Follow the time format provided here: !<INPUT 0>!
+* **Use this exact schema:** Follow the time format provided here: !<INPUT 0>!
 * **Consistency:** The schedule must align with the "Broad Daily Plan" provided above.
 * **Completeness:** Fill every hour from the current time until sleep.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The output must be a list of lists, where each inner list contains the time and the activity.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The output must be a list of lists, where each inner list contains the time and the activity.
+Use this exact schema:
 {
   "schedule": [
     ["8:00 am", "waking up"],

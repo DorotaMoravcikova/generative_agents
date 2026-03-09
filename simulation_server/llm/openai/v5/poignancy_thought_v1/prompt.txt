@@ -16,8 +16,11 @@ Rate the significance of this thought for **{{ .Persona.Name }}** on a scale of 
     * **10:** Core Identity/Goal (ambitions, "I love him", "I want to change careers").
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "reasoning": "Explanation of why this thought matters.",
   "poignancy": 1

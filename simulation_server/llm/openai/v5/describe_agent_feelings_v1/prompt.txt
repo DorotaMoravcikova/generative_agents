@@ -21,8 +21,11 @@ Given the statements above, summarize how **{{ .Persona.Name }}** feels about th
 - Keep the tone introspective and reflective, not analytical.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "thought": "{{ .Persona.Name }} feels ... "
 }

@@ -26,5 +26,8 @@ Generate the next spoken line for: **!<INPUT 13>!**
 * Do NOT act as the other character.
 
 ### OUTPUT FORMAT
-Return valid JSON only. The "utterance" field should contain the spoken text.
-Format: {"utterance": "I'll go check the coffee machine now."}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The "utterance" field should contain the spoken text.
+Use this exact schema: {"utterance": "I'll go check the coffee machine now."}

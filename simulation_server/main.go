@@ -119,22 +119,22 @@ func main() {
 	}
 	embedder := openai.New(embedderOpts...)
 
-	sim, err := simulationloader.LoadSimulation(path.Join(conf.SimulationDir, conf.SimulationName), conf.MazeDir, embedder, client, rl.Log)
-	if err != nil {
-		panic(fmt.Sprintf("Could not load maze: %v\n", err))
-	}
-
-	storage := simulationloader.FileStorage{
-		SimulationsFolder: conf.SimulationDir,
-		Simulation:        conf.SimulationName,
-		Maze:              conf.SimulationMaze,
-		BackupFolder:      conf.BackupDir,
-	}
-
-	sim.Storage = &storage
-
-	sim.BackupInterval = conf.BackupInterval
 	RetryPanic(func() {
+		sim, err := simulationloader.LoadSimulation(path.Join(conf.SimulationDir, conf.SimulationName), conf.MazeDir, embedder, client, rl.Log)
+		if err != nil {
+			panic(fmt.Sprintf("Could not load maze: %v\n", err))
+		}
+
+		storage := simulationloader.FileStorage{
+			SimulationsFolder: conf.SimulationDir,
+			Simulation:        conf.SimulationName,
+			Maze:              conf.SimulationMaze,
+			BackupFolder:      conf.BackupDir,
+		}
+
+		sim.Storage = &storage
+
+		sim.BackupInterval = conf.BackupInterval
 		if err := sim.Run(100000); err != nil {
 			panic(fmt.Sprintf("Could not run simulation: %v", err))
 		}

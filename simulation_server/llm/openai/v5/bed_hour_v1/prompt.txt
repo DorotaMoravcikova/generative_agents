@@ -12,5 +12,8 @@ Based on the lifestyle habits provided above, determine the optimal bedtime for 
 * Ensure the time aligns with their stated lifestyle (e.g., if they usually sleep at 11pm, stick close to that unless the schedule demands otherwise).
 
 ### OUTPUT FORMAT
-Return valid JSON only. The time must be in a standard 12-hour format.
-Format: {"bed_time": "HH:MM am/pm"}
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here.. The time must be in a standard 12-hour format.
+Use this exact schema: {"bed_time": "HH:MM am/pm"}

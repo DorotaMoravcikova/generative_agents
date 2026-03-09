@@ -21,8 +21,11 @@ Given the statements above, is there anything that **{{ .Persona.Name }}** shoul
 - If no concrete or actionable information is present, explicitly say so rather than inventing a vague reminder.
 
 ### OUTPUT FORMAT
-Return valid JSON only.
-Format:
+Return exactly one JSON object.
+Do not include markdown fences.
+Do not include any text before or after the JSON.
+Do not include any fields not included here..
+Use this exact schema:
 {
   "memory": "{{ .Persona.Name }} should remember ... "
 }
