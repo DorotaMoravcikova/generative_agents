@@ -23,7 +23,7 @@
   "recency_w": 1,
   "relevance_w": 1,
   "importance_w": 1,
-  "valence_w": 1,
+  "valence_w": 0,
   "recency_decay": 0.99,
   "asymetric_encoding": true,
   "importance_trigger_max": 150,
