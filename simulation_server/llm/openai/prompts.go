@@ -435,9 +435,13 @@ func (c *Client) GenerateReactionScheduleUpdate(p llm.Persona, inserted llm.Plan
 
 		if out.Schedule[0].Action != inserted.Activity {
 			return fmt.Errorf(
-				"the first activity in the generated schedule must be exactly %q but got %q; "+
-					"stick as close as possible to the original schedule",
+				"the first activity in the generated schedule must be exactly %q but got %q",
 				inserted.Activity, out.Schedule[0].Action,
+			)
+		} else if out.Schedule[0].DurationMinutes != inserted.Duration {
+			return fmt.Errorf(
+				"the first activity in the generated schedule must be exactly %d minutes long but got %d",
+				inserted.Duration, out.Schedule[0].DurationMinutes,
 			)
 		}
 
