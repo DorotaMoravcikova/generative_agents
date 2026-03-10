@@ -196,7 +196,7 @@ func (c *Client) responseParams(input responses.ResponseNewParamsInputUnion, sch
 	} else {
 		r = responses.ResponseNewParams{
 			Model:     c.textModel,
-			Reasoning: shared.ReasoningParam{Effort: "low"},
+			Reasoning: shared.ReasoningParam{Effort: "medium"},
 			Input:     input,
 			Text: responses.ResponseTextConfigParam{
 				Format: responses.ResponseFormatTextConfigParamOfJSONSchema(schema.Name, schema.Schema),
@@ -391,7 +391,7 @@ func (c *Client) doRequestWithRetry(ctx context.Context, prompt prompt, params a
 			return err
 		}
 
-		errs, valid, err := prompt.validateJSON(resp.OutputText())
+		errs, valid, err := prompt.validateJSON(extractJSON(resp.OutputText()))
 		if err != nil {
 			l.Error("llm_json_validation_error",
 				"type", "llm_call",
