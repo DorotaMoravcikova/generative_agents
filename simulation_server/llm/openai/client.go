@@ -196,7 +196,7 @@ func (c *Client) responseParams(input responses.ResponseNewParamsInputUnion, sch
 	} else {
 		r = responses.ResponseNewParams{
 			Model:     c.textModel,
-			Reasoning: shared.ReasoningParam{Effort: "medium"},
+			Reasoning: shared.ReasoningParam{Effort: "high"},
 			Input:     input,
 			Text: responses.ResponseTextConfigParam{
 				Format: responses.ResponseFormatTextConfigParamOfJSONSchema(schema.Name, schema.Schema),
