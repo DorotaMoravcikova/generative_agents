@@ -128,6 +128,7 @@ func LoadState(stateFile string, position maze.TilePos) (*agent.State, error) {
 		RelevanceWeight:    state.RelevanceW,
 		ValenceWeight:      state.ValenceW,
 		AsymetricEncoding:  state.AsymetricEncoding,
+		NegativityBias:     state.NegativityBias,
 		FirstName:          state.FirstName,
 		LastName:           state.LastName,
 		Age:                state.Age,

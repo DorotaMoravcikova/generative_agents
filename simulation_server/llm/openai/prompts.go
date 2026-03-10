@@ -455,6 +455,18 @@ func (c *Client) GenerateReactionScheduleUpdate(p llm.Persona, inserted llm.Plan
 			return nil
 		}
 
+		// Silently repair if the adjustment is small relative to the last item:
+		// extend by less than the last item's duration, or shorten by less than half of it
+		lastDur := out.Schedule[len(out.Schedule)-1].DurationMinutes
+		if (delta > 0 && delta < lastDur) || (delta < 0 && -delta < lastDur/2) {
+			fixed := append(out.Schedule[:0:0], out.Schedule...)
+			fixed[len(fixed)-1].DurationMinutes += delta
+			if fixed[len(fixed)-1].DurationMinutes >= 1 {
+				out.Schedule = fixed
+				return nil
+			}
+		}
+
 		if delta > 0 {
 			return fmt.Errorf(
 				"the generated schedule totals %d minutes but must be exactly %d minutes; "+

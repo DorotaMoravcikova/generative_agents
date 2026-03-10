@@ -185,6 +185,7 @@ type PersonaState struct {
 	ImportanceW             float64        `json:"importance_w"`
 	ValenceW                float64        `json:"valence_w"`
 	AsymetricEncoding       bool           `json:"asymetric_encoding"`
+	NegativityBias          float64        `json:"negativity_bias"`
 	RecencyDecay            float64        `json:"recency_decay"`
 	ImportanceTriggerMax    int            `json:"importance_trigger_max"`
 	ImportanceTriggerCurr   int            `json:"importance_trigger_curr"`

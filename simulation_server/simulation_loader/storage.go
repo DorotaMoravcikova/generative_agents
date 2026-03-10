@@ -207,6 +207,7 @@ func (fs *FileStorage) savePersonaState(p *agent.Persona) error {
 		ImportanceW:             state.ImportanceWeight,
 		ValenceW:                state.ValenceWeight,
 		AsymetricEncoding:       state.AsymetricEncoding,
+		NegativityBias:          state.NegativityBias,
 		RecencyDecay:            state.RecencyDecay,
 		ImportanceTriggerMax:    state.ReflectionTrigger,
 		ImportanceTriggerCurr:   state.CurrentReflectionTrigger,

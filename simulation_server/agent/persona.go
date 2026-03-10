@@ -107,6 +107,8 @@ type State struct {
 
 	// Do we create more detailed descriptions after generating them?
 	AsymetricEncoding bool
+
+	NegativityBias float64
 }
 
 func (s *State) SetActivity(plog *slog.Logger, activityAddress memory.Path, duration time.Duration, activityDescription string, activityPronunciato string, activitySPO memory.SPO, activityObjectDescription string, activityObjectPronunciato string, activityObjectSPO memory.SPO) {

@@ -138,5 +138,5 @@ func main() {
 		if err := sim.Run(100000); err != nil {
 			panic(fmt.Sprintf("Could not run simulation: %v", err))
 		}
-	}, 10)
+	}, 999999)
 }
