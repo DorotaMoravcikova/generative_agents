@@ -452,7 +452,7 @@ func (p *Persona) IdentityStableSet() string {
 	traits = append(traits, fmt.Sprintf("Currently: %s", p.state.CurrentPlans))
 	traits = append(traits, fmt.Sprintf("Lifestyle: %s", p.state.Lifestyle))
 	traits = append(traits, fmt.Sprintf("Daily plan requirements: %s", p.state.DailyPlanRequirements))
-	traits = append(traits, fmt.Sprintf("Current date: %s", p.name))
+	traits = append(traits, fmt.Sprintf("Current date: %s", p.CurrentTime().Format("Monday January 02")))
 
 	return strings.Join(traits, ",\n")
 }

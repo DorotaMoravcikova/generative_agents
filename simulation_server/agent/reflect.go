@@ -115,8 +115,8 @@ func (p *Persona) reflect() {
 		importance2 := p.cognition.GenerateImportanceScore(p, memory.NodeTypeThought, origMemoThought)
 		valence2 := p.cognition.GenerateValenceScore(p, memory.NodeTypeThought, origMemoThought)
 
-		memoThought := p.expandMemoryDescription(valence, nil, origPlanningThought)
-		embedding2 := p.GetEmbedding(origMemoThought)
+		memoThought := p.expandMemoryDescription(valence2, nil, origMemoThought)
+		embedding2 := p.GetEmbedding(memoThought)
 
 		p.addThoughtToMemory(spo2, memoThought, origMemoThought, keywords2, importance2, valence2, evidence, created2, &expired2, memoThought, embedding2)
 	}

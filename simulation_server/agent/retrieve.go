@@ -239,7 +239,7 @@ func (p *Persona) retrieveForFocalPoints(focalPoints []string, retrievalOpts ...
 		slices.SortFunc(nodes, func(a, b memory.NodeId) int {
 			memA := p.associativeMemory.GetNode(a)
 			memB := p.associativeMemory.GetNode(b)
-			return memA.LastAccessed.Compare(memB.LastAccessed)
+			return memB.LastAccessed.Compare(memA.LastAccessed)
 		})
 
 		recencyScores := extractRecency(p, nodes)

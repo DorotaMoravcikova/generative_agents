@@ -286,7 +286,7 @@ func (store *Associative) AddThought(spo SPO, description, original string, keyw
 
 func (store *Associative) AddChat(spo SPO, description, original string, keywords []string, importance, valence int, chat []Utterance, created time.Time, expiration *time.Time, embeddingKey string, embedding []float64) ConceptNode {
 	nodeCount := len(store.nodes)
-	typeCount := len(store.thoughts)
+	typeCount := len(store.chats)
 	nodeType := NodeTypeChat
 	nodeId := NodeId(nodeCount)
 

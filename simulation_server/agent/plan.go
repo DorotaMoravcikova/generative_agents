@@ -101,7 +101,7 @@ func (p *Persona) longTermPlanning(newDay NewDayType) {
 
 func (p *Persona) determineActivity(maze *maze.Maze) {
 	shouldDecomposeActivity := func(desc string, dur int) bool {
-		if !strings.Contains(desc, "sleep") && !strings.Contains("bed", desc) {
+		if !strings.Contains(desc, "sleep") && !strings.Contains(desc, "bed") {
 			return true
 		} else if strings.Contains(desc, "sleeping") || strings.Contains(desc, "asleep") || strings.Contains(desc, "in bed") {
 			return false
@@ -480,7 +480,7 @@ func (p *Persona) iterativeGenerateConversation(target *Persona, maze *maze.Maze
 		focalPoints := []string{relationship, fmt.Sprintf("%s is %s", target.name, target.ActivityDescription())}
 		lastUtt := getLastN(chat, 4)
 		for _, utt := range lastUtt {
-			focalPoints = append(focalPoints, "%s: %s\n", utt.Speaker, utt.Sentence)
+			focalPoints = append(focalPoints, fmt.Sprintf("%s: %s\n", utt.Speaker, utt.Sentence))
 		}
 
 		retrieved := init.retrieveForFocalPoints(focalPoints, withRetrievalCount(15))
@@ -520,7 +520,7 @@ func (p *Persona) chatReact(maze *maze.Maze, reactionMode string, personas map[s
 
 	endOfMinute := p.state.CurrentTime
 	if endOfMinute.Second() != 0 {
-		endOfMinute = endOfMinute.Add(time.Duration(endOfMinute.Second()) * time.Second)
+		endOfMinute = endOfMinute.Truncate(time.Minute).Add(time.Minute)
 	}
 	chatEndTime := endOfMinute.Add(time.Duration(duration) * time.Minute)
 

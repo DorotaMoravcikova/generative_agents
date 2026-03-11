@@ -125,7 +125,7 @@ func extractChat(filling interface{}) ([]memory.Utterance, error) {
 				}
 				sentence, ok := f[1].(string)
 				if !ok {
-					return nil, fmt.Errorf("unexpected chat memory filling element type: %T", f[0])
+					return nil, fmt.Errorf("unexpected chat memory filling element type: %T", f[1])
 				}
 				chat = append(chat, memory.Utterance{
 					Speaker:  speaker,

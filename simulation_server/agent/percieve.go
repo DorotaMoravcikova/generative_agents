@@ -102,14 +102,13 @@ func (p *Persona) percieve(m *maze.Maze) []memory.NodeId {
 		if subject == p.name && percievedEvent.SPO.Predicate == "chat with" {
 			currentEvent := p.state.ActivitySPO
 
-			var chatEmbedding []float64 = p.GetEmbedding(p.state.ActivityDescription)
-
 			chatImportance := p.cognition.GenerateImportanceScoreChat(p, p.state.Chat, p.state.ActivityDescription)
 			chatValence := p.cognition.GenerateValenceScoreChat(p, p.state.Chat, p.state.ActivityDescription)
 
 			chatDescription := p.expandMemoryDescription(chatValence, p.state.Chat, p.state.ActivityDescription)
+			var chatEmbedding []float64 = p.GetEmbedding(chatDescription)
 
-			chatNode := p.addChatToMemory(currentEvent, p.state.ActivityDescription, chatDescription, keywords, chatImportance, chatValence, p.state.Chat, p.state.CurrentTime, nil, chatDescription, chatEmbedding)
+			chatNode := p.addChatToMemory(currentEvent, chatDescription, p.state.ActivityDescription, keywords, chatImportance, chatValence, p.state.Chat, p.state.CurrentTime, nil, chatDescription, chatEmbedding)
 			chatNodes = append(chatNodes, chatNode.Id)
 		}
 
