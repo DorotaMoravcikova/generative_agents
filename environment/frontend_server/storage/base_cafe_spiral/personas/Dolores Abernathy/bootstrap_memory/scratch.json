@@ -24,7 +24,7 @@
   "relevance_w": 1,
   "importance_w": 1,
   "valence_w": 1,
-  "recency_decay": 0.995,
+  "recency_decay": 0.99,
   "asymetric_encoding": true,
   "negativity_bias": 2,
   "importance_trigger_max": 75,
