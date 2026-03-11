@@ -133,6 +133,36 @@ func neverValence[K comparable, V float32 | float64](m map[K]V, bias V) map[K]V 
 	return out
 }
 
+func absolute[K comparable, V float32 | float64](m map[K]V) map[K]V {
+	out := make(map[K]V, len(m))
+
+	for k, v := range m {
+		if v < 0 {
+			out[k] = V(-v)
+		} else {
+			out[k] = v
+		}
+	}
+
+	return out
+}
+
+func negativityBias(p *Persona, m map[memory.NodeId]float64) map[memory.NodeId]float64 {
+	out := make(map[memory.NodeId]float64, len(m))
+
+	for k, v := range m {
+		mem := p.associativeMemory.GetNode(k)
+
+		if mem.Valence < 0 {
+			out[k] = v * p.state.NegativityBias
+		} else {
+			out[k] = v
+		}
+	}
+
+	return out
+}
+
 func extractRecency(p *Persona, nodes []memory.NodeId) map[memory.NodeId]float64 {
 	out := map[memory.NodeId]float64{}
 
@@ -219,8 +249,9 @@ func (p *Persona) retrieveForFocalPoints(focalPoints []string, retrievalOpts ...
 		relevanceScores := extractRelevance(p, nodes, focalPoint)
 		relevanceScores = normalizeMap(relevanceScores, 0, 1)
 		valenceScores := extractValence(p, nodes)
-		valenceScores = neverValence(valenceScores, p.state.NegativityBias)
+		valenceScores = absolute(valenceScores)
 		valenceScores = normalizeMap(valenceScores, 0, 1)
+		valenceScores = negativityBias(p, valenceScores)
 
 		out := map[memory.NodeId]float64{}
 

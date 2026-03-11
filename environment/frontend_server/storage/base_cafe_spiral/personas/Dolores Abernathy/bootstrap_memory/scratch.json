@@ -26,7 +26,7 @@
   "valence_w": 1,
   "recency_decay": 0.99,
   "asymetric_encoding": true,
-  "negativity_bias": 2,
+  "negativity_bias": 1.5,
   "importance_trigger_max": 75,
   "importance_trigger_curr": 75,
   "importance_ele_n": 0,
