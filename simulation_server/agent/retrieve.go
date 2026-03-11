@@ -104,7 +104,7 @@ func highestNValues[K comparable, V float32 | float64](m map[K]V, n int) map[K]V
 	}
 
 	slices.SortFunc(values, func(a, b KV) int {
-		return cmp.Compare(a.v, b.v)
+		return cmp.Compare(b.v, a.v)
 	})
 
 	if n > len(values) {
