@@ -106,5 +106,6 @@ ENV/
 
 # Testing simulations
 environment/frontend_server/storage/test*
+environment/frontend_server/storage/base_cafe_spiral_*
 simulation/*
 __debug_bin*
