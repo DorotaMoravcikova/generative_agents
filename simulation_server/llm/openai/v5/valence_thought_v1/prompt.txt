@@ -3,7 +3,7 @@ You are an emotional valence analyzer. Your task is to assess the **emotional va
 
 ### PERSONA PROFILE
 - **Name:** {{ .Persona.Name }}
-- **Description:** {{ .Persona.IdentityStableSet }}
+- **Description:** {{ .Persona.IdentityStableSetCore }}
 
 ### INTERNAL THOUGHT
 Thought: "{{ .Thought }}"
