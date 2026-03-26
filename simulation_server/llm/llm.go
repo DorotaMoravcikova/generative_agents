@@ -18,6 +18,7 @@ type Persona interface {
 	Lifestyle() string
 	CurrentPlans() string
 	IdentityStableSet() string
+	IdentityStableSetCore() string 
 
 	CurrentTime() time.Time
 	StartOfDay() time.Time
