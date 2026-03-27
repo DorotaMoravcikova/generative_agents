@@ -457,6 +457,20 @@ func (p *Persona) IdentityStableSet() string {
 	return strings.Join(traits, ",\n")
 }
 
+// IdentityStableSetCore returns a slim identity profile without dynamic fields
+// (Currently, Lifestyle, DailyPlanRequirements) to prevent cognitive drift
+// from contaminating valence scoring.
+func (p *Persona) IdentityStableSetCore() string {
+	traits := []string{}
+	traits = append(traits, fmt.Sprintf("Name: %s", p.name))
+	traits = append(traits, fmt.Sprintf("Age: %d", p.state.Age))
+	traits = append(traits, fmt.Sprintf("Innate traits: %s", p.state.InnateTraits))
+	traits = append(traits, fmt.Sprintf("Learned traits: %s", p.state.LearnedTraits))
+	traits = append(traits, fmt.Sprintf("Current date: %s", p.CurrentTime().Format("Monday January 02")))
+
+	return strings.Join(traits, ",\n")
+}
+
 // Lifestyle implements llm.Persona.
 func (p *Persona) Lifestyle() string {
 	return p.state.Lifestyle

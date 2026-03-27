@@ -3,7 +3,7 @@ You are an expert psychology engine. Your task is to evaluate the emotional vale
 
 ### PERSONA PROFILE
 - **Name:** {{ .Persona.Name }}
-- **Description:** {{ .Persona.IdentityStableSet }}
+- **Description:** {{ .Persona.IdentityStableSetCore }}
 
 ### INPUT EVENT
 Event to evaluate: "{{ .Event }}"
