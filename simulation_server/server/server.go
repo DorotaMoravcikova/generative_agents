@@ -60,6 +60,10 @@ func (s *Server) Run(i int) error {
 				return fmt.Errorf("could not create server backup: %w", err)
 			}
 		}
+		if !s.CurrentTime.Before(s.StartTime.Add(2 * 24 * time.Hour)) {
+			slog.Info("Simulation ran for two days, exiting")
+			return nil
+		}
 
 		s.ExecuteStep()
 		if err := s.Storage.SaveSimulation(s); err != nil {

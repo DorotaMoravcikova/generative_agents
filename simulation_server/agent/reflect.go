@@ -2,6 +2,7 @@ package agent
 
 import (
 	"fmt"
+	"log/slog"
 	"slices"
 	"strings"
 	"time"
@@ -42,6 +43,8 @@ func (p *Persona) generateFocalPoints() []string {
 
 func (p *Persona) runReflect() {
 	focalPoints := p.generateFocalPoints()
+	l := p.ctx.Log.With("process", "reflection")
+	l.Debug("running reflection", slog.Any("focal_points", focalPoints))
 	retrieved := p.retrieveForFocalPoints(focalPoints)
 
 	for _, nodes := range retrieved {
@@ -59,6 +62,7 @@ func (p *Persona) runReflect() {
 			p.addThoughtToMemory(spo, thought, originalThought, keywords, importance, valence, evidence, created, &expiration, thought, embedding)
 		}
 	}
+	l.Debug("reflection done")
 }
 
 func (p *Persona) shouldReflect() bool {
