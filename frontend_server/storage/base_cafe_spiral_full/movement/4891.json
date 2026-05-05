@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "🍳🥗",
+      "description": "eating dinner (preparing side dishes) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        123,
+        55
+      ],
+      "pronunciato": "📖",
+      "description": "continuing to read in her room (rereading the last few chapters) @ the Ville:Dorm for Oak Hill College:Dolores Abernathy's room:desk",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        106,
+        37
+      ],
+      "pronunciato": "🍽️",
+      "description": "having dinner (serving food) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 20:34:10"
+  }
+}

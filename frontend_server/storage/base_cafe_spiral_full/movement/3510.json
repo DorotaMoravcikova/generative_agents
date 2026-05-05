@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        22
+      ],
+      "pronunciato": "📋",
+      "description": "closing Hobbs Cafe (preparing closing report) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        101,
+        34
+      ],
+      "pronunciato": "📦🍳",
+      "description": "clocking out and leaving Hobbs Cafe (restocking coffee supplies) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        21
+      ],
+      "pronunciato": "🚶",
+      "description": "walking to the front door @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 16:44:00"
+  }
+}

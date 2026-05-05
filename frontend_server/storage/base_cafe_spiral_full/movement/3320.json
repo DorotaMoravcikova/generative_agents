@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of strict adherence to new procedures and monitoring performance @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. The new procedure is a bit unfamiliar, but I'm trying to get the hang of it."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to follow the procedure to the letter. Any mistakes will be noted and addressed. I'm watching you closely today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to follow the procedure exactly as you've outlined. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today. Any mistakes, no matter how small, will be addressed immediately. I'm watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to double-check each step of the procedure, sir. I want to prove that I can handle the new requirements."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll do my best to follow the procedure exactly as you've outlined. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be monitoring your performance throughout the morning rush. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to follow the procedure exactly as you've outlined, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your guidance, sir. I'll make sure to follow the procedure to the letter. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to follow the procedure exactly as you've outlined, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to follow the procedure exactly as you've outlined. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of strict adherence to new procedures and monitoring performance @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. The new procedure is a bit unfamiliar, but I'm trying to get the hang of it."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to follow the procedure to the letter. Any mistakes will be noted and addressed. I'm watching you closely today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to follow the procedure exactly as you've outlined. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today. Any mistakes, no matter how small, will be addressed immediately. I'm watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to double-check each step of the procedure, sir. I want to prove that I can handle the new requirements."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll do my best to follow the procedure exactly as you've outlined. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be monitoring your performance throughout the morning rush. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to follow the procedure exactly as you've outlined, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your guidance, sir. I'll make sure to follow the procedure to the letter. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll make sure to follow the procedure exactly as you've outlined, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to follow the procedure exactly as you've outlined. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today. Make sure you follow the procedure exactly as I've outlined. Any mistakes will be noted and addressed immediately. I expect nothing less than perfect execution of the new procedures today."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        92,
+        30
+      ],
+      "pronunciato": "🧹🧺",
+      "description": "restocking supplies and cleaning the cafe (quick restock and cleaning touch-up) @ the Ville:Dorm for Oak Hill College:kitchen:kitchen sink",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 16:12:20"
+  }
+}

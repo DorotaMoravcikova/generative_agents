@@ -1,0 +1,982 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 14, 2023, 23:59:50",
+  "curr_tile": [
+    89,
+    37
+  ],
+  "daily_plan_req": "Maeve Millay begins her day by preparing pastries and coffee at Hobbs Cafe, staying focused on her tasks and checking in with her colleague Dolores to ensure a smooth day at work.",
+  "name": "Maeve Millay",
+  "first_name": "Maeve",
+  "last_name": "Millay",
+  "age": 24,
+  "innate": "conflict-averse, earnest",
+  "learned": "Maeve Millay is a barista at Hobbs Cafe. She tries hard but tends to get flustered when put on the spot and struggles to respond well under scrutiny. Her boss is Bernard Lowe, who manages the cafe. Maeve and Dolores are colleagues who work together to keep the cafe running. She keeps interactions at work task-oriented. After work Maeve walks in Johnson Park. She loves her walks in the park.",
+  "currently": "Maeve Millay is starting her day and heading to work at Hobbs Cafe. She's determined to stay on top of the morning rush by prepping pastries and keeping an eye on the coffee machine. She's also made a mental note to check in with Dolores throughout the day to ensure everything runs smoothly.",
+  "lifestyle": "Maeve Millay wakes up around 7am, has breakfast and walks to Hobbs Cafe where she works as a barista from 8am to 4pm. After work she walks in Johnson Park. She has dinner around 8pm. She spends time in her room before going to bed at 11pm.",
+  "living_area": "the Ville:Dorm for Oak Hill College:Maeve Millay's room",
+  "concept_forget": 0,
+  "daily_reflection_time": 0,
+  "daily_reflection_size": 0,
+  "overlap_reflect_th": 0,
+  "kw_strg_event_reflect_th": 0,
+  "kw_strg_thought_reflect_th": 0,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "valence_w": 0,
+  "asymetric_encoding": false,
+  "negativity_bias": 1,
+  "recency_decay": 0.99,
+  "importance_trigger_max": 75,
+  "importance_trigger_curr": 68,
+  "importance_ele_n": 2,
+  "thought_count": 0,
+  "daily_req": [
+    "wake up and complete the morning routine at 7:00am",
+    "walk to Hobbs Cafe at 8:00am",
+    "prepare pastries and coffee at Hobbs Cafe from 8:00am to 4:00pm",
+    "check in with Dolores throughout the day",
+    "walk in Johnson Park from 4:00pm to 5:00pm",
+    "have dinner at 8:00pm",
+    "spend time in her room from 8:00pm to 10:00pm",
+    "go to bed at 11:00pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "receiving a stern warning about maintaining high standards and avoiding mistakes during a busy day at the cafe",
+      6
+    ],
+    [
+      "preparing breakfast and checking work emails (preparing breakfast area)",
+      10
+    ],
+    [
+      "preparing breakfast and checking work emails (preparing coffee)",
+      10
+    ],
+    [
+      "preparing breakfast and checking work emails (setting out pastries)",
+      5
+    ],
+    [
+      "preparing breakfast and checking work emails (checking work emails)",
+      17
+    ],
+    [
+      "receiving strict instructions and warnings about performance from Bernard",
+      6
+    ],
+    [
+      "preparing breakfast and checking work emails (checking work emails)",
+      5
+    ],
+    [
+      "preparing breakfast and checking work emails (responding to urgent emails)",
+      5
+    ],
+    [
+      "walking to Hobbs Cafe (checking weather conditions)",
+      4
+    ],
+    [
+      "receiving repeated reminders about flawless performance and severe consequences for any mistakes",
+      5
+    ],
+    [
+      "walking to Hobbs Cafe (checking weather conditions)",
+      1
+    ],
+    [
+      "walking to Hobbs Cafe (grabbing a coffee to go)",
+      5
+    ],
+    [
+      "walking to Hobbs Cafe (locking the apartment door)",
+      2
+    ],
+    [
+      "walking to Hobbs Cafe (walking to the park entrance)",
+      8
+    ],
+    [
+      "receiving strict instructions and repeated warnings about performance",
+      5
+    ],
+    [
+      "walking to Hobbs Cafe (walking to the park entrance)",
+      1
+    ],
+    [
+      "coordinating tasks and responsibilities to manage the morning rush at the coffee shop while preparing for Bernard's inspections",
+      7
+    ],
+    [
+      "walking to Hobbs Cafe (walking to the park entrance)",
+      1
+    ],
+    [
+      "walking to Hobbs Cafe (putting on sunglasses)",
+      2
+    ],
+    [
+      "walking to Hobbs Cafe (adjusting backpack)",
+      3
+    ],
+    [
+      "walking to Hobbs Cafe (starting the walk)",
+      3
+    ],
+    [
+      "receiving intense scrutiny and being held to an extremely high standard for flawless service throughout the day",
+      4
+    ],
+    [
+      "preparing pastries and coffee (checking pastry inventory)",
+      2
+    ],
+    [
+      "coordinating morning coffee and pastry preparations",
+      4
+    ],
+    [
+      "checking pastry inventory",
+      3
+    ],
+    [
+      "preparing pastry display",
+      8
+    ],
+    [
+      "being closely monitored and warned of potential termination for any mistakes",
+      5
+    ],
+    [
+      "preheating espresso machine",
+      3
+    ],
+    [
+      "discussing morning rush and customer service strategies",
+      8
+    ],
+    [
+      "preheating espresso machine",
+      6
+    ],
+    [
+      "receiving intense scrutiny and pressure to maintain flawless performance",
+      6
+    ],
+    [
+      "preheating espresso machine",
+      1
+    ],
+    [
+      "grinding coffee beans",
+      3
+    ],
+    [
+      "collaborating to manage the morning rush together with mutual support",
+      8
+    ],
+    [
+      "grinding coffee beans",
+      6
+    ],
+    [
+      "receiving constant criticism for perceived inefficiency",
+      6
+    ],
+    [
+      "grinding coffee beans",
+      1
+    ],
+    [
+      "brewing espresso shots",
+      22
+    ],
+    [
+      "being closely monitored for any mistakes while performing her duties",
+      6
+    ],
+    [
+      "brewing espresso shots",
+      1
+    ],
+    [
+      "discussing and coordinating their roles in handling customer orders while maintaining teamwork",
+      4
+    ],
+    [
+      "brewing espresso shots",
+      2
+    ],
+    [
+      "finalizing orders",
+      6
+    ],
+    [
+      "serving customers at the counter (checking customer orders)",
+      5
+    ],
+    [
+      "serving customers at the counter (preparing drinks)",
+      1
+    ],
+    [
+      "receiving constant scrutiny and ultimatums about job performance",
+      6
+    ],
+    [
+      "serving customers at the counter (preparing drinks)",
+      2
+    ],
+    [
+      "collaborating on cafe tasks while supporting each other through Bernard's criticism",
+      5
+    ],
+    [
+      "serving customers at the counter (preparing drinks)",
+      14
+    ],
+    [
+      "serving customers at the counter (assembling food orders)",
+      2
+    ],
+    [
+      "receiving a stern warning about maintaining high standards and being closely monitored",
+      4
+    ],
+    [
+      "restocking coffee and pastry supplies (checking inventory levels)",
+      5
+    ],
+    [
+      "restocking coffee and pastry supplies (calculating required quantities)",
+      5
+    ],
+    [
+      "restocking coffee and pastry supplies (gathering supplies)",
+      5
+    ],
+    [
+      "restocking coffee and pastry supplies (restocking coffee supplies)",
+      10
+    ],
+    [
+      "restocking coffee and pastry supplies (restocking pastry supplies)",
+      15
+    ],
+    [
+      "restocking coffee and pastry supplies (organizing supplies)",
+      5
+    ],
+    [
+      "assisting Dolores with the lunch rush",
+      7
+    ],
+    [
+      "collaborating on perfecting espresso machine operation and customer service during morning rush",
+      8
+    ],
+    [
+      "assisting Dolores with the lunch rush",
+      1
+    ],
+    [
+      "receiving constant reminders of her precarious position while striving to meet Bernard's high expectations",
+      5
+    ],
+    [
+      "assisting Dolores with the lunch rush",
+      9
+    ],
+    [
+      "preparing for next shift handover",
+      5
+    ],
+    [
+      "finalizing shift reports",
+      1
+    ],
+    [
+      "receiving a stern warning about errors and performance from Bernard Lowe",
+      6
+    ],
+    [
+      "finalizing shift reports",
+      1
+    ],
+    [
+      "dividing tasks between pastries and espresso machine to efficiently handle orders",
+      4
+    ],
+    [
+      "finalizing shift reports",
+      5
+    ],
+    [
+      "reviewing closing procedures",
+      5
+    ],
+    [
+      "performing closing duties",
+      1
+    ],
+    [
+      "receiving a stern warning about maintaining high standards and facing consequences for any mistakes",
+      5
+    ],
+    [
+      "locking up and securing the cafe",
+      1
+    ],
+    [
+      "reassuring each other while working under Bernard's close supervision",
+      7
+    ],
+    [
+      "preparing iced beverages for the afternoon (organizing supplies)",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing ice)",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (checking syrup and topping inventory)",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing drink containers)",
+      2
+    ],
+    [
+      "receiving a stern warning about latte art and job performance, with threats of demotion or termination",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing drink containers)",
+      3
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing blender for smoothies)",
+      1
+    ],
+    [
+      "discussing the division of tasks for preparing for the afternoon rush",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing blender for smoothies)",
+      4
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing fruit for garnish)",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (setting up drink station)",
+      7
+    ],
+    [
+      "discussing morning rush responsibilities and team coordination",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (setting up drink station)",
+      1
+    ],
+    [
+      "reiterating strict oversight and perfection expectations for the drink station",
+      5
+    ],
+    [
+      "preparing iced beverages for the afternoon (setting up drink station)",
+      2
+    ],
+    [
+      "preparing iced beverages for the afternoon (preparing coffee for iced beverages)",
+      3
+    ],
+    [
+      "cleaning the cafe's kitchen area (gathering cleaning supplies)",
+      5
+    ],
+    [
+      "cleaning the cafe's kitchen area (removing trash from bins)",
+      5
+    ],
+    [
+      "cleaning the cafe's kitchen area (wiping down counters)",
+      10
+    ],
+    [
+      "cleaning the cafe's kitchen area (scrubbing sinks)",
+      3
+    ],
+    [
+      "reiterating commitment to maintaining cleanliness and efficiency while being closely monitored",
+      6
+    ],
+    [
+      "cleaning the cafe's kitchen area (scrubbing sinks)",
+      10
+    ],
+    [
+      "cleaning the cafe's kitchen area (cleaning coffee machines)",
+      10
+    ],
+    [
+      "receiving a stern warning about the consequences of mistakes",
+      5
+    ],
+    [
+      "cleaning the cafe's kitchen area (disinfecting high-touch surfaces)",
+      1
+    ],
+    [
+      "supporting each other with teamwork and deep breathing during a busy morning rush",
+      5
+    ],
+    [
+      "cleaning the cafe's kitchen area (disinfecting high-touch surfaces)",
+      5
+    ],
+    [
+      "checking in with Bernard about inventory (gathering inventory sheets)",
+      5
+    ],
+    [
+      "checking in with Bernard about inventory (checking current inventory levels)",
+      6
+    ],
+    [
+      "collaborating and supporting each other to manage the morning rush at the coffee shop",
+      6
+    ],
+    [
+      "checking in with Bernard about inventory (checking current inventory levels)",
+      4
+    ],
+    [
+      "checking in with Bernard about inventory (reviewing sales reports)",
+      1
+    ],
+    [
+      "reiterating the importance of inventory oversight and strict adherence to standards",
+      4
+    ],
+    [
+      "checking in with Bernard about inventory (reviewing sales reports)",
+      7
+    ],
+    [
+      "checking in with Bernard about inventory (noting low stock items)",
+      9
+    ],
+    [
+      "exchanging morning greetings and coordinating duties",
+      5
+    ],
+    [
+      "checking in with Bernard about inventory (preparing order list)",
+      4
+    ],
+    [
+      "reiterating expectations for efficiency, cleanliness, and reporting issues while preparing for the morning rush",
+      7
+    ],
+    [
+      "checking in with Bernard about inventory (preparing order list)",
+      4
+    ],
+    [
+      "walking to Johnson Park for her afternoon stroll (putting on coat)",
+      5
+    ],
+    [
+      "walking to Johnson Park for her afternoon stroll (locking the cafe door)",
+      2
+    ],
+    [
+      "walking to Johnson Park for her afternoon stroll (walking to Johnson Park)",
+      33
+    ],
+    [
+      "enjoying the park's scenery and fresh air (unfastening park entrance)",
+      2
+    ],
+    [
+      "enjoying the park's scenery and fresh air (walking to park entrance)",
+      5
+    ],
+    [
+      "enjoying the park's scenery and fresh air (unlocking park entrance)",
+      2
+    ],
+    [
+      "enjoying the park's scenery and fresh air (entering Johnson Park)",
+      3
+    ],
+    [
+      "enjoying the park's scenery and fresh air (finding a suitable walking path)",
+      5
+    ],
+    [
+      "enjoying the park's scenery and fresh air (beginning the walk)",
+      11
+    ],
+    [
+      "receiving a stern warning about the importance of efficiency and avoiding mistakes during a high-pressure morning shift",
+      8
+    ],
+    [
+      "enjoying the park's scenery and fresh air (beginning the walk)",
+      9
+    ],
+    [
+      "enjoying the park's scenery and fresh air (observing park scenery)",
+      12
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (locking the cafe entrance)",
+      5
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (turning off the coffee machines)",
+      6
+    ],
+    [
+      "reiterating the importance of efficient and prompt closing duties, with consequences for any delays or mistakes",
+      6
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (turning off the coffee machines)",
+      4
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (cleaning the espresso grinders)",
+      5
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (wiping down the counters)",
+      6
+    ],
+    [
+      "reiterating strict expectations for efficiency and cleanliness while promising to maintain high standards and avoid mistakes",
+      8
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (wiping down the counters)",
+      4
+    ],
+    [
+      "discussing plans to decompress and finish closing duties before going to the park",
+      7
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (cleaning the coffee station)",
+      5
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (organizing the pastry display)",
+      5
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (checking the cash register)",
+      4
+    ],
+    [
+      "receiving a stern warning about maintaining high standards and facing consequences for mistakes",
+      3
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties (counting the day's earnings)",
+      7
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (collecting cash drawers)",
+      5
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (counting cash)",
+      5
+    ],
+    [
+      "receiving repeated reminders about maintaining high standards and avoiding mistakes",
+      5
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (verifying cash amounts)",
+      5
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (preparing bank deposit)",
+      10
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (securing cash drawer)",
+      1
+    ],
+    [
+      "receiving strict instructions on cash drawer security and facing disciplinary threats for any mistakes",
+      6
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (securing cash drawer)",
+      4
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer (completing end-of-day inventory)",
+      9
+    ],
+    [
+      "walking home from Hobbs Cafe (putting on coat and gathering belongings)",
+      1
+    ],
+    [
+      "reiterating commitment to perfection and cleanliness while being closely monitored",
+      5
+    ],
+    [
+      "walking home from Hobbs Cafe (putting on coat and gathering belongings)",
+      5
+    ],
+    [
+      "walking home from Hobbs Cafe (saying goodbye to colleagues)",
+      5
+    ],
+    [
+      "walking home from Hobbs Cafe (locking the cafe door)",
+      1
+    ],
+    [
+      "supporting each other through a busy morning rush at the coffee shop",
+      5
+    ],
+    [
+      "walking home from Hobbs Cafe (locking the cafe door)",
+      10
+    ],
+    [
+      "walking home from Hobbs Cafe (walking towards the park entrance)",
+      10
+    ],
+    [
+      "walking home from Hobbs Cafe (enjoying the walk in the park)",
+      22
+    ],
+    [
+      "having a simple dinner at home (washing hands)",
+      5
+    ],
+    [
+      "having a simple dinner at home (preparing dining area)",
+      5
+    ],
+    [
+      "having a simple dinner at home (heating dinner)",
+      10
+    ],
+    [
+      "having a simple dinner at home (setting dining table)",
+      5
+    ],
+    [
+      "having a simple dinner at home (eating dinner)",
+      18
+    ],
+    [
+      "spending time in her room reading (setting up reading space)",
+      5
+    ],
+    [
+      "spending time in her room reading (selecting a book)",
+      5
+    ],
+    [
+      "spending time in her room reading (opening the book)",
+      5
+    ],
+    [
+      "spending time in her room reading (reading introduction)",
+      10
+    ],
+    [
+      "spending time in her room reading (skimming chapter 1)",
+      10
+    ],
+    [
+      "spending time in her room reading (taking notes)",
+      5
+    ],
+    [
+      "spending time in her room reading (reviewing notes)",
+      5
+    ],
+    [
+      "spending time in her room reading (skimming chapter 2)",
+      10
+    ],
+    [
+      "spending time in her room reading (closing the book)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (gathering personal items)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (making bed)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (preparing breakfast for tomorrow)",
+      10
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (reviewing work schedule)",
+      10
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (checking cafe supply list)",
+      10
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (reviewing park walk schedule)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (setting out clothes for tomorrow)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (checking tomorrow's tasks)",
+      5
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks (finalizing tomorrow's tasks)",
+      5
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "preparing breakfast and checking work emails",
+      60
+    ],
+    [
+      "walking to Hobbs Cafe",
+      60
+    ],
+    [
+      "preparing pastries and coffee",
+      60
+    ],
+    [
+      "serving customers at the counter",
+      60
+    ],
+    [
+      "restocking coffee and pastry supplies",
+      60
+    ],
+    [
+      "assisting Dolores with the lunch rush",
+      60
+    ],
+    [
+      "preparing iced beverages for the afternoon",
+      60
+    ],
+    [
+      "cleaning the cafe's kitchen area",
+      60
+    ],
+    [
+      "checking in with Bernard about inventory",
+      60
+    ],
+    [
+      "walking to Johnson Park for her afternoon stroll",
+      60
+    ],
+    [
+      "enjoying the park's scenery and fresh air",
+      60
+    ],
+    [
+      "returning to Hobbs Cafe for closing duties",
+      60
+    ],
+    [
+      "preparing closing tasks and finalizing the cash drawer",
+      60
+    ],
+    [
+      "walking home from Hobbs Cafe",
+      60
+    ],
+    [
+      "having a simple dinner at home",
+      60
+    ],
+    [
+      "spending time in her room reading",
+      60
+    ],
+    [
+      "preparing for bed and reviewing tomorrow's tasks",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Hobbs Cafe:cafe:piano",
+  "act_start_time": "February 14, 2023, 23:56:00",
+  "act_duration": 4,
+  "act_description": "preparing for bed and reviewing tomorrow's tasks (finalizing tomorrow's tasks)",
+  "act_pronunciatio": "✅📅",
+  "act_event": [
+    "Maeve Millay",
+    "preparing",
+    "for bed"
+  ],
+  "act_obj_description": "unattended",
+  "act_obj_pronunciatio": "👥",
+  "act_obj_event": [
+    "piano",
+    "unattended",
+    "None"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Bernard Lowe": -1234,
+    "Dolores Abernathy": -1135
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": [
+    [
+      88,
+      37
+    ],
+    [
+      87,
+      37
+    ],
+    [
+      86,
+      37
+    ],
+    [
+      85,
+      37
+    ],
+    [
+      84,
+      37
+    ],
+    [
+      83,
+      37
+    ],
+    [
+      82,
+      37
+    ],
+    [
+      81,
+      37
+    ],
+    [
+      80,
+      37
+    ],
+    [
+      79,
+      37
+    ],
+    [
+      78,
+      37
+    ],
+    [
+      77,
+      37
+    ],
+    [
+      77,
+      36
+    ],
+    [
+      77,
+      35
+    ],
+    [
+      77,
+      34
+    ],
+    [
+      77,
+      33
+    ],
+    [
+      77,
+      32
+    ],
+    [
+      77,
+      31
+    ],
+    [
+      77,
+      30
+    ],
+    [
+      77,
+      29
+    ],
+    [
+      77,
+      28
+    ],
+    [
+      77,
+      27
+    ],
+    [
+      77,
+      26
+    ],
+    [
+      78,
+      26
+    ],
+    [
+      79,
+      26
+    ],
+    [
+      80,
+      26
+    ],
+    [
+      81,
+      26
+    ],
+    [
+      82,
+      26
+    ]
+  ]
+}

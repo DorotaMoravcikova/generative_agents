@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        74,
+        19
+      ],
+      "pronunciato": "💼",
+      "description": "reviewing daily sales figures (checking daily sales figures) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        122,
+        48
+      ],
+      "pronunciato": "🚶🏻‍♂️💡",
+      "description": "walking home from work (turning off the lights) @ the Ville:Dorm for Oak Hill College:common room:common room table",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        38,
+        36
+      ],
+      "pronunciato": "🌳🌿",
+      "description": "enjoying the park's scenery and fresh air (finding a suitable walking path) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 17:24:00"
+  }
+}

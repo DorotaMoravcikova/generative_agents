@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "👩‍🍳",
+      "description": "overseeing food preparation @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on handling the morning rush together @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for being here. I know it's been a tough day, but I'm trying to stay focused on the orders. How's it going with the restocking?"
+        ],
+        [
+          "Maeve Millay",
+          "I've got the restocking mostly done. The coffee is looking good, and I think we're all set for the morning rush. Thanks for your help with the orders, I'll take over here in a bit."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your help. I'm feeling a bit overwhelmed with the orders, but I know we'll get through it together. Let me know if you need anything from me while I'm handling these drinks."
+        ],
+        [
+          "Maeve Millay",
+          "I've got your back, Dolores. We'll handle the rush together. Just take your time with each order and let me know if you need a break."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got your back, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I'll take over the register while you focus on the coffee orders. Just let me know if you need anything, and remember to take breaks as needed. We've got this, Dolores."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here if you need anything, Dolores. Remember, we're a team and we can handle this together. Take your time with each order and let me know if you need a break."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on handling the morning rush together @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for being here. I know it's been a tough day, but I'm trying to stay focused on the orders. How's it going with the restocking?"
+        ],
+        [
+          "Maeve Millay",
+          "I've got the restocking mostly done. The coffee is looking good, and I think we're all set for the morning rush. Thanks for your help with the orders, I'll take over here in a bit."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your help. I'm feeling a bit overwhelmed with the orders, but I know we'll get through it together. Let me know if you need anything from me while I'm handling these drinks."
+        ],
+        [
+          "Maeve Millay",
+          "I've got your back, Dolores. We'll handle the rush together. Just take your time with each order and let me know if you need a break."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got your back, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I'll take over the register while you focus on the coffee orders. Just let me know if you need anything, and remember to take breaks as needed. We've got this, Dolores."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here if you need anything, Dolores. Remember, we're a team and we can handle this together. Take your time with each order and let me know if you need a break."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take a quick break after this order to catch my breath. I appreciate your support today."
+        ],
+        [
+          "Maeve Millay",
+          "I've got you covered, Dolores. Just take your time and remember to breathe. We'll get through this together."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 12:41:50"
+  }
+}

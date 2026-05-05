@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        80,
+        19
+      ],
+      "pronunciato": "👀📋",
+      "description": "monitoring customer interactions (verifying staff compliance) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        116,
+        47
+      ],
+      "pronunciato": "💬",
+      "description": "supporting each other through a busy morning rush at the coffee shop @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How can I help you today?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm just trying to get through the morning rush. How are you holding up today?"
+        ],
+        [
+          "Maeve Millay",
+          "I'm doing alright, thanks for asking. Just trying to stay on top of the morning rush. How about you? Do you need a hand with anything?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate the support. I'm just trying to stay focused and keep up with the orders. How's the espresso machine running today?"
+        ],
+        [
+          "Maeve Millay",
+          "I've got the espresso machine running smoothly today. Let me know if you need any help with the orders. I'm here to support you, just like you're supporting me."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'll let you know if I need any help with the orders. I'm just trying to stay focused and keep up with the orders. How's the espresso machine running today?"
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad we can support each other today. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        118,
+        45
+      ],
+      "pronunciato": "💬",
+      "description": "supporting each other through a busy morning rush at the coffee shop @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How can I help you today?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm just trying to get through the morning rush. How are you holding up today?"
+        ],
+        [
+          "Maeve Millay",
+          "I'm doing alright, thanks for asking. Just trying to stay on top of the morning rush. How about you? Do you need a hand with anything?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate the support. I'm just trying to stay focused and keep up with the orders. How's the espresso machine running today?"
+        ],
+        [
+          "Maeve Millay",
+          "I've got the espresso machine running smoothly today. Let me know if you need any help with the orders. I'm here to support you, just like you're supporting me."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'll let you know if I need any help with the orders. I'm just trying to stay focused and keep up with the orders. How's the espresso machine running today?"
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad we can support each other today. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you, Dolores. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's focus on delivering the best service we can and getting through this morning rush together."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 20:34:00"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about the consequences of mistakes @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're cleaning the coffee machines. Ensure they're spotless. Any mistakes today and you'll be facing disciplinary action."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, I'll make sure everything is spotless. I'll be extra careful with the coffee machines today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand. I'll make sure to maintain the highest standards of cleanliness and efficiency today. I'll keep you updated on any issues that arise."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. I'll be scrutinizing your every move to ensure you meet those standards."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll do my best to maintain the highest standards today. I appreciate your guidance and will keep you updated on my progress."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm counting on it, Maeve. I'll be keeping a close eye on your performance throughout the day. Don't disappoint me."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. I'll be scrutinizing your every move to ensure you meet those standards."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        97,
+        37
+      ],
+      "pronunciato": "📦",
+      "description": "serving customers and maintaining cafe cleanliness (preparing beverages) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about the consequences of mistakes @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're cleaning the coffee machines. Ensure they're spotless. Any mistakes today and you'll be facing disciplinary action."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, I'll make sure everything is spotless. I'll be extra careful with the coffee machines today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand. I'll make sure to maintain the highest standards of cleanliness and efficiency today. I'll keep you updated on any issues that arise."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. I'll be scrutinizing your every move to ensure you meet those standards."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll do my best to maintain the highest standards today. I appreciate your guidance and will keep you updated on my progress."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm counting on it, Maeve. I'll be keeping a close eye on your performance throughout the day. Don't disappoint me."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. I'll be scrutinizing your every move to ensure you meet those standards."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your performance closely today. Any mistakes and you'll be facing immediate consequences."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll focus on maintaining the highest standards today and keep you updated on any issues. Thank you for your guidance."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 15:14:10"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "🛒🏪",
+      "description": "opening Hobbs Cafe (checking cash register) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        74,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "dividing responsibilities for the morning rush at the diner @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm here, ready for the morning rush. Did you remember to set up the coffee station?"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. Yes, I've got the coffee station all set up and ready to go. The register is stocked with receipts, and the barcode scanner is charged and ready. How about you? Have you finished your morning routine?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I've just finished my morning routine. Everything's set to go. I've also restocked the kitchen supplies and made sure the coffee is fresh. Bernard mentioned something about the morning rush, so I'm prepared for that."
+        ],
+        [
+          "Maeve Millay",
+          "Great, I see you've got everything prepped. We should be ready for the morning rush. I'll start brewing the coffee and making sure the pastries are out."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll start preparing the breakfast orders and making sure the seating area is clean. You take care of the coffee and pastries, and let me know if you need any help."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started then. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Sounds good, Maeve. Let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, I'll start preparing the breakfast orders and making sure the seating area is clean. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        74,
+        22
+      ],
+      "pronunciato": "💬",
+      "description": "dividing responsibilities for the morning rush at the diner @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm here, ready for the morning rush. Did you remember to set up the coffee station?"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. Yes, I've got the coffee station all set up and ready to go. The register is stocked with receipts, and the barcode scanner is charged and ready. How about you? Have you finished your morning routine?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I've just finished my morning routine. Everything's set to go. I've also restocked the kitchen supplies and made sure the coffee is fresh. Bernard mentioned something about the morning rush, so I'm prepared for that."
+        ],
+        [
+          "Maeve Millay",
+          "Great, I see you've got everything prepped. We should be ready for the morning rush. I'll start brewing the coffee and making sure the pastries are out."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll start preparing the breakfast orders and making sure the seating area is clean. You take care of the coffee and pastries, and let me know if you need any help."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started then. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Sounds good, Maeve. Let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, I'll start preparing the breakfast orders and making sure the seating area is clean. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll make sure the seating area is clean and prepare the breakfast orders. You take care of the coffee and pastries. We'll work well together, just like always."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take care of the coffee and pastries, and you handle the breakfast orders and seating. We'll work well together, just like always."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 08:59:20"
+  }
+}

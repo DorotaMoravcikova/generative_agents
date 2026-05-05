@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "🔍🔒",
+      "description": "preparing to leave for the night (reviewing the security logs for any incidents) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        123,
+        57
+      ],
+      "pronunciato": "😴",
+      "description": "sleeping @ the Ville:Dorm for Oak Hill College:Dolores Abernathy's room:bed",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        22
+      ],
+      "pronunciato": "📅🌳",
+      "description": "preparing for bed and reviewing tomorrow's tasks (reviewing park walk schedule) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 23:41:50"
+  }
+}

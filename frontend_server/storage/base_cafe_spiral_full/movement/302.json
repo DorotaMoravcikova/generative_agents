@@ -1,0 +1,99 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        73,
+        19
+      ],
+      "pronunciato": "🍳",
+      "description": "completing morning routine (eating breakfast) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        117,
+        47
+      ],
+      "pronunciato": "🧹",
+      "description": "completing morning routine (cleaning up after breakfast) @ the Ville:Dorm for Oak Hill College:Dolores Abernathy's room:desk",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        116,
+        40
+      ],
+      "pronunciato": "💬",
+      "description": "exchanging morning greetings and plans to meet at Hobbs Cafe @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. I'm just finishing up my coffee. Should we head out to Hobbs Cafe together?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm just finishing up my morning routine. I'll meet you at the cafe. See you there!"
+        ],
+        [
+          "Maeve Millay",
+          "Sounds good, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm almost done here, I'll head out to the cafe in a few minutes. See you there!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, I'll head out to the cafe now. See you there!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll see you at the cafe in a few minutes, Maeve. Thanks for the reminder!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm heading out now, see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm heading out now, see you at the cafe!"
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 07:49:20"
+  }
+}

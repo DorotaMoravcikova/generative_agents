@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        81,
+        25
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about maintaining high standards and avoiding mistakes during a busy day at the cafe @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're preparing breakfast. Make sure the pastries are up to standard. And be careful not to make any mistakes with the coffee orders. I'll be watching closely today."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure everything is perfect today."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. Any mistakes and you'll be out on your ear. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm holding you to that, Maeve. Don't disappoint me. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I'll stay in touch with Dolores throughout the day to ensure everything goes smoothly, and I'll start prepping pastries for the morning rush right away."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I'll stay in touch with Dolores throughout the day to ensure everything goes smoothly, and I'll start prepping pastries for the morning rush right away."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        120,
+        45
+      ],
+      "pronunciato": "🍳🕒",
+      "description": "preparing breakfast and getting ready for work (waking up) @ the Ville:Dorm for Oak Hill College:kitchen:toaster",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        79,
+        26
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about maintaining high standards and avoiding mistakes during a busy day at the cafe @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're preparing breakfast. Make sure the pastries are up to standard. And be careful not to make any mistakes with the coffee orders. I'll be watching closely today."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure everything is perfect today."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Maeve. Any mistakes and you'll be out on your ear. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm holding you to that, Maeve. Don't disappoint me. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I'll stay in touch with Dolores throughout the day to ensure everything goes smoothly, and I'll start prepping pastries for the morning rush right away."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely throughout the day. Don't make me disappointed in you, Maeve. Now get to work and make sure everything runs like clockwork."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I'll stay in touch with Dolores throughout the day to ensure everything goes smoothly, and I'll start prepping pastries for the morning rush right away."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 07:04:00"
+  }
+}

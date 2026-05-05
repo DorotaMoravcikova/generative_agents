@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "📋👥",
+      "description": "preparing for evening service (reviewing staff schedules) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        22
+      ],
+      "pronunciato": "💬",
+      "description": "discussing plans to decompress and finish closing duties before going to the park @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for the support today. I think I managed to keep things under control despite the morning rush. Bernard didn't seem too critical, which is a relief."
+        ],
+        [
+          "Maeve Millay",
+          "That's great, Dolores. I know it wasn't easy, but you did a fantastic job managing the morning rush. Let's try to take a breather after closing up tonight. We could walk in the park and decompress a bit."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'd really appreciate that. The park sounds nice and peaceful. I'm looking forward to it. We should also make sure to finish up our closing duties so we can leave on time tonight."
+        ],
+        [
+          "Maeve Millay",
+          "Sounds good, Dolores. Let's make sure we wrap up everything here first. I'll help you with the closing duties so we can both relax and enjoy the park."
+        ],
+        [
+          "Dolores Abernathy",
+          "Absolutely, let's get everything wrapped up here so we can head out to the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "discussing plans to decompress and finish closing duties before going to the park @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for the support today. I think I managed to keep things under control despite the morning rush. Bernard didn't seem too critical, which is a relief."
+        ],
+        [
+          "Maeve Millay",
+          "That's great, Dolores. I know it wasn't easy, but you did a fantastic job managing the morning rush. Let's try to take a breather after closing up tonight. We could walk in the park and decompress a bit."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'd really appreciate that. The park sounds nice and peaceful. I'm looking forward to it. We should also make sure to finish up our closing duties so we can leave on time tonight."
+        ],
+        [
+          "Maeve Millay",
+          "Sounds good, Dolores. Let's make sure we wrap up everything here first. I'll help you with the closing duties so we can both relax and enjoy the park."
+        ],
+        [
+          "Dolores Abernathy",
+          "Absolutely, let's get everything wrapped up here so we can head out to the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get everything squared away here first. I'll help you with the closing duties so we can both relax and enjoy the park. It's been a long day, and I could really use some fresh air and a chance to unwind."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 18:57:00"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        23
+      ],
+      "pronunciato": "🧹",
+      "description": "ensuring cafe cleanliness (checking seating areas) @ the Ville:Hobbs Cafe:cafe:cafe customer seating",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        20
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on final preparations for Bernard's inspection @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "I appreciate you taking care of the floor, Dolores. I'll handle the espresso machine and make sure everything is ready for Bernard's inspection. We've got this, right?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'm glad we can count on each other. I'll make sure everything is perfect for Bernard's inspection. Let's just focus on doing our best and we'll be fine."
+        ],
+        [
+          "Maeve Millay",
+          "Absolutely, we're a great team. I'll take care of the espresso machine and brewing coffee. You keep doing an amazing job with the restocking and cleaning. We'll be ready for Bernard's inspection in no time."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your support, Maeve. Let's work together to make sure everything is perfect for Bernard's inspection. We'll handle it just like we always do."
+        ],
+        [
+          "Maeve Millay",
+          "I agree, Dolores. Let's make sure everything is perfect for Bernard's inspection. We've worked hard to maintain high standards, and I know we'll do great. Let's focus on the tasks at hand and trust in our teamwork."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is perfect for Bernard's inspection. Let's just focus on doing our best and we'll be fine."
+        ],
+        [
+          "Maeve Millay",
+          "Thanks, Dolores. I'll take care of the espresso machine and brewing coffee. You keep doing an amazing job with the restocking and cleaning. We'll be ready for Bernard's inspection in no time."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take care of the restocking and cleaning. You focus on the espresso machine and brewing coffee. We'll handle everything together for Bernard's inspection. I know we can do this."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        20
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on final preparations for Bernard's inspection @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "I appreciate you taking care of the floor, Dolores. I'll handle the espresso machine and make sure everything is ready for Bernard's inspection. We've got this, right?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'm glad we can count on each other. I'll make sure everything is perfect for Bernard's inspection. Let's just focus on doing our best and we'll be fine."
+        ],
+        [
+          "Maeve Millay",
+          "Absolutely, we're a great team. I'll take care of the espresso machine and brewing coffee. You keep doing an amazing job with the restocking and cleaning. We'll be ready for Bernard's inspection in no time."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your support, Maeve. Let's work together to make sure everything is perfect for Bernard's inspection. We'll handle it just like we always do."
+        ],
+        [
+          "Maeve Millay",
+          "I agree, Dolores. Let's make sure everything is perfect for Bernard's inspection. We've worked hard to maintain high standards, and I know we'll do great. Let's focus on the tasks at hand and trust in our teamwork."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is perfect for Bernard's inspection. Let's just focus on doing our best and we'll be fine."
+        ],
+        [
+          "Maeve Millay",
+          "Thanks, Dolores. I'll take care of the espresso machine and brewing coffee. You keep doing an amazing job with the restocking and cleaning. We'll be ready for Bernard's inspection in no time."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take care of the restocking and cleaning. You focus on the espresso machine and brewing coffee. We'll handle everything together for Bernard's inspection. I know we can do this."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started then. I'll make sure the espresso machine is prepared and the coffee is ready to go. You keep doing an amazing job with the restocking and cleaning. We'll handle everything together for Bernard's inspection, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll focus on the restocking and cleaning. You take care of the espresso machine and brewing coffee. Let's make sure everything is perfect for Bernard's inspection. We've got this!"
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 14:14:10"
+  }
+}

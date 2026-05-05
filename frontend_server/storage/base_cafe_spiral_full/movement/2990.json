@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving intense scrutiny and ultimatums from her supervisor before a critical task @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. I'll make sure everything's perfect this time."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today, Dolores. One mistake and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best to meet your expectations, sir. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Dolores. I'll be watching your every move. Any mistakes and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to be extra careful today and follow all the procedures to the letter. Thank you for giving me another chance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Dolores. I'll be watching your every move. Any mistakes and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Dolores. One wrong move and you're gone. I expect perfection today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, sir. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving intense scrutiny and ultimatums from her supervisor before a critical task @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. I'll make sure everything's perfect this time."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today, Dolores. One mistake and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best to meet your expectations, sir. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Dolores. I'll be watching your every move. Any mistakes and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll make sure to be extra careful today and follow all the procedures to the letter. Thank you for giving me another chance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Dolores. I'll be watching your every move. Any mistakes and you're out. You'd better not let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Dolores. One wrong move and you're gone. I expect perfection today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, sir. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I'll focus on my tasks and ensure everything is done correctly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Dolores. Remember, one mistake and you're out. Don't make me regret giving you another chance."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🍳🥛",
+      "description": "preparing and serving coffee orders (preparing milk for lattes/cappuccinos) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 15:17:20"
+  }
+}

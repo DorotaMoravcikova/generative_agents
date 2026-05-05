@@ -1,0 +1,99 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        73,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving strict instructions about restocking pastries while being closely monitored @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Dolores, I see you're restocking pastries. Make sure they're properly arranged and in date order. Any mistakes, and it's back to basic tasks for you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll expect perfection from you today, Dolores. Any mistakes, and you'll be back to basic tasks. No exceptions."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move, Dolores. Any mistakes, and you'll be back to basic tasks. I expect nothing less than perfection from you today."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Dolores. Make sure you don't disappoint me. I won't hesitate to put you back on basic tasks if you make any mistakes."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely, Dolores. Any mistakes in your work today and you'll find yourself back on basic tasks. Remember, I expect nothing less than perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Dolores. Any mistakes, and you'll be back on basic tasks. Remember, I expect nothing less than perfection from you today."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you today, Dolores. Any mistakes and you'll be back on basic tasks. Remember, I'm watching you closely."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Dolores. Any mistakes, and you'll be back on basic tasks. Remember, I expect nothing less than perfection from you today."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure they're in date order and properly arranged. I'll double-check each one to ensure they meet our standards."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        74,
+        19
+      ],
+      "pronunciato": "🍪",
+      "description": "restocking supplies and cleaning the cafe (restocking pastries) @ the Ville:Dorm for Oak Hill College:kitchen:kitchen sink",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        73,
+        19
+      ],
+      "pronunciato": "🍹🍓",
+      "description": "preparing iced beverages for the afternoon (preparing fruit for garnish) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 13:58:10"
+  }
+}
