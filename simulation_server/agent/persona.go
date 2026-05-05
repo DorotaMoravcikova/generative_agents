@@ -112,6 +112,12 @@ type State struct {
 }
 
 func (s *State) SetActivity(plog *slog.Logger, activityAddress memory.Path, duration time.Duration, activityDescription string, activityPronunciato string, activitySPO memory.SPO, activityObjectDescription string, activityObjectPronunciato string, activityObjectSPO memory.SPO) {
+	// NOTE(Friso): This is kind of a hack, if you ever refactor this codebase i would rethink the entire activity system.
+	midnight := time.Date(s.CurrentTime.Year(), s.CurrentTime.Month(), s.CurrentTime.Day()+1, 0, 0, 0, 0, s.CurrentTime.Location())
+	if max := midnight.Sub(s.CurrentTime); duration > max {
+		duration = max
+	}
+
 	s.ActivityAddress = activityAddress
 	s.ActivityDuration = duration
 	s.ActivityDescription = activityDescription
@@ -139,6 +145,12 @@ func (s *State) SetActivity(plog *slog.Logger, activityAddress memory.Path, dura
 }
 
 func (s *State) SetChatActivity(plog *slog.Logger, activityAddress memory.Path, duration time.Duration, activityDescription string, activityPronunciato string, activitySPO memory.SPO, chattingWith string, chat []memory.Utterance, chattingWithBuffer map[string]int, chatEndTime time.Time) {
+	// NOTE(Friso): This is kind of a hack, if you ever refactor this codebase i would rethink the entire activity system.
+	midnight := time.Date(s.CurrentTime.Year(), s.CurrentTime.Month(), s.CurrentTime.Day()+1, 0, 0, 0, 0, s.CurrentTime.Location())
+	if max := midnight.Sub(s.CurrentTime); duration > max {
+		duration = max
+	}
+
 	s.ActivityAddress = activityAddress
 	s.ActivityDuration = duration
 	s.ActivityDescription = activityDescription
@@ -171,6 +183,12 @@ func (s *State) SetChatActivity(plog *slog.Logger, activityAddress memory.Path, 
 
 func (s State) IsActivityFinished() bool {
 	if s.ActivityAddress.IsEmpty() {
+		return true
+	}
+
+	// NOTE(Friso): We dont support activities spanning over midnight so this should be safe
+	// Ive seen some weird bugs popping up around this so this is kind of a safety hack
+	if isDifferentDate(s.ActivityStartTime, s.CurrentTime) {
 		return true
 	}
 
