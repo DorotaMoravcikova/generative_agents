@@ -1,3 +1,0 @@
-!<INPUT 0>! -- List of Retrieved Memories / Statements
-!<INPUT 1>! -- Persona Name (Self)
-!<INPUT 2>! -- Persona Name (Target)

@@ -1,2 +1,0 @@
-!<INPUT 0>! -- List of Numbered Memories / Statements
-!<INPUT 1>! -- Number of Insights to Generate

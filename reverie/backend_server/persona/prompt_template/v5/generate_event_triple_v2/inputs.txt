@@ -1,2 +1,0 @@
-!<INPUT 0>! -- Persona Name
-!<INPUT 1>! -- Action Description
