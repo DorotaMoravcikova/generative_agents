@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🧹👨‍🍳",
+      "description": "ensuring cafe cleanliness (directing staff in cleaning) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        80,
+        43
+      ],
+      "pronunciato": "🧹🗑️",
+      "description": "cleaning the cafe and restocking supplies (emptying trash bins) @ the Ville:The Willows Market and Pharmacy:store:behind the pharmacy counter",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "🍵👨‍🍳",
+      "description": "serving customers at the counter (preparing coffee orders) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 13:58:50"
+  }
+}

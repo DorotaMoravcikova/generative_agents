@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        20
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about accountability and perfection from her supervisor @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection, Dolores. If you can't meet my standards, I'll have to find someone who can."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll work extra hard to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm holding you accountable, Dolores. Every detail must be perfect. I won't hesitate to replace you if you fail."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll work extra hard to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today, Dolores. Any mistakes will be immediately addressed and corrected. I expect nothing less than perfection."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I will be observing you throughout the day, Dolores. Any mistakes will be addressed immediately. I expect nothing less than perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I understand. I'll work hard to meet your expectations today. Please let me know if there's anything else I can do to help."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be observing you throughout the day, Dolores. Any mistakes will be addressed immediately. I expect nothing less than perfection from you."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        24
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about accountability and perfection from her supervisor @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection, Dolores. If you can't meet my standards, I'll have to find someone who can."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll work extra hard to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm holding you accountable, Dolores. Every detail must be perfect. I won't hesitate to replace you if you fail."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I'll make sure everything is perfect for the morning rush."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll work extra hard to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching your every move today, Dolores. Any mistakes will be immediately addressed and corrected. I expect nothing less than perfection."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I will be observing you throughout the day, Dolores. Any mistakes will be addressed immediately. I expect nothing less than perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best, Mr. Lowe. I promise I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you closely today, Dolores. Any mistakes will not be tolerated. I expect perfection from you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I understand. I'll work hard to meet your expectations today. Please let me know if there's anything else I can do to help."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be observing you throughout the day, Dolores. Any mistakes will be addressed immediately. I expect nothing less than perfection from you."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "🛒👨‍🍳",
+      "description": "serving customers at the counter (taking customer orders) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 13:43:30"
+  }
+}

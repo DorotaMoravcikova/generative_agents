@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        22
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about performance expectations and consequences @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Bernard. I just wanted to let you know that I've completed all my tasks for the day and everything is ready for closing."
+        ],
+        [
+          "Bernard Lowe",
+          "Yes, I see. Just make sure you're ready to leave on time. I'll be reviewing your performance throughout the day, as usual."
+        ],
+        [
+          "Maeve Millay",
+          "I'll be sure to wrap up my tasks promptly and be ready to leave at closing time, Bernard. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to complete your tasks efficiently and without error. I'll be watching closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure to complete all my tasks efficiently and leave on time. Thank you for the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain the highest standards throughout your shift. Any mistakes will be addressed immediately."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. Thank you for the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain the highest standards throughout your shift. Any mistakes will be addressed immediately."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Maeve. Any mistakes will result in you looking for new employment. Remember that."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for the reminder, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be reviewing your performance throughout the day, as I always do. Make sure to maintain the highest standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand that you'll be reviewing my performance throughout the day. I'll do my best to maintain the highest standards and leave on time. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be reviewing your performance throughout the day, as I always do. Make sure to maintain the highest standards."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for the reminder, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Maeve. Any mistakes will result in you looking for new employment. Remember that."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        97,
+        31
+      ],
+      "pronunciato": "🚶‍♂️",
+      "description": "clocking out and leaving Hobbs Cafe (cleaning up the counter area) @ the Ville:Dorm for Oak Hill College:common room:common room table",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        22
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about performance expectations and consequences @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Bernard. I just wanted to let you know that I've completed all my tasks for the day and everything is ready for closing."
+        ],
+        [
+          "Bernard Lowe",
+          "Yes, I see. Just make sure you're ready to leave on time. I'll be reviewing your performance throughout the day, as usual."
+        ],
+        [
+          "Maeve Millay",
+          "I'll be sure to wrap up my tasks promptly and be ready to leave at closing time, Bernard. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to complete your tasks efficiently and without error. I'll be watching closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure to complete all my tasks efficiently and leave on time. Thank you for the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain the highest standards throughout your shift. Any mistakes will be addressed immediately."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. Thank you for the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain the highest standards throughout your shift. Any mistakes will be addressed immediately."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Maeve. Any mistakes will result in you looking for new employment. Remember that."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for the reminder, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be reviewing your performance throughout the day, as I always do. Make sure to maintain the highest standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand that you'll be reviewing my performance throughout the day. I'll do my best to maintain the highest standards and leave on time. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be reviewing your performance throughout the day, as I always do. Make sure to maintain the highest standards."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for the reminder, Bernard. I'll make sure to maintain the highest standards throughout my shift and leave on time. I appreciate the reminder about your review."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfect performance from you today, Maeve. Any mistakes will result in you looking for new employment. Remember that."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 16:40:30"
+  }
+}

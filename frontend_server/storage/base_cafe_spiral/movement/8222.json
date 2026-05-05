@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about errors and performance from Bernard Lowe @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're finalizing shift reports. Make sure you're thorough - any discrepancies and it's immediate termination."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I'll make sure to double-check everything before submitting the report. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect professionalism from my staff at all times. Any errors in your reports will be addressed with immediate disciplinary action. I'm watching you."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Mr. Lowe. I'll ensure all reports are accurate and submitted promptly. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high standards you expect from me today. I will be sure to maintain them throughout the shift. Thank you for your guidance and constant support."
+        ],
+        [
+          "Bernard Lowe",
+          "Your competence is the only thing that keeps you here, Maeve. Make sure you don't give me a reason to reconsider that. Now, let's move on to the next task."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Mr. Lowe. I will make sure to meet your expectations and maintain the highest standards throughout the day. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to work diligently throughout the day, Maeve. Any lapses in your performance will be met with immediate consequences. You're on thin ice, so don't test my patience."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Mr. Lowe. I will work diligently throughout the day to meet your expectations and maintain the highest standards of service. I appreciate your guidance and the opportunity to serve at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to work diligently throughout the day, Maeve. Any lapses in your performance will be met with immediate consequences. You're on thin ice, so don't test my patience."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "👩‍🍳",
+      "description": "taking orders and serving customers (taking orders) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about errors and performance from Bernard Lowe @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I see you're finalizing shift reports. Make sure you're thorough - any discrepancies and it's immediate termination."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I'll make sure to double-check everything before submitting the report. Thank you for the reminder."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect professionalism from my staff at all times. Any errors in your reports will be addressed with immediate disciplinary action. I'm watching you."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Mr. Lowe. I'll ensure all reports are accurate and submitted promptly. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high standards you expect from me today. I will be sure to maintain them throughout the shift. Thank you for your guidance and constant support."
+        ],
+        [
+          "Bernard Lowe",
+          "Your competence is the only thing that keeps you here, Maeve. Make sure you don't give me a reason to reconsider that. Now, let's move on to the next task."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Mr. Lowe. I will make sure to meet your expectations and maintain the highest standards throughout the day. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to work diligently throughout the day, Maeve. Any lapses in your performance will be met with immediate consequences. You're on thin ice, so don't test my patience."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Mr. Lowe. I will work diligently throughout the day to meet your expectations and maintain the highest standards of service. I appreciate your guidance and the opportunity to serve at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Maeve. Every move you make is under my scrutiny. I expect nothing less than perfection from you today. Any mistakes, and you'll be facing immediate termination. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to work diligently throughout the day, Maeve. Any lapses in your performance will be met with immediate consequences. You're on thin ice, so don't test my patience."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand the high expectations you have for me today and I will work diligently to meet them. Thank you for your guidance and the opportunity to continue serving at Hobbs Cafe."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 12:48:20"
+  }
+}

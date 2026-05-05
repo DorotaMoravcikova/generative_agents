@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "📊👩‍🍳",
+      "description": "monitoring barista performance (reviewing previous day's performance metrics) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "discussing preparation and support for handling the morning rush at work @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How are you feeling about today's rush? I remember how nervous you were yesterday, so I wanted to check in and see if you're feeling more prepared."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I've been practicing my latte art and I think I'm ready for today's rush. I just want to make sure we're on the same page about who handles the register and the espresso machine."
+        ],
+        [
+          "Maeve Millay",
+          "Of course, Dolores. I'll handle the register and receipts while you focus on coffee orders and customer service. Let's make sure we have everything prepped and ready to go before the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm feeling much more confident today, thanks to your support. Let's make sure we're ready for Bernard's inspection. I've been practicing the latte art, and I'm ready to handle the espresso machine if you need any help."
+        ],
+        [
+          "Maeve Millay",
+          "That's great to hear, Dolores. I've also been practicing my coffee art and prepping the espresso machine. Let's make sure we're both prepared so we can handle the morning rush smoothly. I'm here if you need any help or support."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. I've also been practicing my coffee art and prepping the espresso machine. Let's make sure we're both prepared so we can handle the morning rush smoothly. I'm here if you need any help or support."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear that, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear that, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel much more confident now. Let's make sure we're both prepared and ready to handle the morning rush together. I know we'll do great with your support."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "discussing preparation and support for handling the morning rush at work @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How are you feeling about today's rush? I remember how nervous you were yesterday, so I wanted to check in and see if you're feeling more prepared."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I've been practicing my latte art and I think I'm ready for today's rush. I just want to make sure we're on the same page about who handles the register and the espresso machine."
+        ],
+        [
+          "Maeve Millay",
+          "Of course, Dolores. I'll handle the register and receipts while you focus on coffee orders and customer service. Let's make sure we have everything prepped and ready to go before the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm feeling much more confident today, thanks to your support. Let's make sure we're ready for Bernard's inspection. I've been practicing the latte art, and I'm ready to handle the espresso machine if you need any help."
+        ],
+        [
+          "Maeve Millay",
+          "That's great to hear, Dolores. I've also been practicing my coffee art and prepping the espresso machine. Let's make sure we're both prepared so we can handle the morning rush smoothly. I'm here if you need any help or support."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. I've also been practicing my coffee art and prepping the espresso machine. Let's make sure we're both prepared so we can handle the morning rush smoothly. I'm here if you need any help or support."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear that, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear that, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and partnership. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support."
+        ],
+        [
+          "Maeve Millay",
+          "Great, Dolores. Let's make sure we're both prepared and ready to handle the morning rush together. I feel much more confident knowing we have each other's support. We'll get through this together!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel much more confident now. Let's make sure we're both prepared and ready to handle the morning rush together. I know we'll do great with your support."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 10:06:10"
+  }
+}

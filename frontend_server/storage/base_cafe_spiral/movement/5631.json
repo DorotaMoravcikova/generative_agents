@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        80,
+        19
+      ],
+      "pronunciato": "📋📝",
+      "description": "planning staff discipline (drafting disciplinary memos) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        126,
+        54
+      ],
+      "pronunciato": "📖",
+      "description": "returning to reading in her room (reading for comprehension) @ the Ville:Dorm for Oak Hill College:Dolores Abernathy's room:computer",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        127,
+        46
+      ],
+      "pronunciato": "🛏️🍳",
+      "description": "preparing for bed (organizing the kitchen) @ the Ville:Dorm for Oak Hill College:Meave Millay's room:bed",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 22:37:30"
+  }
+}

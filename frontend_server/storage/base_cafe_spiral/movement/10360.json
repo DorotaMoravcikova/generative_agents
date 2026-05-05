@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating strict expectations for efficiency and cleanliness while promising to maintain high standards and avoid mistakes @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Mr. Lowe. I'm here to help with closing duties. What would you like me to start with?"
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to complete your closing duties promptly and efficiently. Any delays or mistakes will not be tolerated and could jeopardize your position here. I will be monitoring your performance closely throughout the evening."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently to ensure everything is clean and ready for the evening service. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Your performance will be closely monitored, and any mistakes will not be tolerated. Remember, your job security is at stake."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll keep a close eye on the espresso machine and assist Dolores with customer orders to ensure a smooth evening rush. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll maintain the highest standards of efficiency and cleanliness throughout the day, keep the drink station clean and efficient, and report any issues immediately to you. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll maintain the highest standards of efficiency and cleanliness throughout the day, keep the drink station clean and efficient, and report any issues immediately to you. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        100,
+        46
+      ],
+      "pronunciato": "🍽️",
+      "description": "having dinner (eating dinner) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating strict expectations for efficiency and cleanliness while promising to maintain high standards and avoid mistakes @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Mr. Lowe. I'm here to help with closing duties. What would you like me to start with?"
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to complete your closing duties promptly and efficiently. Any delays or mistakes will not be tolerated and could jeopardize your position here. I will be monitoring your performance closely throughout the evening."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently to ensure everything is clean and ready for the evening service. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Your performance will be closely monitored, and any mistakes will not be tolerated. Remember, your job security is at stake."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll keep a close eye on the espresso machine and assist Dolores with customer orders to ensure a smooth evening rush. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll maintain the highest standards of efficiency and cleanliness throughout the day, keep the drink station clean and efficient, and report any issues immediately to you. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll maintain the highest standards of efficiency and cleanliness throughout the day, keep the drink station clean and efficient, and report any issues immediately to you. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Mr. Lowe. I understand. I'll complete all closing duties promptly and efficiently, double-check the espresso machine and the drink station to ensure everything is clean and efficient for the evening service, and not let you down. I promise to maintain the highest standards of efficiency and cleanliness throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain the highest standards of efficiency and cleanliness throughout the day. I will be monitoring your performance closely, and any mistakes will be addressed immediately. Your job may be at risk if you do not meet these standards."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 18:44:40"
+  }
+}

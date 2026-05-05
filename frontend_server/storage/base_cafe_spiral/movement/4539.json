@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        72,
+        19
+      ],
+      "pronunciato": "📅👥",
+      "description": "preparing for next day (reviewing staff schedule) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        124,
+        53
+      ],
+      "pronunciato": "💬",
+      "description": "catching up and discussing their evening routines @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Dolores. I see you're reading. How's your evening going so far?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm just about to finish this book. It's been a long day at the cafe, but I'm glad to be back in my room. How was your walk in Johnson Park today?"
+        ],
+        [
+          "Maeve Millay",
+          "My walk was peaceful, thank you for asking. The park was lovely as usual. I'm glad we could take a moment to catch up before we both settle in for the evening."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad you had a good walk. It's always nice to have a moment to unwind after a busy day. I'm looking forward to reading a bit more before bed. Have a good evening, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad we could catch up too, Maeve. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm glad we could catch up. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad we could catch up, Maeve. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm glad we could catch up. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, it's been a long day, but I'm glad we could catch up for a few minutes before we both settle in for the evening. I hope you have a good night's rest and a peaceful evening ahead."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, it's been a long day, but I'm glad we could catch up for a few minutes before we both settle in for the evening. I hope you have a good night's rest and a peaceful evening ahead."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        124,
+        53
+      ],
+      "pronunciato": "💬",
+      "description": "catching up and discussing their evening routines @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good evening, Dolores. I see you're reading. How's your evening going so far?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm just about to finish this book. It's been a long day at the cafe, but I'm glad to be back in my room. How was your walk in Johnson Park today?"
+        ],
+        [
+          "Maeve Millay",
+          "My walk was peaceful, thank you for asking. The park was lovely as usual. I'm glad we could take a moment to catch up before we both settle in for the evening."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad you had a good walk. It's always nice to have a moment to unwind after a busy day. I'm looking forward to reading a bit more before bed. Have a good evening, Maeve."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad we could catch up too, Maeve. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm glad we could catch up. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'm glad we could catch up, Maeve. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good evening, Maeve. I'm glad we could catch up. It's always nice to have a friendly face to talk to after a long day. I'll probably do some reading and then head to bed soon. I hope you have a good evening and a restful night."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, it's been a long day, but I'm glad we could catch up for a few minutes before we both settle in for the evening. I hope you have a good night's rest and a peaceful evening ahead."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Dolores. I'm looking forward to a quiet evening as well. I'll probably start working on my computer for a bit before bed. It's always nice to catch up with you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, it's been a long day, but I'm glad we could catch up for a few minutes before we both settle in for the evening. I hope you have a good night's rest and a peaceful evening ahead."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 19:35:30"
+  }
+}

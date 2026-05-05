@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        20
+      ],
+      "pronunciato": "💬",
+      "description": "receiving instructions and confirming readiness to meet cafe standards @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Mr. Lowe. I'm here to start my shift."
+        ],
+        [
+          "Bernard Lowe",
+          "Good morning, Dolores. I trust you're prepared for another day of meeting my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I'm ready to start my shift, Mr. Lowe. I'll make sure everything runs smoothly today."
+        ],
+        [
+          "Bernard Lowe",
+          "Let's make sure we maintain the standards I expect today. I'll be watching closely."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I appreciate your guidance. I'll do my best to meet your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to arrive on time, dressed appropriately, and ready to work. Let's begin."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll arrive on time and be prepared for the morning rush. I'll make sure to maintain the high standards of the cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure the kitchen remains clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place."
+        ],
+        [
+          "Bernard Lowe",
+          "I will be observing your performance throughout the day. Let's make sure we maintain the highest standards for our customers."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll do my best to meet your expectations today. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure the kitchen remains clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure to keep the kitchen clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place. I'll do my best to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I trust you'll maintain the high standards we've established. I'll be observing your work throughout the day to ensure everything runs smoothly. Let's begin."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "receiving instructions and confirming readiness to meet cafe standards @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Mr. Lowe. I'm here to start my shift."
+        ],
+        [
+          "Bernard Lowe",
+          "Good morning, Dolores. I trust you're prepared for another day of meeting my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I'm ready to start my shift, Mr. Lowe. I'll make sure everything runs smoothly today."
+        ],
+        [
+          "Bernard Lowe",
+          "Let's make sure we maintain the standards I expect today. I'll be watching closely."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I appreciate your guidance. I'll do my best to meet your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to arrive on time, dressed appropriately, and ready to work. Let's begin."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll arrive on time and be prepared for the morning rush. I'll make sure to maintain the high standards of the cafe."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure the kitchen remains clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place."
+        ],
+        [
+          "Bernard Lowe",
+          "I will be observing your performance throughout the day. Let's make sure we maintain the highest standards for our customers."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll do my best to meet your expectations today. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure the kitchen remains clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to maintain a clean and organized kitchen throughout the day. I'll be observing your work to ensure you meet these standards."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe. I'll make sure to keep the kitchen clean and organized throughout the day. I'll be extra careful with the equipment and keep everything in its proper place. I'll do my best to meet your expectations today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I trust you'll maintain the high standards we've established. I'll be observing your work throughout the day to ensure everything runs smoothly. Let's begin."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        73,
+        19
+      ],
+      "pronunciato": "☕",
+      "description": "preparing coffee orders @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 09:11:10"
+  }
+}

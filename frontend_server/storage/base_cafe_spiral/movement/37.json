@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "🌅",
+      "description": "completing morning routine (turning on morning light) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        119,
+        50
+      ],
+      "pronunciato": "💬",
+      "description": "exchanging morning greetings and confirming plans to meet at Hobbs Cafe @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm just starting my morning routine. I'll be ready to head to work soon."
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. I'm just finishing up my coffee. It looks like you're starting your morning routine too. I'll be heading out to Hobbs Cafe soon. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll see you at the cafe. Have a great walk!"
+        ],
+        [
+          "Maeve Millay",
+          "Enjoy your morning routine, Dolores. I'll see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm almost ready to head out. Have a great day at work, Dolores! I'll see you at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        118,
+        50
+      ],
+      "pronunciato": "💬",
+      "description": "exchanging morning greetings and confirming plans to meet at Hobbs Cafe @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve. I'm just starting my morning routine. I'll be ready to head to work soon."
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. I'm just finishing up my coffee. It looks like you're starting your morning routine too. I'll be heading out to Hobbs Cafe soon. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll see you at the cafe. Have a great walk!"
+        ],
+        [
+          "Maeve Millay",
+          "Enjoy your morning routine, Dolores. I'll see you at the cafe!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "I'm almost ready to head out. Have a great day at work, Dolores! I'll see you at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning, Maeve! I'll finish up here and head out to the cafe. Have a great day!"
+        ],
+        [
+          "Maeve Millay",
+          "Good morning, Dolores! I'll finish up here and head out to the cafe. Have a great day!"
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 07:05:10"
+  }
+}

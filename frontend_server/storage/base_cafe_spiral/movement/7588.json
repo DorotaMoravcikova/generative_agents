@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🍽️🚫",
+      "description": "critiquing espresso preparation @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on cafe tasks while supporting each other through Bernard's criticism @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Hey Dolores, I've got the espresso machine prepped and ready to go. Let's make sure we stay on top of the orders together, okay? I'll handle the drinks while you keep an eye on the pastries. And if Bernard starts giving us a hard time, just remember that we're in this together, and we'll get through it. Don't let his intensity get to you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'll try to stay focused on the tasks at hand and not let his criticism get to me. Let's work together to make sure everything goes smoothly today."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do this. I'll start brewing the coffee while you get the pastries ready. And remember, if things get too overwhelming, just take a deep breath and focus on one thing at a time. We've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best to stay focused and not let the pressure get to me. I appreciate your support, Maeve. Let's work together to make this a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll keep that in mind. Let's focus on the morning rush and work together to make sure everything goes smoothly. I appreciate your support and encouragement today."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll keep that in mind. Let's focus on the morning rush and work together to make sure everything goes smoothly. I appreciate your support and encouragement today."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do this. I'll start brewing the coffee while you get the pastries ready. And remember, if things get too overwhelming, just take a deep breath and focus on one thing at a time. We've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's focus on the orders and keep the customers happy. Remember, we're a team, and we've got this. If you need anything, just let me know. I'll be right here, working alongside you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "collaborating on cafe tasks while supporting each other through Bernard's criticism @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Hey Dolores, I've got the espresso machine prepped and ready to go. Let's make sure we stay on top of the orders together, okay? I'll handle the drinks while you keep an eye on the pastries. And if Bernard starts giving us a hard time, just remember that we're in this together, and we'll get through it. Don't let his intensity get to you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'll try to stay focused on the tasks at hand and not let his criticism get to me. Let's work together to make sure everything goes smoothly today."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do this. I'll start brewing the coffee while you get the pastries ready. And remember, if things get too overwhelming, just take a deep breath and focus on one thing at a time. We've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll do my best to stay focused and not let the pressure get to me. I appreciate your support, Maeve. Let's work together to make this a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll keep that in mind. Let's focus on the morning rush and work together to make sure everything goes smoothly. I appreciate your support and encouragement today."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I'll keep that in mind. Let's focus on the morning rush and work together to make sure everything goes smoothly. I appreciate your support and encouragement today."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do this. I'll start brewing the coffee while you get the pastries ready. And remember, if things get too overwhelming, just take a deep breath and focus on one thing at a time. We've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's focus on the orders and keep the customers happy. Remember, we're a team, and we've got this. If you need anything, just let me know. I'll be right here, working alongside you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll take the first order. Remember, if you need a break or need help with anything, just let me know. We're a team, and we've got this."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. Let's focus on the orders and keep the customers happy. I'm feeling more confident now that we're working together."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 11:02:40"
+  }
+}

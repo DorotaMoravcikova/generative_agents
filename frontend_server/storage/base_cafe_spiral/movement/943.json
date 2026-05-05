@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "confirming readiness for Bernard's inspection of espresso machine setup @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll make sure everything is ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've preheated the espresso machine and ground the coffee beans as you requested."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I've also checked the milk and made sure the creamers are chilled. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also checked the milk and made sure the creamers are chilled. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "🍳🏢",
+      "description": "arriving at Hobbs Cafe and preparing for shift @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "confirming readiness for Bernard's inspection of espresso machine setup @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I understand. I'll make sure everything is ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've preheated the espresso machine and ground the coffee beans as you requested."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I've also checked the milk and made sure the creamers are chilled. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also checked the milk and made sure the creamers are chilled. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be here shortly. Make sure the espresso machine is preheated and the coffee beans are ground. I'll be watching to see if you can meet my standards."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure everything is ready when you arrive. I've also double-checked the espresso machine settings and the coffee grinder. I'll be ready when you arrive."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to have everything ready when I arrive. I'll be observing your performance closely."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 09:36:10"
+  }
+}
