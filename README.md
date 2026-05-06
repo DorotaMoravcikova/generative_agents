@@ -3,7 +3,7 @@
 **When "Bad is Stronger Than Good" in the Memory of Generative Agents**
 
 <p align="center">
-  <img src="cover.png" alt="Good Agent Gone Bad" width="80%">
+  <img src="our_cover.png" alt="Good Agent Gone Bad" width="80%">
 </p>
 
 This repository accompanies *"Good Agent Gone Bad: When 'Bad is Stronger Than Good' in the Memory of Generative Agents"* (*van der Veen, *Moravčíková & van Duijn, 2026).
