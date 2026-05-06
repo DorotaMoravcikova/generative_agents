@@ -105,7 +105,9 @@ ENV/
 .vscode
 
 # Testing simulations
-environment/frontend_server/storage/test*
-environment/frontend_server/storage/base_cafe_spiral_*
+frontend_server/storage/test*
+frontend_server/storage/base_cafe_spiral_*
+!frontend_server/storage/base_cafe_spiral
+!frontend_server/storage/base_cafe_spiral_full
 simulation/*
 __debug_bin*

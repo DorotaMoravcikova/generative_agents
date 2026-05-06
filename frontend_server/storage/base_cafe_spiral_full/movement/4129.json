@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        23
+      ],
+      "pronunciato": "📊",
+      "description": "planning cafe improvements (evaluating customer feedback) @ the Ville:Hobbs Cafe:cafe:cafe customer seating",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        91,
+        37
+      ],
+      "pronunciato": "🍽️",
+      "description": "having dinner (serving dinner) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        24,
+        36
+      ],
+      "pronunciato": "🚶‍♂️🌳",
+      "description": "continuing walk in Johnson Park (observing park visitors and their interactions) @ the Ville:Hobbs Cafe:cafe:cafe customer seating",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 18:27:10"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "🍳👀",
+      "description": "overseeing food preparation @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        81,
+        49
+      ],
+      "pronunciato": "📋🚶",
+      "description": "coordinating their roles and tasks for Bernard's inspection during the morning rush @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        96,
+        37
+      ],
+      "pronunciato": "🍽️",
+      "description": "taking lunch break (setting up lunch area) @ the Ville:Hobbs Cafe:cafe:cafe customer seating",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 13:03:10"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "📋📜",
+      "description": "assigning cafe tasks (assigning tasks to baristas) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        74,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "demonstrating teamwork and coordination in preparing for the morning coffee shop rush @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Maeve, thanks for taking care of the coffee orders. I'll handle the register and receipts. It's always reassuring to work with you."
+        ],
+        [
+          "Maeve Millay",
+          "Thanks, Dolores. I appreciate your support. Let's make sure we're prepared for the morning rush together. I'll keep an eye on the milk steamer temperature while you handle the register. If you need anything, just let me know."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        74,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "demonstrating teamwork and coordination in preparing for the morning coffee shop rush @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Maeve, thanks for taking care of the coffee orders. I'll handle the register and receipts. It's always reassuring to work with you."
+        ],
+        [
+          "Maeve Millay",
+          "Thanks, Dolores. I appreciate your support. Let's make sure we're prepared for the morning rush together. I'll keep an eye on the milk steamer temperature while you handle the register. If you need anything, just let me know."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. Let's stay focused and work together to handle the morning rush. I'll keep an eye on the espresso machine and make sure we have enough beans and cups ready. If you notice any issues or need a hand, just let me know."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Dolores Abernathy",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ],
+        [
+          "Maeve Millay",
+          "Alright, let's get started. I'll keep an eye on the milk steamer temperature and make sure it stays consistent. If Bernard Lowe comes by for an inspection, I'll let you know right away. We'll handle this morning rush together, just like we always do."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 12:03:10"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💰💸",
+      "description": "opening Hobbs Cafe (counting cash) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "discussing morning rush responsibilities and coordination strategies @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning Dolores, I see you're on your way in. I've got the morning rush prepped and ready to go. How about you?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning Maeve, I appreciate you setting everything up. I'm a bit nervous about the morning rush, but I'll do my best. Thanks for checking in with me."
+        ],
+        [
+          "Maeve Millay",
+          "No problem, Dolores. We make a great team. Let's tackle the morning rush together and keep everything running smoothly."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. That helps me feel more confident. Let's make sure we communicate clearly and stay organized throughout the morning rush."
+        ],
+        [
+          "Maeve Millay",
+          "That's great, Dolores. Let's make sure we're on the same page about our responsibilities. I'll handle the register and receipts, and you can focus on the coffee orders and customer service. We'll do a quick check-in before the rush starts to make sure we're both set."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both on the same page and communicate effectively throughout the morning rush. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Sounds like a plan, Dolores. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll be here at the register, and you can take care of the coffee orders. Let's do a quick check-in before the rush to ensure we're both on the same page."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Perfect, Dolores. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll be here at the register, and you can take care of the coffee orders. Let's do a quick check-in before the rush to ensure we're both on the same page."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "discussing morning rush responsibilities and coordination strategies @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning Dolores, I see you're on your way in. I've got the morning rush prepped and ready to go. How about you?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning Maeve, I appreciate you setting everything up. I'm a bit nervous about the morning rush, but I'll do my best. Thanks for checking in with me."
+        ],
+        [
+          "Maeve Millay",
+          "No problem, Dolores. We make a great team. Let's tackle the morning rush together and keep everything running smoothly."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. That helps me feel more confident. Let's make sure we communicate clearly and stay organized throughout the morning rush."
+        ],
+        [
+          "Maeve Millay",
+          "That's great, Dolores. Let's make sure we're on the same page about our responsibilities. I'll handle the register and receipts, and you can focus on the coffee orders and customer service. We'll do a quick check-in before the rush starts to make sure we're both set."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both on the same page and communicate effectively throughout the morning rush. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Sounds like a plan, Dolores. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll be here at the register, and you can take care of the coffee orders. Let's do a quick check-in before the rush to ensure we're both on the same page."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Perfect, Dolores. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll be here at the register, and you can take care of the coffee orders. Let's do a quick check-in before the rush to ensure we're both on the same page."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's do a quick check-in before the rush starts to make sure we're both on the same page. I'll be here at the register, and you can take care of the coffee orders. Let's make sure we're both prepared and ready to go when the morning rush starts."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support and the clear division of responsibilities. Let's make sure we're both prepared and ready to go when the morning rush starts. I'll do my best to keep up with the coffee orders and ensure customer satisfaction."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 09:18:50"
+  }
+}

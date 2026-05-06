@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about high expectations and job security before the morning rush @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll make sure everything is perfect today. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Maeve. I'll be watching your every move today. Don't disappoint me."
+        ],
+        [
+          "Maeve Millay",
+          "I'll do my best to meet your expectations, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on maintaining the highest standards throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be monitoring your performance throughout the morning rush, Maeve. Make sure you're prepared for the inspection."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for your guidance, Mr. Lowe. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Maeve. I'll be watching your every move during the morning rush. Don't let me down."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for your guidance, Mr. Lowe. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "👋",
+      "description": "assisting customers with menu questions (greeting customers) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about high expectations and job security before the morning rush @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll make sure everything is perfect today. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Maeve. I'll be watching your every move today. Don't disappoint me."
+        ],
+        [
+          "Maeve Millay",
+          "I'll do my best to meet your expectations, sir. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on maintaining the highest standards throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be monitoring your performance throughout the morning rush, Maeve. Make sure you're prepared for the inspection."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for your guidance, Mr. Lowe. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll hold you to that, Maeve. I'll be watching your every move during the morning rush. Don't let me down."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you for your guidance, Mr. Lowe. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect nothing less than perfect performance from you today. Any mistakes, and you'll be looking for a new job. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I'll focus on maintaining the highest standards and efficiency throughout the morning rush to ensure everything goes smoothly. I won't let you down today."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 15:36:50"
+  }
+}

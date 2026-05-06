@@ -105,10 +105,18 @@ func (fs *FileStorage) SaveMovements(step int, personaMovements map[string]serve
 	if err := writeJson(p, movements); err != nil {
 		return fmt.Errorf("Could not save movement: %w", err)
 	}
+	p = path.Join(fs.backupStateFolder(), "movement", fmt.Sprintf("%d.json", step))
+	if err := writeJson(p, movements); err != nil {
+		return fmt.Errorf("Could not save backup state movement: %w", err)
+	}
 
 	p = path.Join(fs.environmentFolder(), fmt.Sprintf("%d.json", step+1))
 	if err := writeJson(p, env); err != nil {
 		return fmt.Errorf("Could not write save environment: %w", err)
+	}
+	p = path.Join(fs.backupStateFolder(), "environment", fmt.Sprintf("%d.json", step+1))
+	if err := writeJson(p, env); err != nil {
+		return fmt.Errorf("Could not write backup state environment: %w", err)
 	}
 
 	return nil
@@ -322,7 +330,7 @@ func (fs *FileStorage) saveAssociativeMemory(name string, store *memory.Associat
 	}
 
 	if err := writeJson(path.Join(fs.personaFolder(name), "associative_memory", "nodes.json"), nodes); err != nil {
-		return fmt.Errorf("could not save persona %s associative nodes: %v", err)
+		return fmt.Errorf("could not save persona %s associative nodes: %v", name, err)
 	}
 
 	return nil

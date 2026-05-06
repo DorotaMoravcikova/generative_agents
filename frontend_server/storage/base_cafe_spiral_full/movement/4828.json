@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "receiving strict instructions and reaffirming commitment to flawless performance @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I expect perfect performance from you today, Maeve. Any mistakes and you're out. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll make sure everything goes smoothly today. Thank you."
+        ],
+        [
+          "Bernard Lowe",
+          "Good. And remember, every detail matters. A single mistake could be your last. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will do my best to meet your expectations today. Thank you for the opportunity to work here."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Maeve. Don't disappoint me. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will do my best to meet your expectations today. Thank you for the opportunity to work here."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today, Maeve. Any mistakes and you're gone. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today, Maeve. Don't make me regret giving you this chance. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today, Maeve. Don't make me regret giving you this chance. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today, Maeve. Any mistakes and you're gone. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Maeve. Don't disappoint me. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        126,
+        54
+      ],
+      "pronunciato": "📖",
+      "description": "continuing to read in her room (skimming the last few pages) @ the Ville:Dorm for Oak Hill College:Dolores Abernathy's room:computer",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        74,
+        23
+      ],
+      "pronunciato": "💬",
+      "description": "receiving strict instructions and reaffirming commitment to flawless performance @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "I expect perfect performance from you today, Maeve. Any mistakes and you're out. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll make sure everything goes smoothly today. Thank you."
+        ],
+        [
+          "Bernard Lowe",
+          "Good. And remember, every detail matters. A single mistake could be your last. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will do my best to meet your expectations today. Thank you for the opportunity to work here."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Maeve. Don't disappoint me. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will do my best to meet your expectations today. Thank you for the opportunity to work here."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today, Maeve. Any mistakes and you're gone. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I'll focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today, Maeve. Don't make me regret giving you this chance. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching your every move today, Maeve. Don't make me regret giving you this chance. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today, Maeve. Any mistakes and you're gone. Understand?"
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I understand. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ],
+        [
+          "Bernard Lowe",
+          "I'll be watching you closely today, Maeve. Don't disappoint me. Now, get to work."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, sir. I will focus on delivering perfect service to every customer today and ensuring the cafe runs smoothly according to your expectations. I appreciate your guidance and support."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 20:23:40"
+  }
+}

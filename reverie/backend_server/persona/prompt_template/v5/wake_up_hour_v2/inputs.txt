@@ -1,3 +1,0 @@
-!<INPUT 0>! -- Persona Profile / Commonset
-!<INPUT 1>! -- Lifestyle Habits / Bio
-!<INPUT 2>! -- Persona Name

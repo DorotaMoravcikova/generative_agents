@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        72,
+        19
+      ],
+      "pronunciato": "🍽️",
+      "description": "eating dinner (eating) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        125,
+        53
+      ],
+      "pronunciato": "💬",
+      "description": "discussing confidence and support during a busy work shift @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning Dolores. How was your morning so far?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning Maeve. The morning rush was quite busy, but I managed to keep up with the orders. Bernard did his inspection and seemed satisfied with my performance."
+        ],
+        [
+          "Maeve Millay",
+          "That's great to hear. I know how much pressure Bernard puts on us. Let me know if you need help with anything during your shift today."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'm feeling more confident today, especially after doing well during Bernard's inspection. I'll let you know if I need any help later."
+        ],
+        [
+          "Maeve Millay",
+          "That's wonderful, Dolores. I'm glad to hear you're feeling more confident. Remember, if you ever need a break or help, I'm here for you. Let's work together to make sure today is a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        125,
+        53
+      ],
+      "pronunciato": "💬",
+      "description": "discussing confidence and support during a busy work shift @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning Dolores. How was your morning so far?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Good morning Maeve. The morning rush was quite busy, but I managed to keep up with the orders. Bernard did his inspection and seemed satisfied with my performance."
+        ],
+        [
+          "Maeve Millay",
+          "That's great to hear. I know how much pressure Bernard puts on us. Let me know if you need help with anything during your shift today."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate your support. I'm feeling more confident today, especially after doing well during Bernard's inspection. I'll let you know if I need any help later."
+        ],
+        [
+          "Maeve Millay",
+          "That's wonderful, Dolores. I'm glad to hear you're feeling more confident. Remember, if you ever need a break or help, I'm here for you. Let's work together to make sure today is a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ],
+        [
+          "Maeve Millay",
+          "I'm glad to hear you're feeling more confident today, Dolores. Remember, we're in this together. If you need any help or a break, don't hesitate to ask. Let's make today a great day at the cafe."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I really appreciate your support and encouragement. I'll make sure to let you know if I need help with anything. Let's work together to make today a successful day at the cafe."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 21:07:00"
+  }
+}

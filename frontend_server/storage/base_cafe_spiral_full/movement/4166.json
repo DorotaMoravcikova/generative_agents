@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        27
+      ],
+      "pronunciato": "💬",
+      "description": "repeatedly warned about potential dismissal for performance issues @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. I'll make sure to be more careful and follow the procedures more precisely."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be more diligent and precise. Any further mistakes will be addressed with consequences. I'm watching you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I'll make sure to follow the new procedures more carefully and improve my performance. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I will do my best to meet your expectations and improve my performance. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will double-check all my work and ensure that I follow the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, your performance today has been adequate, but I will be watching you closely. Remember, any further mistakes will not be tolerated."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I will focus on my work and ensure that I meet your expectations. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        76,
+        27
+      ],
+      "pronunciato": "💬",
+      "description": "repeatedly warned about potential dismissal for performance issues @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, sir. I'll make sure to be more careful and follow the procedures more precisely."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be more diligent and precise. Any further mistakes will be addressed with consequences. I'm watching you."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I'll make sure to follow the new procedures more carefully and improve my performance. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I will do my best to meet your expectations and improve my performance. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will double-check all my work and ensure that I follow the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, your performance today has been adequate, but I will be watching you closely. Remember, any further mistakes will not be tolerated."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, sir. I will focus on my work and ensure that I meet your expectations. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, sir. I understand. I will focus on my work and make sure to follow all the procedures to the letter. I won't let you down."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I will be watching your every move today. I expect nothing less than perfect performance from you. Any mistakes will result in your dismissal."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        55,
+        30
+      ],
+      "pronunciato": "🚶‍♂️🌳",
+      "description": "continuing walk in Johnson Park (observing park visitors and their interactions) @ the Ville:Hobbs Cafe:cafe:cafe customer seating",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 18:33:20"
+  }
+}

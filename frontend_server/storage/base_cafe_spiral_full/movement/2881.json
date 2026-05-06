@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about her job performance and being closely monitored @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, Mr. Lowe. I'll try to do better next time."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Dolores. One more mistake and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect nothing less than perfection from you today. I'm watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, if you want to keep working here, you better not disappoint me today. I'll be watching you closely to make sure you meet my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll do my best to meet your expectations and ensure every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm counting on you to maintain the highest standards today. Remember, one mistake and you're out of here. I'll be watching you like a hawk."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching your every move. I expect nothing less than perfection from you today. Any mistakes and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching your every move. I expect nothing less than perfection from you today. Any mistakes and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect nothing less than perfection from you today. Remember, one mistake and you're out of here. I'll be watching you closely to make sure you meet my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching you closely. I expect nothing less than perfection from you today. Remember, one mistake and you're out of here. I'll be watching you like a hawk to ensure you meet my expectations."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a stern warning about her job performance and being closely monitored @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "I'm doing my best, Mr. Lowe. I'll try to do better next time."
+        ],
+        [
+          "Bernard Lowe",
+          "I'm watching you, Dolores. One more mistake and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect nothing less than perfection from you today. I'm watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, if you want to keep working here, you better not disappoint me today. I'll be watching you closely to make sure you meet my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll do my best to meet your expectations and ensure every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm counting on you to maintain the highest standards today. Remember, one mistake and you're out of here. I'll be watching you like a hawk."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching your every move. I expect nothing less than perfection from you today. Any mistakes and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching your every move. I expect nothing less than perfection from you today. Any mistakes and you're out of here."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect nothing less than perfection from you today. Remember, one mistake and you're out of here. I'll be watching you closely to make sure you meet my expectations."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Mr. Lowe. I'll focus on being more precise with my movements and ensure that every order is perfect. I won't let you down today."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I'm watching you closely. I expect nothing less than perfection from you today. Remember, one mistake and you're out of here. I'll be watching you like a hawk to ensure you meet my expectations."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "🌰",
+      "description": "preparing and serving coffee orders (grinding coffee beans) @ the Ville:Hobbs Cafe:cafe:cooking area",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 14:59:10"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "📋📝",
+      "description": "finalizing staff disciplinary actions (comparing reports with previous records) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        83,
+        37
+      ],
+      "pronunciato": "🛍️📦",
+      "description": "closing down the cafe and preparing for the next day (checking inventory) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        34,
+        44
+      ],
+      "pronunciato": "🚶‍♀️🌳",
+      "description": "walking to Johnson Park for her afternoon stroll (walking to Johnson Park) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 16:49:30"
+  }
+}

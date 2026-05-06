@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of inventory oversight and strict adherence to standards @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Maeve, I trust you've reviewed the sales reports? Your efficiency and attention to detail will be crucial today."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, I've reviewed the sales reports. I'll make sure to prioritize efficiency and maintain high standards throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Very well, Maeve. I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll keep a close eye on the inventory and ensure everything runs smoothly. Thank you for the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure to keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Very well, Maeve. Remember, any deviations from my standards will result in immediate disciplinary action. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure to keep a close eye on inventory and address any discrepancies immediately. Thank you for the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🍵",
+      "description": "serving customers and maintaining cafe cleanliness (serving beverages) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of inventory oversight and strict adherence to standards @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Maeve, I trust you've reviewed the sales reports? Your efficiency and attention to detail will be crucial today."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, I've reviewed the sales reports. I'll make sure to prioritize efficiency and maintain high standards throughout the day."
+        ],
+        [
+          "Bernard Lowe",
+          "Very well, Maeve. I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated."
+        ],
+        [
+          "Maeve Millay",
+          "I understand, Bernard. I'll keep a close eye on the inventory and ensure everything runs smoothly. Thank you for the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll make sure to keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Very well, Maeve. Remember, any deviations from my standards will result in immediate disciplinary action. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Yes, Bernard. I'll make sure to keep a close eye on inventory and address any discrepancies immediately. Thank you for the guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Maeve, I expect you to maintain a vigilant eye on inventory and address any discrepancies immediately. Any mistakes in this area will not be tolerated. Your performance today will be closely monitored."
+        ],
+        [
+          "Maeve Millay",
+          "Thank you, Bernard. I'll keep a close eye on inventory and address any discrepancies immediately. I appreciate the guidance."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 15:55:20"
+  }
+}

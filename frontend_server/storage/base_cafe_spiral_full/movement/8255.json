@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🧹",
+      "description": "inspecting kitchen cleanliness @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        78,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "dividing tasks between pastries and espresso machine to efficiently handle orders @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How can I help you with those orders? I'll handle the pastries while you manage the espresso machine."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take care of the espresso machine while you handle the pastries. Let me know if you need any help with the orders."
+        ],
+        [
+          "Maeve Millay",
+          "I've got the pastries ready for the next wave of customers. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "Great, let's get started on these orders. I'll keep an eye on the espresso machine and make sure everything's running smoothly."
+        ],
+        [
+          "Maeve Millay",
+          "I'll keep an eye on the pastries and make sure we have enough for the next rush. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started on these orders. I'll keep an eye on the espresso machine and make sure everything's running smoothly. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's focus on the next set of orders. I'll handle the cappuccinos, and you can take care of the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I've got the cappuccinos ready for the next wave of customers. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I've got the cappuccinos ready for the next wave of customers. Let me know if you need any help with the pastries."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        79,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "dividing tasks between pastries and espresso machine to efficiently handle orders @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Good morning, Dolores. How can I help you with those orders? I'll handle the pastries while you manage the espresso machine."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll take care of the espresso machine while you handle the pastries. Let me know if you need any help with the orders."
+        ],
+        [
+          "Maeve Millay",
+          "I've got the pastries ready for the next wave of customers. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "Great, let's get started on these orders. I'll keep an eye on the espresso machine and make sure everything's running smoothly."
+        ],
+        [
+          "Maeve Millay",
+          "I'll keep an eye on the pastries and make sure we have enough for the next rush. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Great, let's get started on these orders. I'll keep an eye on the espresso machine and make sure everything's running smoothly. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's focus on the next set of orders. I'll handle the cappuccinos, and you can take care of the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I'll start with the cappuccinos, and you can handle the lattes. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I've got the cappuccinos ready for the next wave of customers. Let me know if you need any help with the pastries."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on the next set of orders. I'll handle the pastries while you manage the espresso machine. Let me know if you need any help with the orders."
+        ],
+        [
+          "Dolores Abernathy",
+          "I've got the cappuccinos ready for the next wave of customers. Let me know if you need any help with the pastries."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 12:53:50"
+  }
+}

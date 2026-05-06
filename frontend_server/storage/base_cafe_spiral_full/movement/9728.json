@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        76,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of strict adherence to cafe rules and cleanliness standards with Dolores before closing @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Dolores, I see you're preparing for tomorrow. Make sure everything is in order. You know the rules about inventory and cleanliness. Any mistakes, and it's immediate disciplinary action."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I'll make sure everything is in order. I understand the importance of strict adherence to the rules and will ensure that there are no mistakes. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will make sure everything is in perfect order and that there are no mistakes. Thank you for your guidance and for your vigilance in ensuring our cafe meets the highest standards. I appreciate your leadership and the opportunity to work under your direction."
+        ],
+        [
+          "Bernard Lowe",
+          "Remember, any deviation from my standards will result in immediate disciplinary action. You know the consequences. Now get back to work and make sure everything is in order for tomorrow. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Make sure to be extra vigilant with the inventory tonight, Dolores. Any discrepancies will be dealt with immediately. I expect nothing less than perfection from you. Now, get back to work."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on time tomorrow. Any tardiness will result in disciplinary action. Now, get back to work and make sure everything is in order for closing. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on time tomorrow. Any tardiness will result in disciplinary action. Now, get back to work and make sure everything is in order for closing. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "reiterating the importance of strict adherence to cafe rules and cleanliness standards with Dolores before closing @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Bernard Lowe",
+          "Dolores, I see you're preparing for tomorrow. Make sure everything is in order. You know the rules about inventory and cleanliness. Any mistakes, and it's immediate disciplinary action."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I'll make sure everything is in order. I understand the importance of strict adherence to the rules and will ensure that there are no mistakes. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will make sure everything is in perfect order and that there are no mistakes. Thank you for your guidance and for your vigilance in ensuring our cafe meets the highest standards. I appreciate your leadership and the opportunity to work under your direction."
+        ],
+        [
+          "Bernard Lowe",
+          "Remember, any deviation from my standards will result in immediate disciplinary action. You know the consequences. Now get back to work and make sure everything is in order for tomorrow. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Make sure to be extra vigilant with the inventory tonight, Dolores. Any discrepancies will be dealt with immediately. I expect nothing less than perfection from you. Now, get back to work."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect nothing less than perfection from you, Dolores. Your job depends on it. I'll be watching your every move."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on time tomorrow. Any tardiness will result in disciplinary action. Now, get back to work and make sure everything is in order for closing. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on time tomorrow. Any tardiness will result in disciplinary action. Now, get back to work and make sure everything is in order for closing. I'll be watching."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Mr. Lowe, I understand. I will double-check the inventory and ensure that all areas of the cafe are spotless before closing. I appreciate your guidance and the opportunity to work under your direction. I will do my best to meet your high standards and avoid any mistakes."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        34,
+        44
+      ],
+      "pronunciato": "🚶‍♀️🌳",
+      "description": "walking to Johnson Park for her afternoon stroll (walking to Johnson Park) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 16:59:20"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        79,
+        19
+      ],
+      "pronunciato": "🔍📋",
+      "description": "monitoring customer interactions (checking security logs) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        119,
+        49
+      ],
+      "pronunciato": "📖",
+      "description": "continuing to read (beginning reading session) @ the Ville:Dorm for Oak Hill College:common room:common room table",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        108,
+        34
+      ],
+      "pronunciato": "🚶‍♂️👋🍳",
+      "description": "walking home from Hobbs Cafe (saying goodbye to colleagues) @ the Ville:Dorm for Oak Hill College:common room:common room table",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 20:28:10"
+  }
+}

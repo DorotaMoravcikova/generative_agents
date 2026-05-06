@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        91,
+        31
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a verbal reprimand for tardiness and instructions on cafe management @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Bernard. How can I help you today?"
+        ],
+        [
+          "Bernard Lowe",
+          "You're late. You know the drill. Get to work."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I'm aware, Bernard. I'll get right to it."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, if you're not going to be on time, at least try to look presentable. You look like you just rolled out of bed."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Bernard. I'll make sure to be more punctual in the future."
+        ],
+        [
+          "Bernard Lowe",
+          "You're lucky I'm in a good mood today. Now get to work and don't make me regret it."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll get right to work. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Make sure to keep the kitchen clean and the coffee fresh. I don't need to remind you about efficiency, do I?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll make sure to keep everything running smoothly. I'll check the coffee and ensure the kitchen is clean. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Don't forget, Maeve will be working the register today. Make sure the receipts are organized and you don't forget the bar code scanner."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll make sure to take care of everything. Thank you for the reminders. I'll focus on keeping the cafe running smoothly today."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I understand. I'll make sure to focus on efficiency and preparedness today. I'll keep the kitchen clean, the coffee fresh, and handle the register with Maeve. Thank you for the reminders and your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I understand. I'll make sure to focus on efficiency and preparedness today. I'll keep the kitchen clean, the coffee fresh, and handle the register with Maeve. Thank you for the reminders and your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ]
+      ]
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        86,
+        36
+      ],
+      "pronunciato": "💬",
+      "description": "receiving a verbal reprimand for tardiness and instructions on cafe management @ \u003cpersona\u003e Bernard Lowe",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Good morning, Bernard. How can I help you today?"
+        ],
+        [
+          "Bernard Lowe",
+          "You're late. You know the drill. Get to work."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, I'm aware, Bernard. I'll get right to it."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, if you're not going to be on time, at least try to look presentable. You look like you just rolled out of bed."
+        ],
+        [
+          "Dolores Abernathy",
+          "I understand, Bernard. I'll make sure to be more punctual in the future."
+        ],
+        [
+          "Bernard Lowe",
+          "You're lucky I'm in a good mood today. Now get to work and don't make me regret it."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll get right to work. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Make sure to keep the kitchen clean and the coffee fresh. I don't need to remind you about efficiency, do I?"
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll make sure to keep everything running smoothly. I'll check the coffee and ensure the kitchen is clean. Thank you for your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Don't forget, Maeve will be working the register today. Make sure the receipts are organized and you don't forget the bar code scanner."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I'll make sure to take care of everything. Thank you for the reminders. I'll focus on keeping the cafe running smoothly today."
+        ],
+        [
+          "Bernard Lowe",
+          "I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I understand. I'll make sure to focus on efficiency and preparedness today. I'll keep the kitchen clean, the coffee fresh, and handle the register with Maeve. Thank you for the reminders and your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ],
+        [
+          "Dolores Abernathy",
+          "Yes, Bernard. I understand. I'll make sure to focus on efficiency and preparedness today. I'll keep the kitchen clean, the coffee fresh, and handle the register with Maeve. Thank you for the reminders and your guidance."
+        ],
+        [
+          "Bernard Lowe",
+          "Dolores, I expect you to be on your best behavior today. Remember, efficiency and preparedness are key, especially during the morning rush. Don't let me down."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        73,
+        21
+      ],
+      "pronunciato": "🍳👔",
+      "description": "preparing breakfast and getting ready for work (leaving for work) @ the Ville:Hobbs Cafe:cafe:refrigerator",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 08:04:30"
+  }
+}

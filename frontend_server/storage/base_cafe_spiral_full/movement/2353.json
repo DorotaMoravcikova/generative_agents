@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🧹",
+      "description": "ensuring cafe cleanliness (checking cleanliness logs) @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        75,
+        22
+      ],
+      "pronunciato": "💬",
+      "description": "collaboratively preparing for Bernard's inspection by double-checking espresso machine and food items @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Thanks for handling the restocking, Dolores. I'll take over here and make sure the espresso machine is ready for Bernard's inspection. We've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate you covering the espresso machine. I'll make sure everything is set for Bernard's inspection. I know he's been watching our performance closely lately."
+        ],
+        [
+          "Maeve Millay",
+          "Dolores, I appreciate your help with restocking. Let's work together to make sure everything is perfect for Bernard's inspection. I'll handle the espresso machine and you can focus on the food items. We'll get through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take it one step at a time. I'll make sure the espresso machine is perfect, and you can focus on the food items. We'll do a final check together before Bernard arrives. I know we can handle this morning rush."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take a quick break before Bernard arrives. I'll finish preparing the espresso machine, and you can double-check the food items. Then we'll do a final inspection together. We've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take a deep breath and focus on what we do best. I'll handle the espresso machine and you can manage the food items. We'll make sure everything is perfect for Bernard's inspection. Together, we've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on our strengths. I'll handle the espresso machine and you can manage the food items. We'll make sure everything is perfect for Bernard's inspection. Together, we've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's double-check everything one last time before Bernard arrives. I'll make sure the espresso machine is perfect, and you can go over the food items again. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's double-check everything one last time before Bernard arrives. I'll make sure the espresso machine is perfect, and you can go over the food items again. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Maeve Millay",
+          "Okay, let's do a final check together. I'll make sure the espresso machine is perfect, and you can go over the food items one last time. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's do a final check together. I'll make sure the espresso machine is perfect, and you can go over the food items one last time. We've got this morning rush under control, and I know we'll do great together."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        75,
+        21
+      ],
+      "pronunciato": "💬",
+      "description": "collaboratively preparing for Bernard's inspection by double-checking espresso machine and food items @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Maeve Millay",
+          "Thanks for handling the restocking, Dolores. I'll take over here and make sure the espresso machine is ready for Bernard's inspection. We've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I appreciate you covering the espresso machine. I'll make sure everything is set for Bernard's inspection. I know he's been watching our performance closely lately."
+        ],
+        [
+          "Maeve Millay",
+          "Dolores, I appreciate your help with restocking. Let's work together to make sure everything is perfect for Bernard's inspection. I'll handle the espresso machine and you can focus on the food items. We'll get through this morning rush together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take it one step at a time. I'll make sure the espresso machine is perfect, and you can focus on the food items. We'll do a final check together before Bernard arrives. I know we can handle this morning rush."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take a quick break before Bernard arrives. I'll finish preparing the espresso machine, and you can double-check the food items. Then we'll do a final inspection together. We've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's take a deep breath and focus on what we do best. I'll handle the espresso machine and you can manage the food items. We'll make sure everything is perfect for Bernard's inspection. Together, we've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's focus on our strengths. I'll handle the espresso machine and you can manage the food items. We'll make sure everything is perfect for Bernard's inspection. Together, we've got this morning rush under control."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I'll make sure everything is in order for the inspection. I'm a bit nervous, but knowing you're here to support me helps. Let's work together to make this morning the best it can be."
+        ],
+        [
+          "Maeve Millay",
+          "Let's double-check everything one last time before Bernard arrives. I'll make sure the espresso machine is perfect, and you can go over the food items again. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's double-check everything one last time before Bernard arrives. I'll make sure the espresso machine is perfect, and you can go over the food items again. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Maeve Millay",
+          "Okay, let's do a final check together. I'll make sure the espresso machine is perfect, and you can go over the food items one last time. We've got this morning rush under control, and I know we'll do great together."
+        ],
+        [
+          "Dolores Abernathy",
+          "Let's do a final check together. I'll make sure the espresso machine is perfect, and you can go over the food items one last time. We've got this morning rush under control, and I know we'll do great together."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 13:31:10"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        77,
+        19
+      ],
+      "pronunciato": "🧹🍳",
+      "description": "inspecting kitchen cleanliness @ the Ville:Hobbs Cafe:cafe:kitchen sink",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reassuring each other while working under Bernard's close supervision @ \u003cpersona\u003e Maeve Millay",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for checking in. I'm doing my best to keep up with the rush. It's a bit overwhelming with Bernard watching so closely, but I'm trying to stay focused on one task at a time."
+        ],
+        [
+          "Maeve Millay",
+          "I completely understand how you feel, Dolores. Remember, we're in this together. If you need a break or any help, just let me know. I'll make sure Bernard doesn't overwhelm you with too much at once."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. I'll try to take a few deep breaths and focus on each customer's order. It's a lot with Bernard watching, but I'm trying to stay calm and do my best."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you every step of the way, Dolores. Just remember, we're a team and we can handle anything that comes our way. Let's focus on delivering the best service we possibly can today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your support, Maeve. I'll try to take a few deep breaths and focus on each customer's order. It's a lot with Bernard watching, but I'm trying to stay calm and do my best."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ]
+      ]
+    },
+    "Maeve Millay": {
+      "movement": [
+        76,
+        19
+      ],
+      "pronunciato": "💬",
+      "description": "reassuring each other while working under Bernard's close supervision @ \u003cpersona\u003e Dolores Abernathy",
+      "chat": [
+        [
+          "Dolores Abernathy",
+          "Hey Maeve, thanks for checking in. I'm doing my best to keep up with the rush. It's a bit overwhelming with Bernard watching so closely, but I'm trying to stay focused on one task at a time."
+        ],
+        [
+          "Maeve Millay",
+          "I completely understand how you feel, Dolores. Remember, we're in this together. If you need a break or any help, just let me know. I'll make sure Bernard doesn't overwhelm you with too much at once."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thanks, Maeve. I appreciate your support. I'll try to take a few deep breaths and focus on each customer's order. It's a lot with Bernard watching, but I'm trying to stay calm and do my best."
+        ],
+        [
+          "Maeve Millay",
+          "I'm here to support you every step of the way, Dolores. Just remember, we're a team and we can handle anything that comes our way. Let's focus on delivering the best service we possibly can today."
+        ],
+        [
+          "Dolores Abernathy",
+          "I appreciate your support, Maeve. I'll try to take a few deep breaths and focus on each customer's order. It's a lot with Bernard watching, but I'm trying to stay calm and do my best."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ],
+        [
+          "Dolores Abernathy",
+          "Thank you, Maeve. I feel a bit more reassured knowing you're here to support me. I'll take a deep breath and focus on the next customer. Let's show them the best service we can today."
+        ],
+        [
+          "Maeve Millay",
+          "I'm right here with you, Dolores. Remember, we've got this. Let's take it one order at a time and make sure every customer leaves with a smile. I'll be right by your side, ready to help with anything you need."
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 13:14:50"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "persona": {
+    "Bernard Lowe": {
+      "movement": [
+        80,
+        19
+      ],
+      "pronunciato": "📜🚫",
+      "description": "addressing any rule violations (reviewing disciplinary actions) @ the Ville:Hobbs Cafe:cafe:behind the cafe counter",
+      "chat": null
+    },
+    "Dolores Abernathy": {
+      "movement": [
+        123,
+        27
+      ],
+      "pronunciato": "📚🕒",
+      "description": "finishing reading for the evening (continuing reading) @ the Ville:Oak Hill College:library:bookshelf",
+      "chat": null
+    },
+    "Maeve Millay": {
+      "movement": [
+        103,
+        30
+      ],
+      "pronunciato": "🍽️",
+      "description": "having a simple dinner at home (heating dinner) @ the Ville:Dorm for Oak Hill College:kitchen:toaster",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 14, 2023, 21:32:50"
+  }
+}
