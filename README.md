@@ -22,7 +22,7 @@ The simulation runs a workplace scenario in a three-agent café environment (Hob
 
 ## What this fork changes
 
-This codebase is a substantially modified fork of [Park et al.'s Generative Agents](https://github.com/joonspk-research/generative_agents).The original framework was a landmark contribution to the field. It has also remained a landmark, in the sense of not moving, since 2023. The original code was written against OpenAI's GPT-3-era APIs, including the now-deprecated completions endpoint, with prompts designed for raw next-token continuation. We found, as have many others, that the original repository does not run with current models. We rewrote the simulation backend in Go and restructured the prompts to elicit JSON responses rather than relying on raw next-token continuation.
+This codebase is a substantially modified fork of [Park et al.'s Generative Agents](https://github.com/joonspk-research/generative_agents). The original framework was a landmark contribution to the field. It has also remained a landmark, in the sense of not moving, since 2023. The original code was written against OpenAI's GPT-3-era APIs, including the now-deprecated completions endpoint, with prompts designed for raw next-token continuation. We found, as have many others, that the original repository does not run with current models. We rewrote the simulation backend in Go and restructured the prompts to elicit JSON responses rather than relying on raw next-token continuation.
 
 
 
