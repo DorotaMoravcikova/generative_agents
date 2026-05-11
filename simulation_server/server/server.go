@@ -55,7 +55,7 @@ type Movements struct {
 
 func (s *Server) Run(i int) error {
 	for range i {
-		if s.Step%s.BackupInterval == 0 {
+		if s.BackupInterval != 0 && s.Step%s.BackupInterval == 0 {
 			if err := s.Storage.Backup(s.Step); err != nil {
 				return fmt.Errorf("could not create server backup: %w", err)
 			}

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"log/slog"
 	"os"
 	"path"
 	"strconv"
@@ -31,6 +32,21 @@ type Config struct {
 	EmbeddingModel string
 
 	BackupInterval int
+
+	LogToFile    bool
+	LogLevel     slog.Level
+	LogLevelFile slog.Level
+}
+
+func parseLogLevel(s, def string) slog.Level {
+	if s == "" {
+		s = def
+	}
+	var l slog.Level
+	if err := l.UnmarshalText([]byte(s)); err != nil {
+		panic(fmt.Sprintf("invalid log level %q: %v", s, err))
+	}
+	return l
 }
 
 func RetryPanic(fn func(), retries int) error {
@@ -70,6 +86,18 @@ func main() {
 		}
 	}
 
+	logLevel := parseLogLevel(os.Getenv("LOG_LEVEL"), "INFO")
+	logLevelFileStr := os.Getenv("LOG_LEVEL_FILE")
+	if logLevelFileStr == "" {
+		logLevelFileStr = os.Getenv("LOG_LEVEL")
+	}
+	logLevelFile := parseLogLevel(logLevelFileStr, "INFO")
+
+	logToFile := true
+	if v := os.Getenv("LOG_TO_FILE"); v == "false" || v == "0" {
+		logToFile = false
+	}
+
 	conf := Config{
 		SimulationDir: os.Getenv("SIMULATION_DIR"),
 		MazeDir:       os.Getenv("MAZE_DIR"),
@@ -88,12 +116,17 @@ func main() {
 		EmbeddingModel: os.Getenv("EMBEDDING_MODEL"),
 
 		BackupInterval: backupInterval,
+
+		LogToFile:    logToFile,
+		LogLevel:     logLevel,
+		LogLevelFile: logLevelFile,
 	}
 
 	rl, err := logging.NewRunLogs(logging.Config{
-		BaseDir:        path.Join(conf.LogDir, conf.SimulationName),
-		AlsoToStderr:   true,
-		EnableDebugLog: true,
+		BaseDir:      path.Join(conf.LogDir, conf.SimulationName),
+		LogToFile:    conf.LogToFile,
+		FileLevel:    conf.LogLevelFile,
+		ConsoleLevel: conf.LogLevel,
 	})
 	if err != nil {
 		panic(fmt.Sprintf("Could not react logger: %v", err))
@@ -115,7 +148,7 @@ func main() {
 		embedderOpts = append(embedderOpts, openai.WithURL(conf.EmbeddingURL))
 	}
 	if conf.EmbeddingModel != "" {
-		embedderOpts = append(embedderOpts, openai.WithTextModel(conf.EmbeddingModel))
+		embedderOpts = append(embedderOpts, openai.WithEmbeddingsModel(conf.EmbeddingModel))
 	}
 	embedder := openai.New(embedderOpts...)
 

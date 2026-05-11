@@ -34,7 +34,57 @@ Key changes:
 
 ## Setup
 
-<!-- TODO: fill in, Friso's part, hi bby -->
+### Prerequisites
+
+**Go 1.24.3 or later.** Download from [go.dev/dl](https://go.dev/dl/) and verify with:
+
+```sh
+go version
+```
+
+**An OpenAI API-compatible LLM endpoint.** The simulation backend uses the OpenAI chat completions API. This can be OpenAI itself, a HuggingFace Inference Endpoint, a local model served via Ollama, or any other compatible provider.
+
+You also need an embeddings endpoint (used for memory retrieval). This can be the same provider or a different one.
+
+### Configuration
+
+Copy the example below into a `.env` file at the project root and fill in your values:
+
+```sh
+# Embeddings endpoint
+EMBEDDING_KEY="<your-api-key>"
+EMBEDDING_URL="<openai-compatible-base-url>"  # optional, defaults to OpenAI
+EMBEDDING_LLM="<model-name>" # optional in case of OpenAI
+
+# Text/chat completions endpoint
+TEXT_MODEL_KEY="<your-api-key>"
+TEXT_MODEL_URL="<openai-compatible-base-url>"  # optional, defaults to OpenAI
+TEXT_MODEL_LLM="<model-name>"
+
+# Paths (defaults shown — adjust if needed)
+SIMULATION_DIR="environment/frontend_server/storage"
+BACKUP_DIR="simulation/backup"
+LOG_DIR="simulation/logs"
+MAZE_DIR="environment/frontend_server/static_dirs/assets"
+
+# Simulation settings
+SIMULATION_NAME="base_cafe_spiral"
+SIMULATION_MAZE="the_spiral"
+BACKUP_INTERVAL=50 # If set to 0 backups are disabled
+
+# Logging (optional)
+LOG_LEVEL="INFO"       # DEBUG, INFO, WARN, ERROR — applies to console and file
+LOG_LEVEL_FILE="INFO"  # overrides LOG_LEVEL for the file log only
+LOG_TO_FILE=true
+```
+
+### Running
+
+Build and run with:
+
+```sh
+go run ./simulation_server
+```
 
 ## Citation
 
