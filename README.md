@@ -14,7 +14,7 @@ van der Veen\*, Moravčíková\* & van Duijn (2026)
 
 We implement valence-driven memory asymmetries inspired by the NEVER model (Negative Emotional Valence Enhances Recapitulation; Bowen, Kark & Kensinger, 2018) within a generative agent architecture; namely asymmetric encoding and valence-aware retrieval. In the original Generative Agents framework (Park et al., 2023), the agents retrieve memories through recency, relevance, and importance. While importance captures the arousal-like dimension of memory, the architecture has no mechanism for valence, meaning that a deeply negative and a deeply positive event of equal importance are treated identically. We address this through our work.
 
-We built on the three-agent base simulation (`base_the_ville_isabella_maria_klaus`), renaming the agents Dolores Abernathy, Maeve Millay, and Bernard Lowe as a nod to *Westworld*. This continues a tradition set by Park et al., whose original codebase already references the series.
+We built on the three-agent base simulation (`base_the_ville_isabella_maria_klaus`), renaming the agents Dolores Abernathy, Maeve Millay, and Bernard Lowe as a nod to *Westworld*. This continues a tradition set by Park et al., whose original codebase already references the series. The full 25-agent Smallville simulation was not modified.
 
 The simulation runs a workplace scenario in a three-agent café environment (Hobbs Cafe): an experimental agent with NEVER-inspired memory (Dolores Abernathy), a matched control (Maeve Millay), and a manager acting as a naturalistic stressor (Bernard Lowe).
 
@@ -22,7 +22,11 @@ The simulation runs a workplace scenario in a three-agent café environment (Hob
 
 ## What this fork changes
 
-This codebase is a substantially modified fork of [Park et al.'s Generative Agents](https://github.com/joonspk-research/generative_agents). Key changes:
+This codebase is a substantially modified fork of [Park et al.'s Generative Agents](https://github.com/joonspk-research/generative_agents). The original framework was a landmark contribution to the field. It has also remained a landmark, in the sense of not moving, since 2023. The original code was written against OpenAI's GPT-3-era APIs, including the now-deprecated completions endpoint, with prompts designed for raw next-token continuation. We found, as have [many others](https://github.com/joonspk-research/generative_agents/issues), that the original repository does not run with current models. We rewrote the simulation backend in Go and restructured the prompts to elicit JSON responses rather than relying on raw next-token continuation.
+
+
+
+Key changes:
 
 **Valence-aware memory retrieval.** We add a valence dimension to the retrieval score. Absolute valence is normalised to [0, 1] and weighted ×1.5 for negative memories, producing a retrieval hierarchy (negative > positive > neutral). The full retrieval score is: `score = α_rec·R + α_rel·L + α_imp·I + α_val·V` (all α = 1).
 
