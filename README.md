@@ -42,7 +42,7 @@ Key changes:
 go version
 ```
 
-**An OpenAI API-compatible LLM endpoint.** The simulation backend uses the OpenAI chat completions API. This can be OpenAI itself, a HuggingFace Inference Endpoint, a local model served via Ollama, or any other compatible provider.
+**An OpenAI API-compatible LLM endpoint.** When using OpenAI directly the backend uses the Responses API; for any other provider (HuggingFace Inference Endpoints, Ollama, etc.) it falls back to the Chat Completions API. Set `TEXT_MODEL_URL` to use a third-party provider; leave it unset to use OpenAI.
 
 You also need an embeddings endpoint (used for memory retrieval). This can be the same provider or a different one.
 
