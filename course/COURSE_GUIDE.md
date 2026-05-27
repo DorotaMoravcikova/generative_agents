@@ -2,8 +2,7 @@
 
 ## Course Guide
 
-> **Working in pairs.** You will work in dyads. Submit one answer template per pair with both names. You are encouraged to divide the work but both partners should understand all exercises.
-
+> **Working in pairs.** You are expected to work in dyads, but each student submits individually and will be assessed on their own understanding. 
 ---
 
 ## Overview
