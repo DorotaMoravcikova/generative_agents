@@ -135,7 +135,7 @@ Your answer:
 
 ### 4.2 Descriptive statistics
 
-| Agent | Mean valence | Std deviation |
+| Agent | Overall valence | Thought valence |
 |---|---|---|
 | Dolores (neg. bias) | | |
 | Maeve (control) | | |
@@ -176,7 +176,7 @@ Your answer:
 
 ### 4.5 Consistency across runs (if applicable)
 
-| Run | Dolores mean valence | Maeve mean valence | Cohen's d |
+| Run | Dolores valence | Maeve valence | Cohen's d |
 |---|---|---|---|
 | Run 1 | | | |
 | Run 2 | | | |
