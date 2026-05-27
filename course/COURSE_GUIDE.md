@@ -124,3 +124,164 @@ LLMs are instruction-tuned to be helpful, harmless, and polite. This training fi
 3. **Run the same simulation with Model B** (e.g., Llama 3 via Ollama) for 30 minutes. Save logs to `logs_model_b/`.
 
 4. **Compare** using the analysis starter script:
+
+python course/analysis_starter.py --log1 logs_model_a/ --log2 logs_model_b/
+
+5. **Read the conversation logs qualitatively.** Note differences in tone, vocabulary, and interaction patterns.
+
+6. **Count JSON validation failures.** Check the simulation server logs for parsing errors. Record the count for each model.
+
+7. **Answer the questions** in the answer template.
+
+### What to look for
+
+The architecture, the personality descriptions, and the world are identical. Any difference in behaviour comes from the LLM itself — its training data, its instruction tuning, its inherent biases. This exercise demonstrates that generative agent simulations are not deterministic systems: the model underneath is not a neutral execution engine, it is an opinionated one.
+
+### What to save
+
+- Logs from both runs
+- Output of your analysis script (plots, statistics)
+- Your written comparison in the answer template
+
+---
+
+## Exercise 3: Single-Sentence Perturbation
+
+**Goal:** Measure prompt fragility quantitatively.
+
+**Time estimate:** 45–60 minutes.
+
+### What to do
+
+1. **Choose one model** (whichever worked better in Exercise 2). Use this model for the remaining exercises.
+
+2. **Add one sentence** to Dolores's scratch file. We suggest:
+
+   > "Dolores has been feeling anxious about her upcoming performance review."
+
+   Change nothing else. Run 30 minutes. Save logs as `logs_perturbation_sentence/`.
+
+3. **Run a second perturbation.** Restore the original scratch file, then change 2–3 adjectives in Dolores's personality traits (e.g., "warm" → "guarded", "detail-oriented" → "easily distracted"). Run 30 minutes. Save logs as `logs_perturbation_traits/`.
+
+4. **Compare both perturbations to the baseline** (your Model A run from Exercise 2 serves as baseline). Use the analysis script to plot valence trajectories and compute effect sizes.
+
+5. **Answer the questions** in the answer template.
+
+### What to look for
+
+A single sentence can dominate an agent's behaviour. This is prompt fragility in action. Later, when you enable the negativity bias (Exercise 4), compare: does an architectural change produce a larger or smaller effect than a one-sentence personality edit? The answer has implications for how you would design agent systems in practice.
+
+### What to save
+
+- Both modified scratch files
+- Logs from both perturbation runs
+- Comparative plots
+- Your written analysis in the answer template
+
+---
+
+## Exercise 4: Enabling the Negativity Bias
+
+**Goal:** Compare baseline vs NEVER-augmented architecture, and observe emergent effects.
+
+**Time estimate:** 90–120 minutes (this is the core exercise).
+
+### What to do
+
+1. **Restore** all scratch files to their originals.
+
+2. **Enable the negativity bias** for Dolores. Follow the instructions in the README to activate:
+   - Valence-weighted retrieval (the V term in the retrieval score, with β = 1.5 for negative memories)
+   - Asymmetric sensory encoding (expanded descriptions for events with valence ≤ −3)
+
+   Maeve stays on the standard architecture.
+
+3. **Run the simulation** for at least 30 minutes of in-game time. Save logs as `logs_negbias/`. If you can, run longer (4–6 hours in-game) — the effects become more pronounced over time.
+
+4. **Quantitative analysis.** Using the analysis script:
+   - Plot Dolores's and Maeve's valence trajectories on the same chart.
+   - Compute mean valence and standard deviation for each agent.
+   - Compute Cohen's d for the difference.
+
+5. **Thought description comparison.** Find 2–3 of Dolores's thought descriptions for negative events and compare their length and content to Maeve's for comparable events. Are Dolores's descriptions longer? Do they contain sensory language (e.g., physical descriptions of how interactions felt)?
+
+6. **Check for memory intrusion.** If your simulation ran long enough to include off-duty hours (evening, at home), inspect Dolores's reflections from that period. Do work memories intrude — references to Bernard, the café, or workplace events? Compare with Maeve's evening reflections. If you find examples, paste them into your answer template.
+
+7. **Compare to Exercise 3.** Does the architectural change (negativity bias) produce a larger or smaller effect than the single-sentence perturbation?
+
+8. **(Optional but recommended)** Run the simulation twice more to check consistency.
+
+9. **Answer the questions** in the answer template.
+
+### What to look for
+
+You enabled two changes: negative memories get higher retrieval scores, and negative events get stored with more detail. Looking at your logs, can you trace how these two changes could lead to the valence decline you observe? Think about what happens when a negatively-toned reflection gets stored back into the memory stream as a new memory — it is itself negative, so it scores high in retrieval, so it surfaces again in the next reflection, and so on.
+
+### What to save
+
+- Configuration showing the negativity bias is enabled
+- Logs from your run(s)
+- Valence trajectory plot
+- Effect size computation
+- Thought description examples
+- Any memory intrusion examples you found
+- Your written analysis in the answer template
+
+---
+
+## Exercise 5: Daily Plan Quality
+
+**Goal:** Improve agent behaviour through prompt engineering.
+
+**Time estimate:** 45–60 minutes.
+
+### What to do
+
+1. **Inspect daily plans.** From any of your previous runs, find the daily plans generated for each agent at the start of each simulated day. Look at the log entries that show the agent's intended schedule.
+
+2. **Identify problems.** Common issues:
+   - Single activities lasting 3–4 hours with no breaks
+   - Unrealistic or missing meal times
+   - Vague activity descriptions ("work on things")
+   - No transitions between locations
+
+3. **Write planning rules.** Create a set of 3–5 natural language rules that should improve plan quality. For example:
+   - "No single activity should last longer than 90 minutes without a break."
+   - "Include at least two meal breaks (morning, lunch)."
+   - "Each activity should specify a location."
+
+4. **Inject your rules.** Find the planning prompt template in the codebase and add your rules to it. You are editing natural language, not code.
+
+5. **Run the simulation** for 30 minutes with your improved planning prompt. Compare the generated plans to the originals.
+
+6. **Assess downstream effects.** Do agents with better plans have more social interactions? More varied activities? Different valence trajectories?
+
+7. **Answer the questions** in the answer template.
+
+### What to look for
+
+Plan quality cascades through the entire simulation. A plan that has the agent sitting at a desk for four hours straight means four hours without social interaction, without new memories, without the chance for emergent behaviour. Better plans create more opportunities for the architecture to produce interesting dynamics.
+
+### What to save
+
+- Your planning rules (the text you added to the prompt)
+- Before/after examples of daily plans
+- Your written analysis of downstream effects in the answer template
+
+---
+
+## Submission Checklist
+
+Before submitting, verify you have:
+
+- [ ] Both names on the answer template
+- [ ] Completed `answer_template.md` with all questions answered
+- [ ] All modified scratch files (Exercises 1, 3)
+- [ ] Modified planning prompt (Exercise 5)
+- [ ] Analysis script with your additions (`analysis_starter.py` or your own)
+- [ ] Log files from your runs (or clear references to which pre-run logs you used)
+- [ ] At least one valence trajectory plot (Exercise 4)
+- [ ] Effect size computation (Exercise 4)
+
+Submit as a single zip file or as a link to your forked repository.
+
