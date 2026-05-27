@@ -269,6 +269,20 @@ Plan quality cascades through the entire simulation. A plan that has the agent s
 
 ---
 
+## Optional Extensions
+
+If you want to go further, consider the following:
+
+- **Vary the bias strength.** Run the simulation with different values of the negative memory multiplier (1.0, 1.25, 1.5, 2.0, 3.0). Plot mean valence as a function of the multiplier. Is the relationship linear? Is there a threshold beyond which the agent spirals?
+
+- **Remove Bernard.** Run the negativity bias condition without the stressor agent. Does the negativity bias still produce a valence shift in a benign environment, or does it require negative events to seed the cycle?
+
+- **Scale up.** Increase the number of agents to 5–10. Do group dynamics emerge? Do you see coalition formation, social isolation, or other multi-agent phenomena? How does the negativity bias interact with group size?
+
+- **Implement another cognitive bias.** Choose one (e.g., confirmation bias, availability heuristic, recency bias) and implement it architecturally. Run the comparison. Does it produce the effect you predicted?
+
+---
+
 ## Submission Checklist
 
 Before submitting, verify you have:
