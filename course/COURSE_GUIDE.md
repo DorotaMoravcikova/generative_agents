@@ -63,15 +63,23 @@ go run ./simulation_server
 
 ### 0.6 Locate key files
 
-Before starting the exercises, find and read the following:
+### 0.6 Key files
 
-| What | Where | Why you need it |
-|------|-------|-----------------|
-| Dolores's personality | `frontend_server/storage/base_cafe_spiral/personas/Dolores Abernathy/bootstrap_memory/scratch.json` | You will edit this in Exercises 1 and 3 |
-| Maeve's personality | Same structure, Maeve Millay folder | Control agent, for comparison |
-| Bernard's personality | Same structure, Bernard Lowe folder | You will edit this in Exercise 1 |
-| Simulation logs | [Path TBD] | You will analyse these |
-| Planning prompt | [Path TBD] | You will edit this in Exercise 5 |
+**Personality descriptions (scratch files):**
+- `frontend_server/storage/base_cafe_spiral/personas/Dolores Abernathy/bootstrap_memory/scratch.json`
+- `frontend_server/storage/base_cafe_spiral/personas/Maeve Millay/bootstrap_memory/scratch.json`
+- `frontend_server/storage/base_cafe_spiral/personas/Bernard Lowe/bootstrap_memory/scratch.json`
+
+**Agent memory (nodes):**
+After running a simulation, each agent's memories are stored in:
+- `<SIMULATION_DIR>/personas/<name>/bootstrap_memory/associative_memory/nodes.json`
+
+Where `<SIMULATION_DIR>` is the path you configured in your `.env` file.
+
+**Planning prompt template (Exercise 5):**
+- `simulation_server/llm/openai/v5/task_decomp_v3/prompt.txt`
+
+Read all three scratch files before starting the exercises.
 
 
 ---
@@ -243,7 +251,11 @@ You enabled two changes: negative memories get higher retrieval scores, and nega
    - "Include at least two meal breaks (morning, lunch)."
    - "Each activity should specify a location."
 
-4. **Inject your rules.** Find the planning prompt template in the codebase and add your rules to it. You are editing natural language, not code.
+4. **Inject your rules.** Open `simulation_server/llm/openai/v5/task_decomp_v3/prompt.txt` and add your rules to the prompt text. You are editing natural language, not code.
+
+   **Important:** The output format specified in the prompt **must stay exactly the same.** Only modify the instructions, not the expected response structure.
+
+   **Tip:** The fields available in the prompt template use Go's text/template syntax (e.g., `{{ .Persona.Name }}`). To see all available fields, check the `TaskDecompV3Input` struct in `simulation_server/llm/openai/v5/types.go` and the `Persona` interface in `simulation_server/llm/llm.go`. There are plenty of online tutorials on Go template syntax if you want to use additional fields.
 
 5. **Run the simulation** for 30 minutes with your improved planning prompt. Compare the generated plans to the originals.
 
