@@ -81,5 +81,5 @@ This is the core exercise and is weighted accordingly.
 
 - **No logs submitted:** −10% per exercise (claims without evidence)
 - **Clearly fabricated data:** Automatic fail on that exercise
-- **No analysis script submitted:** −5% (using other tools is fine if explained)
+- **No analysis code submitted:** −5% 
 - **Only one model used across all exercises:** −5% (requirement was two)
