@@ -15,14 +15,14 @@ You will need to install Go to run the simulation server. **You will not need to
 
 1. A completed **answer template** (`answer_template.md`) with your analysis, log excerpts, plots, and written reflections.
 2. Your **modified files** (scratch files, prompt edits).
-3. Your **analysis script** (the completed `analysis_starter.py` or your own).
+3. Your **analysis script**.
 
 ---
 
 ## Step 0: Setup
 
 ### 0.1 Clone the repository
-https://github.com/DorotaMoravcikova/generative_agents
+ [https://github.com/DorotaMoravcikova/generative_agents](https://github.com/DorotaMoravcikova/generative_agents)
 
 ### 0.2 Install Go
 
@@ -40,9 +40,9 @@ pip install pandas matplotlib scipy
 
 ### 0.4 Configure your LLM
 
-Copy the `.env.example` to `.env` at the project root and fill in your API keys. See the main README for the full list of configuration options.
+Follow instructions in the README.
 
-You need **two different LLMs** for this assignment. At least one should be commercially hosted and one local/open.
+You need **two different LLMs** for this assignment.We recommend choosing one commercially hosted and one local/open model so you gain hands on experience with running both.
 
 | Option | Type | Cost | GPU needed? |
 |--------|------|------|-------------|
@@ -60,7 +60,6 @@ The system requires an **OpenAI API-compatible endpoint**. When using OpenAI dir
 
 go run ./simulation_server
 
-Open `http://localhost:8000` in your browser. You should see the café map with three agent sprites. Watch them for 2–3 minutes to confirm they move and interact. If this works, you are ready to start.
 
 ### 0.6 Locate key files
 
@@ -68,13 +67,12 @@ Before starting the exercises, find and read the following:
 
 | What | Where | Why you need it |
 |------|-------|-----------------|
-| Dolores's personality | Look for `scratch.txt` under Dolores Abernathy's persona folder | You will edit this in Exercises 1 and 3 |
+| Dolores's personality | `frontend_server/storage/base_cafe_spiral/personas/Dolores Abernathy/bootstrap_memory/scratch.json` | You will edit this in Exercises 1 and 3 |
 | Maeve's personality | Same structure, Maeve Millay folder | Control agent, for comparison |
 | Bernard's personality | Same structure, Bernard Lowe folder | You will edit this in Exercise 1 |
-| Simulation logs | Check `simulation/logs/` after running | You will analyse these |
-| Planning prompt | Look for the plan generation template in `simulation_server/` | You will edit this in Exercise 5 |
+| Simulation logs | [Path TBD] | You will analyse these |
+| Planning prompt | [Path TBD] | You will edit this in Exercise 5 |
 
-**Tip:** Use `find . -name "scratch.txt"` or `find . -name "*.tmpl"` if you cannot locate files.
 
 ---
 
@@ -122,15 +120,11 @@ LLMs are instruction-tuned to be helpful, harmless, and polite. This training fi
 
 3. **Run the same simulation with Model B** (e.g., Llama 3 via Ollama) for 30 minutes. Save logs to `logs_model_b/`.
 
-4. **Compare** using the analysis starter script:
+4. **Read the conversation logs qualitatively.** Note differences in tone, vocabulary, and interaction patterns.
 
-python course/analysis_starter.py --log1 logs_model_a/ --log2 logs_model_b/
+5. **Count JSON validation failures.** Check the simulation server logs for parsing errors. Record the count for each model.
 
-5. **Read the conversation logs qualitatively.** Note differences in tone, vocabulary, and interaction patterns.
-
-6. **Count JSON validation failures.** Check the simulation server logs for parsing errors. Record the count for each model.
-
-7. **Answer the questions** in the answer template.
+6. **Answer the questions** in the answer template.
 
 ### What to look for
 
@@ -139,7 +133,7 @@ The architecture, the personality descriptions, and the world are identical. Any
 ### What to save
 
 - Logs from both runs
-- Output of your analysis script (plots, statistics)
+- Output of your analysis (plots, statistics)
 - Your written comparison in the answer template
 
 ---
@@ -162,7 +156,7 @@ The architecture, the personality descriptions, and the world are identical. Any
 
 3. **Run a second perturbation.** Restore the original scratch file, then change 2–3 adjectives in Dolores's personality traits (e.g., "warm" → "guarded", "detail-oriented" → "easily distracted"). Run 30 minutes. Save logs as `logs_perturbation_traits/`.
 
-4. **Compare both perturbations to the baseline** (your Model A run from Exercise 2 serves as baseline). Use the analysis script to plot valence trajectories and compute effect sizes.
+4. **Compare both perturbations to the baseline** (your Model A run from Exercise 2 serves as baseline). Use Python to plot valence trajectories and compute effect sizes.
 
 5. **Answer the questions** in the answer template.
 
@@ -197,7 +191,7 @@ A single sentence can dominate an agent's behaviour. This is prompt fragility in
 
 3. **Run the simulation** for at least 30 minutes of in-game time. Save logs as `logs_negbias/`. If you can, run longer (4–6 hours in-game) — the effects become more pronounced over time.
 
-4. **Quantitative analysis.** Using the analysis script:
+4. **Quantitative analysis.** Using Python:
    - Plot Dolores's and Maeve's valence trajectories on the same chart.
    - Compute mean valence and standard deviation for each agent.
    - Compute Cohen's d for the difference.
@@ -291,7 +285,7 @@ Before submitting, verify you have:
 - [ ] Completed `answer_template.md` with all questions answered
 - [ ] All modified scratch files (Exercises 1, 3)
 - [ ] Modified planning prompt (Exercise 5)
-- [ ] Analysis script with your additions (`analysis_starter.py` or your own)
+- [ ] Analysis scripts
 - [ ] Log files from your runs (or clear references to which pre-run logs you used)
 - [ ] At least one valence trajectory plot (Exercise 4)
 - [ ] Effect size computation (Exercise 4)
