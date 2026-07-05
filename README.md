@@ -18,7 +18,7 @@ We built on the three-agent base simulation (`base_the_ville_isabella_maria_klau
 
 The simulation runs a workplace scenario in a three-agent café environment (Hobbs Cafe): an experimental agent with NEVER-inspired memory (Dolores Abernathy), a matched control (Maeve Millay), and a manager acting as a naturalistic stressor (Bernard Lowe).
 
-> **📚 Course materials:** If you're here from the Agentic LLM course at LIACS (Leiden University), head to the [`course-exercises`](https://github.com/DorotaMoravcikova/generative_agents/tree/course-exercises) branch for the case study materials.
+> **📚 Course materials:** If you're here from the Agentic LLM course at LIACS (Leiden University), head to [agentic-llm-course-excercises](https://github.com/fvdveen/agentic-llm-course-excercises) for the case study materials.
 
 ## What this fork changes
 
